@@ -11,9 +11,7 @@
 	<script src="js/loginform.js"></script>
 </head>
 <body>
-@include('layout.partials.navbar')
-#teste1
-#black
+	
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="container">    
