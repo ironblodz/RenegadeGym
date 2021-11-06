@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+p {
+    font-weight: 300;
+}
+/* --------- NAVBAR --------- */
+nav {
+    /*background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    background: linear-gradient(to right, #ff5e62, #ff9966);*/
+    background-color: rgb(201, 201, 201);
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+.logo-img {
+    width: 100px;
+}
+.navbar-nav {
+    text-align: right;
+}
+.nav-link {
+    color: rgb(48, 48, 48) !important;
+    font-size: 1.2rem;
+}
+.navbar-brand {
+    color: #fff !important;
+}
+.fa {
+    color: #fff;
+}
+button {
+    outline: none !important;
+    border: none !important;
+}
+.account-icon {
+    width: 20px;
+}
+@media only screen and (max-width: 991px) {
+    .nav-link {
+        color: #fff !important;
+        font-size: 1.2rem;
+    }
+}
+/* ----------- FOOTER -----------*/
+footer p {
+    padding-top: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+#contact a {
+    color: #ff5e62;
+    margin: 10px;
+}
+
+#contact {
+    color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    /*background: linear-gradient(to right, #ff5e62, #ff9966);*/
+    background-color: rgb(201, 201, 201);
+}
+
+#icon {
+    background-color: #8b0000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s, box-shadow 0.5s;
+    box-shadow: 0 2px 3px rgb(0 0 0 / 12%), 0 2px 2px rgb(0 0 0 / 24%);
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+@media screen and (max-width: 426px) {
+    #icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    ul li {
+        font-size: 20px;
+    }
+}
+/* ----------- BLOG -----------*/
+
+.btn {
+    background-color: #8b0000;
+    color: #fff;
+}
+.btn:hover {
+    transition: ease-in 0.2s;
+    background-color: #8b0000;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(33, 33, 33, 0.7);
+}
