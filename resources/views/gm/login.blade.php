@@ -12,7 +12,7 @@
 </head>
 <body>
 @include('layout.partials.navbar')
-
+#teste1
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="container">    
