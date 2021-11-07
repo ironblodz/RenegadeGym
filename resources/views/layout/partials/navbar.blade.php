@@ -7,10 +7,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fa fa-bars" aria-hidden="true"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" >
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item active @if ($menuOption=='I') active @endif" >
+              <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -18,13 +18,13 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item @if ($menuOption=='C') active @endif">
               <a class="nav-link" href="{{route('gm.blog')}}">Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item @if ($menuOption=='D') active @endif">
               <a class="nav-link" href="{{route('gm.contacts')}}">Contactos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item @if ($menuOption=='E') active @endif">
               <a class="nav-link" href="{{route('gm.login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
             </li>
           </ul>
