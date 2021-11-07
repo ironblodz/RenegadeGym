@@ -40,28 +40,33 @@
                    
                 	 <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
-                        <input id="nome" type="text" class="form-control" name="nome" value="" placeholder="Nome Próprio">                                        
+                        <input id="nome" type="text" class="form-control" name="nome" value="" placeholder="Nome Próprio" required>                                        
                     </div>
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="user" type="text" class="form-control" name="utilizador" value="" placeholder="Utilizador">                                        
+                        <input id="user" type="text" class="form-control" name="utilizador" value="" placeholder="Utilizador" required>                                        
                     </div>
 
                     <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control" name="senha" placeholder="Senha">
-                    </div>                                                                  
+                        <input id="password" type="password" class="form-control" name="senha" placeholder="Senha" required>
+                    </div>    
+
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="confirmpassword" type="password" class="form-control" name="confirmasenha" placeholder="Confirma a Senha" required>
+                    </div>                                                               
 
                     	 <div class="input-group">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                        <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email">                                        
+                        <input id="email" type="email" class="form-control" name="email" value="" placeholder="Email" required>                                        
                     </div>
 
                     <div class="form-group">
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Regista-te</button>                          
+                            <button type="submit" onclick="location.href='{{route('gm.login')}}'" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Regista-te</button>                          
                         </div>
                     </div>
 

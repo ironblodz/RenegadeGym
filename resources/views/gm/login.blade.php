@@ -55,7 +55,7 @@
                             <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Entrar</button>                          
                         </div>
                         <div class="col-sm-12 controls">
-                            <button href="{{route('gm.registarlogin')}}" target="_blank" class="btn btn-primary pull-right">Registar</button>                          
+                            <button type="button" onclick="location.href='{{route('gm.registarlogin')}}'" target="_blank" class="btn btn-primary pull-right">Registar</button>                    
                         </div>
                     </div>
 
