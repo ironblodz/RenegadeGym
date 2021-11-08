@@ -20,4 +20,8 @@ class PageController extends Controller
     public function login(){
         return view ('gm.login')->with('menuOption', 'E');
     }
+
+    public function registarlogin(){
+        return view ('gm.registarlogin');
+    }
 }
