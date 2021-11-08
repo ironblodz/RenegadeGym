@@ -15,14 +15,14 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+            <li class="nav-item @if ($menuOption=='B') active @endif">
+              <a class="nav-link" href="{{route('gm.aboutus')}}">About Us</a>
             </li>
             <li class="nav-item @if ($menuOption=='C') active @endif">
               <a class="nav-link" href="{{route('gm.blog')}}">Blog</a>
             </li>
             <li class="nav-item @if ($menuOption=='D') active @endif">
-              <a class="nav-link" href="{{route('gm.contacts')}}">Contactos</a>
+              <a class="nav-link" href="{{route('gm.contacts')}}">Contact</a>
             </li>
             <li class="nav-item @if ($menuOption=='E') active @endif">
               <a class="nav-link" href="{{route('gm.login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>

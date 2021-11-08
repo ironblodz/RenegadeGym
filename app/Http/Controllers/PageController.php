@@ -10,6 +10,10 @@ class PageController extends Controller
         return view ('master')->with('menuOption', 'I');
     }
 
+    public function aboutus(){
+        return view ('gm.aboutus')->with('menuOption', 'B');
+    }
+
     public function blog(){
         return view ('gm.blog')->with('menuOption', 'C');
     }
@@ -24,4 +28,5 @@ class PageController extends Controller
     public function registarlogin(){
         return view ('gm.registarlogin');
     }
+
 }
