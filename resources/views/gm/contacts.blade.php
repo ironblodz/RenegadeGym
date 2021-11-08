@@ -23,7 +23,7 @@
                             <input type="text" name="txtPhone" class="form-control" placeholder="O teu número de telefone *" value="" />
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="btnSubmit" class="btnContact" value="Envia" />
+                            <input type="submit" name="btnSubmit" class="btnContact" value="Enviar" />
                         </div>
                     </div>
                     <div class="col-md-6">
