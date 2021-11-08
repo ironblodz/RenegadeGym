@@ -16,3 +16,4 @@ Route::get('/registarlogin', [PageController::class,'registarlogin'])->name('gm.
 
 Route::get('/aboutus', [PageController::class,'aboutus'])->name('gm.aboutus');
 
+
