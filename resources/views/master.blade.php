@@ -14,7 +14,7 @@
 </head>
 <body>
     @include('layout.partials.navbar')
-    @include ld
+  
     @yield('content')
 
     @include('layout.partials.footer')
