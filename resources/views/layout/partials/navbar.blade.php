@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbarNav" >
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active @if ($menuOption=='I') active @endif" >
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="{{route('gm.index')}}">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
