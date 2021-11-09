@@ -66,9 +66,13 @@
                     <div class="form-group">
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <button type="submit" onclick="location.href='{{route('gm.login')}}'" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Regista-te</button>                          
+                            <button type="submit" onclick="location.href='{{route('gm.login')}}'" class="btn btn-primary btn-block pull-right"><i class="glyphicon glyphicon-log-in"></i> Regista-te</button>                          
                         </div>
-                    </div>
+                     
+                        </div>
+                        
+                            <button type="button" onclick="location.href='{{route('gm.login')}}'" class="btn btn-secondary btn-block pull-right"><i class="glyphicon glyphicon-log-in"></i> Voltar </button>
+                    
 
                 </form>     
 
