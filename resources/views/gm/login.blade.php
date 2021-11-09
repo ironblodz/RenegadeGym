@@ -13,7 +13,7 @@
 <body>
 	
 <!------ Include the above in your HEAD tag ---------->
-sdsd
+
 <div class="container">    
         
     <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3"> 
