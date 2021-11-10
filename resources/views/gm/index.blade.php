@@ -124,7 +124,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3 joaoperes" src="img/peaky-blinders.jpg" width="50px" height="50px" alt="..." />
+                                            <img class="rounded-circle me-3 joaoperes" src="img/logo.png" width="50px" height="50px" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Thomas Shelby</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
@@ -145,7 +145,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/ferreira.png" width="50px" height="50px" alt="..." />
+                                            <img class="rounded-circle me-3" src="img/logo.png" width="50px" height="50px" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Rui Costa</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
@@ -166,7 +166,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/hardcore.jpg" width="50px" height="50px" alt="..." />
+                                            <img class="rounded-circle me-3" src="img/logo.png" width="50px" height="50px" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Francisco Xavier</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot; </div>
