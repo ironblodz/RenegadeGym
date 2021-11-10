@@ -1,12 +1,10 @@
-@extends ('master')
+@extends('master')
 
-@section ('Title', 'Clube')
+@section ('title', 'Ginásio')
 
 @section ('content')
 
 
 
 
-
-
-@endsection
+@endsection 
