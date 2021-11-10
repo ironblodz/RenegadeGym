@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to right, #ff5e62, #ff9966);
+    background-color: #454545;
 }
 #loginbox {
     margin-top: 150px;
@@ -69,3 +69,4 @@ body{
     top: -250px;
     left: -80px;
 }
+

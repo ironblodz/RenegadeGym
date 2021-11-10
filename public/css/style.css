@@ -71,7 +71,7 @@ ul li {
     align-items: center;
     height: 200px;
     /*background: linear-gradient(to right, #ff5e62, #ff9966);*/
-    background-color: rgb(201, 201, 201);
+    background-color: white;
 }
 
 #icon {

@@ -52,12 +52,12 @@
                     <div class="form-group">
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <button type="submit" href="#" class="btn btn-primary pull-right"><i class="glyphicon glyphicon-log-in"></i> Entrar</button>                          
+                            <button type="submit" onclick="location.href='{{route('gm.index')}}'" class="btn btn-primary pull-left btn-block"><i class="glyphicon glyphicon-log-in"></i> Entrar</button>                          
                         </div>
-                        <div class="col-sm-12 controls">
-                            <button type="button" onclick="location.href='{{route('gm.registarlogin')}}'" target="_blank" class="btn btn-primary pull-right">Registar</button>                    
-                        </div>
+                        
                     </div>
+
+                    <button type="button" onclick="location.href='{{route('gm.registarlogin')}}'" class="btn btn-secondary btn-block"><i class="glyphicon glyphicon-log-in"></i>Registar</button>
 
                 </form>     
 

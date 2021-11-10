@@ -5,6 +5,7 @@
 @section('content')
 <link rel="stylesheet" href="css/contacts.css">
 
+
 <div class="container contact-form">
             <div class="contact-image">
                 <img src="img/logo.png" alt="Logotipo"/>
@@ -34,4 +35,5 @@
                 </div>
             </form>
 </div>
+
 @endsection
