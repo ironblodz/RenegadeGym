@@ -10,7 +10,7 @@
     </section>
 
     <div id="blog-margin">
-    <h4 id="not-title">Notícias</h4>
+    <h4 id="not-title" class="mb-4">Notícias</h4>
 
     <div class="container-1">
         <div class="row">

@@ -11,7 +11,7 @@
             <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
           </div>
         </a>
-        <a href="#">
+        <a href="https://github.com/ironblodz/RenegadeGym">
           <div id="icon">
             <li><i class="fa fa-github" aria-hidden="true"></i></li>
           </div>

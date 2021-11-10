@@ -1,76 +1,79 @@
 * {
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 #main {
-  width: 100%;
-  height: 40vh;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/img/pexels-victor-freitas-703014.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    width: 100%;
+    height: 40vh;
+    /*background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/img/pexels-victor-freitas-703014.jpg);*/
+    background-color: #343a40;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 #blog-margin {
-  margin: 0 200px;
+    margin: 0 200px;
 }
 #blog-title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 48px;
+    font-weight: bold;
 }
 #not-title {
-  padding-top: 60px;
-  font-size: 40px;
+    padding-top: 60px;
+    font-size: 40px;
 }
 #not-title::before {
-  content: "";
-  background: #424c56;
-  display: block;
-  width: 30px;
-  height: 3px;
-  margin-bottom: 25px;
+    content: "";
+    background: #424c56;
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 25px;
 }
 .blog-img {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .blog-text {
-  padding-top: 15px;
-  padding-right: 90px;
+    padding-top: 15px;
+    padding-right: 90px;
 }
 .blog-title {
-  padding-top: 25px;
+    padding-top: 25px;
 }
 .container-1 {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
 button {
-  background-color: rgb(112, 10, 10) !important;
-  color: #fff !important;
+    background-color: #dc3545 !important;
+    color: #fff !important;
 }
 @media only screen and (max-width: 1350px) {
-  #blog-margin {
-    margin: 0 100px;
-  }
+    #blog-margin {
+        margin: 0 100px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
-  #blog-margin {
-    margin: 0 40px;
-  }
+    #blog-margin {
+        margin: 0 40px;
+    }
 }
 
 @media only screen and (max-width: 1950px) {
-  .blog-text {
-    padding-right: 0px;
-  }
+    .blog-text {
+        padding-right: 0px;
+    }
 }
 @media only screen and (max-width: 991px) {
-  #artigos {
-    margin-bottom: 40px;
-  }
+    #artigos {
+        margin-bottom: 40px;
+    }
 }

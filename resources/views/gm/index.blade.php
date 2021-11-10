@@ -34,7 +34,7 @@
                             <div class="my-5 text-center text-xl-start">
                                 <h1 class="display-5 fw-bolder text-white mb-2">Bem vindo ao nosso website</h1>
                                 <p class="lead fw-normal text-white-50 mb-4">Aqui poderas encontrar diversos planos de treino bem como acompanhamento e vários produtos na nossa loja.</p>
-                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                                <div class="gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
                                     <a class="btn btn-danger btn-lg px-4 me-sm-3" href="#features">Loja</a>
                                     <a class="btn btn-outline-light btn-lg px-4" href="#!">Planos de treino</a>
                                 </div>
@@ -115,7 +115,7 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="./img/2.jpg" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-danger bg-gradient rounded-pill mb-2">Abdominais</div>
+                                    <div class="badge bg-danger bg-gradient mb-2">Abdominais</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Concurso de abdominais</h5></a>
                                     <p class="card-text mb-0">Este concurso é aberto a todos os sócios, o vencedor terá um prémio monetário</p>
                                 </div>
@@ -136,7 +136,7 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="./img/3.jpg" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-danger bg-gradient rounded-pill mb-2">Musculação</div>
+                                    <div class="badge bg-danger bg-gradient mb-2">Musculação</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Modalidades</h5></a>
                                     <p class="card-text mb-0"> Oferecemos todos os tipos de modalidades, desde a musculação a cardio</p>
                                 </div>
@@ -157,7 +157,7 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="/img/grupo.jfif" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-danger bg-gradient rounded-pill mb-2">Running</div>
+                                    <div class="badge bg-danger bg-gradient mb-2">Running</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Aulas de grupo</h5></a>
                                     <p class="card-text mb-0">Disponibilizamos uma vasta variedade de aulas de grupo, é só escolher e fazer a sua reserva</p>
                                 </div>
