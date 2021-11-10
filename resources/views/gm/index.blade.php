@@ -79,7 +79,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>4
             <!-- Testimonial section-->
             <div class="py-5 bg-dark">
                 <div class="container px-5 my-5">
@@ -119,7 +119,7 @@
                                 <div class="card-body p-4">
                                     <div class="badge bg-danger bg-gradient rounded-pill mb-2">Blog</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Concurso de abdominais</h5></a>
-                                    <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text mb-0">Este concurso é aberto a todos os sócios, o vencedor terá um prémio monetário</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
