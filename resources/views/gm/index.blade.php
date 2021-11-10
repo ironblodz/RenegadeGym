@@ -79,18 +79,18 @@
                 </div>
             </section>
             <!-- Testimonial section-->
-            <div class="py-5 bg-light">
+            <div class="py-5 bg-dark">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
                             <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Não existe um treino milagroso, nem uma dieta mágica, o que existe é o foco, disciplina, perseverança e nunca desistir"</div>
+                                <div class="fs-4 mb-4 fst-italic text-white">"Não existe um treino milagroso, nem uma dieta mágica, o que existe é o foco, disciplina, perseverança e nunca desistir"</div>
                                 <div class="d-flex align-items-center justify-content-center">
                                     
-                                    <div class="fw-bold">
-                                    <span class="fw-bold text-primary mx-1">/</span>
+                                    <div class="fw-bold text-white ">
+                                    <span class="fw-bold text-danger mx-1">/</span>
                                         Equipa Renegade
-                                        <span class="fw-bold text-primary mx-1">/</span>
+                                        <span class="fw-bold text-danger mx-1">/</span>
                                      
                                     </div>
                                 </div>
