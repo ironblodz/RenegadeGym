@@ -1,5 +1,7 @@
 @extends ('master')
 
+@section ('Title','Home')
+
 @section ('content')
 
 <!DOCTYPE html>

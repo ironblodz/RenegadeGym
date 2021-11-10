@@ -18,3 +18,4 @@ Route::get('/aboutus', [PageController::class,'aboutus'])->name('gm.aboutus');
 
 Route::get('/index', [PageController::class,'index'])->name('gm.index');
 
+Route::get('/clube', [PageController::class,'clube'])->name('gm.clube');

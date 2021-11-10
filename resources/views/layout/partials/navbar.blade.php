@@ -16,15 +16,18 @@
               <a class="nav-link" href="#">Inscrição</a>
             </li>
             <li class="nav-item @if ($menuOption=='B') active @endif">
-              <a class="nav-link" href="{{route('gm.aboutus')}}">Sobre Nós</a>
+              <a class="nav-link" href="{{route('gm.aboutus')}}">Sobre</a>
             </li>
             <li class="nav-item @if ($menuOption=='C') active @endif">
-              <a class="nav-link" href="{{route('gm.blog')}}">Blog</a>
+              <a class="nav-link" href="{{route('gm.aboutus')}}">Clube</a>
             </li>
             <li class="nav-item @if ($menuOption=='D') active @endif">
-              <a class="nav-link" href="{{route('gm.contacts')}}">Contactos</a>
+              <a class="nav-link" href="{{route('gm.blog')}}">Blog</a>
             </li>
             <li class="nav-item @if ($menuOption=='E') active @endif">
+              <a class="nav-link" href="{{route('gm.contacts')}}">Contactos</a>
+            </li>
+            <li class="nav-item @if ($menuOption=='F') active @endif">
               <a class="nav-link" href="{{route('gm.login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
             </li>
           </ul>
