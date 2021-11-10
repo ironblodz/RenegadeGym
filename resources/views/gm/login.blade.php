@@ -52,7 +52,7 @@
                     <div class="form-group">
                         <!-- Button -->
                         <div class="col-sm-12 controls">
-                            <button type="submit" onclick="location.href='{{route('gm.index')}}'" class="btn btn-primary pull-left btn-block"><i class="glyphicon glyphicon-log-in"></i> Entrar</button>                          
+                            <button type="submit" onclick="location.href='{{route('gm.index')}}'" class="btn btn-danger pull-left btn-block"><i class="glyphicon glyphicon-log-in"></i> Entrar</button>                          
                         </div>
                         
                     </div>
