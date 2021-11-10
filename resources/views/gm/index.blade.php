@@ -12,10 +12,8 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Renegades Gym</title>
-
-        <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+
         <link href="css/indexricardo.css" rel="stylesheet" />
     </head>
     <body class="d-flex flex-column h-100">
@@ -50,7 +48,7 @@
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
-                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">Começe a sua aventura conosco</h2></div>
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h1 class="fw-bolder mb-0">Começe a sua aventura connosco</h1></div>
                         <div class="col-lg-8">
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
@@ -107,8 +105,8 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
                             <div class="text-center">
-                                <h2 class="fw-bolder">Destaques do Blog</h2>
-                                <p class="lead fw-normal text-muted mb-5">Aqui encontras os melhores posts do nosso blog.</p>
+                                <h1 class="fw-bolder">Destaques do Blog</h1>
+                                <p class="lead fw-normal text-muted mb-5">Aqui encontras alguns posts do nosso blog.</p>
                             </div>
                         </div>
                     </div>
@@ -124,7 +122,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3 joaoperes" src="img/logo.png" width="50px" height="50px" alt="..." />
+                                           
                                             <div class="small">
                                                 <div class="fw-bold">João Peres</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
@@ -145,7 +143,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/logo.png" width="50px" height="50px" alt="..." />
+                                         
                                             <div class="small">
                                                 <div class="fw-bold">Rui Costa</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
@@ -166,7 +164,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="img/logo.png" width="50px" height="50px" alt="..." />
+                                    
                                             <div class="small">
                                                 <div class="fw-bold">Francisco Xavier</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot; </div>
