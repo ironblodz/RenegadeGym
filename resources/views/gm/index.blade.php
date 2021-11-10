@@ -52,24 +52,24 @@
                         <div class="col-lg-8">
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                                     <h2 class="h5">Planos de treino adaptados</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Na nossa página de planos de treino irão encontrar planos adapatados para qualquer tipo de treino. </p>
                                 </div>
                                 <div class="col mb-5 h-100">
-                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                                     <h2 class="h5">Incrição gratuita</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Este projeto tem como objetivo não cobrar inscrição nem mensalidades, incentivando assim as pessoas a aderirem.</p>
                                 </div>
                                 <div class="col mb-5 mb-md-0 h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                                     <h2 class="h5">Produtos próprios na nossa loja</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Todos os produtos da nossa loja são exclusivos e limitados.</p>
                                 </div>
                                 <div class="col h-100">
                                     <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
                                     <h2 class="h5">Acompanhamento profissional adequado</h2>
-                                    <p class="mb-0">Paragraph of text beneath the heading to explain the heading. Here is just a bit more text.</p>
+                                    <p class="mb-0">Durante as aulas irão ter acompanhamento feito por profissionais.</p>
                                 </div>
                             </div>
                         </div>
@@ -82,13 +82,14 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
                             <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"Working with Start Bootstrap templates has saved me tons of development time when building new projects! Starting with a Bootstrap template just makes things easier!"</div>
+                                <div class="fs-4 mb-4 fst-italic">"Não existe um treino milagroso, nem uma dieta mágica, o que existe é o foco, disciplina, perseverança e nunca desistir"</div>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
+                                    
                                     <div class="fw-bold">
-                                        Tom Ato
+                                    <span class="fw-bold text-primary mx-1">/</span>
+                                        Equipa Renegade
                                         <span class="fw-bold text-primary mx-1">/</span>
-                                        CEO, Pomodoro
+                                     
                                     </div>
                                 </div>
                             </div>
@@ -102,8 +103,8 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
                             <div class="text-center">
-                                <h2 class="fw-bolder">O nosso blog</h2>
-                                <p class="lead fw-normal text-muted mb-5">Aqui poderas encontrar artigos e eventos onde os Renegades podem participar.</p>
+                                <h2 class="fw-bolder">Destaques do Blog</h2>
+                                <p class="lead fw-normal text-muted mb-5">Aqui encontras alguns posts do nosso blog.</p>
                             </div>
                         </div>
                     </div>
@@ -112,7 +113,7 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="./img/2.jpg" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Blog</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Concurso de abdominais</h5></a>
                                     <p class="card-text mb-0">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -122,7 +123,7 @@
                                             <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Kelly Rowan</div>
-                                                <div class="text-muted">March 12, 2021 &middot; 6 min read</div>
+                                                <div class="text-muted">March 12, 2021 &middot;</div>
                                             </div>
                                         </div>
                                     </div>
@@ -133,7 +134,7 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="./img/3.jpg" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Media</div>
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Blog</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Treinos</h5></a>
                                     <p class="card-text mb-0">This text is a bit longer to illustrate the adaptive height of each card. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -143,7 +144,7 @@
                                             <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Josiah Barclay</div>
-                                                <div class="text-muted">March 23, 2021 &middot; 4 min read</div>
+                                                <div class="text-muted">March 23, 2021 &middot;</div>
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +155,7 @@
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="./img/grupo.jfif" alt="..." />
                                 <div class="card-body p-4">
-                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">News</div>
+                                    <div class="badge bg-primary bg-gradient rounded-pill mb-2">Blog</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Venha participar das nossas aulas em grupo</h5></a>
                                     <p class="card-text mb-0">Some more quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
@@ -164,7 +165,7 @@
                                             <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="..." />
                                             <div class="small">
                                                 <div class="fw-bold">Evelyn Martinez</div>
-                                                <div class="text-muted">April 2, 2021 &middot; 10 min read</div>
+                                                <div class="text-muted">April 2, 2021 &middot; </div>
                                             </div>
                                         </div>
                                     </div>
@@ -176,23 +177,8 @@
                    
             </section>
         </main>
-        <!-- Footer-->
-        <footer class="bg-dark py-4 mt-auto">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Renegades 2021</div></div>
-                    <div class="col-auto">
-                        <a class="link-light small" href="#!">Privacy</a>
-                        <span class="text-white mx-1">&middot;</span>
-                        <a class="link-light small" href="#!">Terms</a>
-                        <span class="text-white mx-1">&middot;</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
