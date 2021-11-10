@@ -32,7 +32,7 @@
         
         <div class="panel panel-default" >
             <div class="panel-heading">
-                <div class="panel-title text-center">Login</div>
+                <div class="panel-title text-center">ola</div>
             </div>     
 
             <div class="panel-body" >
