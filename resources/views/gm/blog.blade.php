@@ -3,51 +3,59 @@
 @section('title', 'Blog')
 
 @section('content')
+    <link rel="stylesheet" href="{{asset('css/blog.css')}}">
 
-<div class="container px-4 px-lg-5">
-            <!-- Heading Row-->
-            <div class="row gx-4 gx-lg-5 align-items-center my-5">
-                <div class="col-lg-7"><img class="img-fluid rounded mb-4 mb-lg-0" src="img/artigo1.jpg" alt="..." /></div>
-                <div class="col-lg-5">
-                    <h1 class="">Atividade física frequente melhora condições da saúde</h1>
-                    <p>Estudo mostra que boa condição física reduz problemas cardíacos e morte prematura, mesmo no caso de pessoas acima do peso</p>
-                    <a class="btn" href="#!">Ler mais</a>
-                </div>
-            </div>
-            <!-- Call to Action-->
-            <div class="card text-white bg-secondary my-5 py-4 text-center">
-                <div class="card-body"><p class="text-white m-0">This call to action card is a great place to showcase some important information or display a clever tagline!</p></div>
-            </div>
-            <!-- Content Row-->
-            <div class="row gx-4 gx-lg-5">
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card One</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-sm" href="#!">More Info</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card Two</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-sm" href="#!">More Info</a></div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-5">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">Card Three</h2>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
-                        </div>
-                        <div class="card-footer"><a class="btn btn-sm" href="#!">More Info</a></div>
-                    </div>
-                </div>
-            </div>
+    <section id="main">
+        <h1 id="blog-title">Blog</h1>
+    </section>
+
+    <div id="blog-margin">
+    <h4 id="not-title">Notícias</h4>
+
+    <div class="container-1">
+        <div class="row">
+          <div id="artigos" class="col-lg-4">
+            <img class="blog-img" src="img/blog1.jpg" alt="">
+            <h3 class="blog-title">5 ERROS A NÃO COMETER NO GINÁSIO 5 ERROS A NÃO COMETER NO GINÁSIO5 ERROS A NÃO COMETER NO GINÁSIO</h3>
+            <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.stinctio. Iste, dolorem tempora porro nemo temporibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in reprehenderit, deleniti, impedit dolor molestiae quaerat vel quia commodi tenetur fugiat. Officia quasi excepturi numquam reiciendis deleniti, molestias est vel?</p>
+            <button type="button" class="btn ">Ver mais</button>
+          </div>
+          <div id="artigos" class="col-lg-4">
+            <img class="blog-img" src="img/pexels-leon-ardho-1552242.jpg" alt="">
+            <h3 class="blog-title">5 ERROS A NÃO COMETER NO GINÁSIO 5 ERROS A NÃO COMETER NO GINÁSIO5 ERROS A NÃO COMETER NO GINÁSIO</h3>
+            <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.stinctio. Iste, dolorem tempora porro nemo temporibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in reprehenderit, deleniti, impedit dolor molestiae quaerat vel quia commodi tenetur fugiat. Officia quasi excepturi numquam reiciendis deleniti, molestias est vel?</p>
+            <button type="button" class="btn ">Ver mais</button>
+          </div>
+          <div id="artigos" class="col-lg-4">
+            <img class="blog-img" src="img/pexels-victor-freitas-703014.jpg" alt="">
+            <h3 class="blog-title">5 ERROS A NÃO COMETER NO GINÁSIO 5 ERROS A NÃO COMETER NO GINÁSIO5 ERROS A NÃO COMETER NO GINÁSIO</h3>
+            <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.stinctio. Iste, dolorem tempora porro nemo temporibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in reprehenderit, deleniti, impedit dolor molestiae quaerat vel quia commodi tenetur fugiat. Officia quasi excepturi numquam reiciendis deleniti, molestias est vel?</p>
+            <button type="button" class="btn">Ver mais</button>
+          </div>
         </div>
+      </div>
+      <div class="container-1">
+        <div class="row">
+          <div id="artigos" class="col-lg-4">
+            <img class="blog-img" src="img/blog1.jpg" alt="">
+            <h3 class="blog-title">5 ERROS A NÃO COMETER NO GINÁSIO 5 ERROS A NÃO COMETER NO GINÁSIO5 ERROS A NÃO COMETER NO GINÁSIO</h3>
+            <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.stinctio. Iste, dolorem tempora porro nemo temporibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in reprehenderit, deleniti, impedit dolor molestiae quaerat vel quia commodi tenetur fugiat. Officia quasi excepturi numquam reiciendis deleniti, molestias est vel?</p>
+            <button type="button" class="btn ">Ver mais</button>
+          </div>
+          <div id="artigos" class="col-lg-4">
+            <img class="blog-img" src="img/blog1.jpg" alt="">
+            <h3 class="blog-title">5 ERROS A NÃO COMETER NO GINÁSIO 5 ERROS A NÃO COMETER NO GINÁSIO5 ERROS A NÃO COMETER NO GINÁSIO</h3>
+            <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.stinctio. Iste, dolorem tempora porro nemo temporibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in reprehenderit, deleniti, impedit dolor molestiae quaerat vel quia commodi tenetur fugiat. Officia quasi excepturi numquam reiciendis deleniti, molestias est vel?</p>
+            <button type="button" class="btn ">Ver mais</button>
+          </div>
+          <div id="artigos" class="col-lg-4">
+            <img class="blog-img" src="img/blog1.jpg" alt="">
+            <h3 class="blog-title">5 ERROS A NÃO COMETER NO GINÁSI 5 ERROS A NÃO COMETER NO GINÁSIO5 ERROS A NÃO COMETER NO GINÁSIOO</h3>
+            <p class="blog-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.stinctio. Iste, dolorem tempora porro nemo temporibus amet. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta in reprehenderit, deleniti, impedit dolor molestiae quaerat vel quia commodi tenetur fugiat. Officia quasi excepturi numquam reiciendis deleniti, molestias est vel?</p>
+            <button type="button" class="btn ">Ver mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 @endsection

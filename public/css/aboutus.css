@@ -27,7 +27,6 @@
     margin: 0 0 35px;
 }
 
-
 .aboutus-more {
     border: 1px solid #fdb801;
     border-radius: 25px;
@@ -63,7 +62,6 @@
     margin: 0 0 5px;
 }
 
-
 .feature .feature-box .feature-content {
     float: left;
     padding-left: 28px;
@@ -82,9 +80,9 @@
     line-height: 22px;
 }
 .icon {
-    color : #f4b841;
-    padding:0px;
-    font-size:40px;
+    color: #f4b841;
+    padding: 0px;
+    font-size: 40px;
     border: 1px solid #fdb801;
     border-radius: 100px;
     color: #fdb801;
@@ -93,5 +91,4 @@
     line-height: 70px;
     text-align: center;
     width: 70px;
-}
 }

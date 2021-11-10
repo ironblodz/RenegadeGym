@@ -7,7 +7,7 @@ p {
     font-weight: 300;
 }
 /* --------- NAVBAR --------- */
-nav {
+.navbar {
     /*background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
     background: linear-gradient(to right, #ff5e62, #ff9966);*/
     background-color: rgb(201, 201, 201);
