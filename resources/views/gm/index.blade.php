@@ -155,7 +155,7 @@
                         </div>
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="./img/grupo.jfif" alt="..." />
+                                <img class="card-img-top" src="/img/grupo.jfif" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-danger bg-gradient rounded-pill mb-2">Running</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Aulas de grupo</h5></a>
