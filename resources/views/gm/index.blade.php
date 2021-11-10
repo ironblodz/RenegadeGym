@@ -55,8 +55,8 @@
                             <div class="row gx-5 row-cols-1 row-cols-md-2">
                                 <div class="col mb-5 h-100">
                                     <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
-</svg></i></div>
+                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+                    </svg></i></div>
                                     <h2 class="h5">Planos de treino adaptados</h2>
                                     <p class="mb-0">Na nossa página de planos de treino irão encontrar planos adapatados para qualquer tipo de treino. </p>
                                 </div>
@@ -126,7 +126,7 @@
                                         <div class="d-flex align-items-center">
                                             <img class="rounded-circle me-3 joaoperes" src="img/logo.png" width="50px" height="50px" alt="..." />
                                             <div class="small">
-                                                <div class="fw-bold">Thomas Shelby</div>
+                                                <div class="fw-bold">João Peres</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
                                             </div>
                                         </div>
