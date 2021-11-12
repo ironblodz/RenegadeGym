@@ -5,12 +5,13 @@
 #main {
     width: 100%;
     height: 50vh;
-    /*background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(/img/pexels-victor-freitas-703014.jpg);*/
+    background-image: linear-gradient(rgba(36, 12, 12, 0.7), rgb(26, 13, 13)),
+        url(/img/risen-wang-20jX9b35r_M-unsplash.jpg);
     background-color: #343a40;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-position: center;
 }
 #blog-margin {
     margin: 0 200px;
