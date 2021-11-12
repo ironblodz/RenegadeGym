@@ -14,7 +14,9 @@ p {
     padding-left: 4rem !important;
     padding-right: 4rem !important;
 }
-
+#bg-color-toggler {
+    background-color: #dc3545;
+}
 .logo-img {
     width: 100px;
 }
@@ -41,7 +43,6 @@ button {
 }
 @media only screen and (max-width: 991px) {
     .nav-link {
-        color: #fff !important;
         font-size: 1.2rem;
     }
 }
