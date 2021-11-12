@@ -14,8 +14,8 @@ class PageController extends Controller
         return view('gm.index')->with('menuOption', 'I');
     }
 
-    public function aboutus(){
-        return view ('gm.aboutus')->with('menuOption', 'B');
+    public function Sobrenos(){
+        return view ('gm.Sobrenos')->with('menuOption', 'B');
     }
 
     public function clube(){

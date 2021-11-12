@@ -16,7 +16,7 @@
               <a class="nav-link" href="#">Inscrição</a>
             </li>
             <li class="nav-item @if ($menuOption=='B') active @endif">
-              <a class="nav-link" href="{{route('gm.aboutus')}}">Sobre</a>
+              <a class="nav-link" href="{{route('gm.Sobrenos')}}">Sobre</a>
             </li>
             <li class="nav-item @if ($menuOption=='C') active @endif">
               <a class="nav-link" href="{{route('gm.clube')}}">Clube</a>
