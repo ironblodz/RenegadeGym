@@ -11,7 +11,6 @@
 
     <section id="blog">
       <p id="publicacoes">Últimas Publicações</p>
-    <h4 id="not-title" class="mb-4">Notícias</h4>
       <!-- Blog-Container -->
       <div class="blog-container">
 
