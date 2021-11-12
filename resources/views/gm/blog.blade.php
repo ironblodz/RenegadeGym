@@ -5,8 +5,15 @@
 @section('content')
     <link rel="stylesheet" href="{{asset('css/blog.css')}}">
 
-    <section id="main">
-        <h1 id="blog-title">Blog</h1>
+    <section id="mainn">
+      <div class="containerr">
+        <video class="video" autoplay muted loop>
+          <source src="{{asset('videos/blog.mp4')}}" type="video/mp4" />
+        </video>
+      </div>
+      <div class="page-content">
+      <h1 id="blog-title">Blog</h1>
+      </div>
     </section>
 
     <section id="blog">
