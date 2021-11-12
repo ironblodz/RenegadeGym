@@ -17,7 +17,6 @@
     </section>
 
     <section id="blog">
-      <p id="publicacoes">Últimas Publicações</p>
       <!-- Blog-Container -->
       <div class="blog-container">
 
