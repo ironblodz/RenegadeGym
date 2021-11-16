@@ -18,9 +18,9 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-6 login-section-wrapper">
-          <div class="brand-wrapper">
-            <img src="{{asset('img/logo.png')}}" alt="logo" class="logo">
-          </div>
+          <div>
+            <img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo">
+          </div> 
           <div class="login-wrapper my-auto">
             <h1 class="login-title">Log in</h1>
             <form action="#!">
@@ -34,11 +34,11 @@
               </div>
               <input name="login" id="login" class="btn btn-block btn-danger" type="button" value="Login">
             </form>
-            <a href="#!" class="forgot-password-link">Esqueci-me da senha?</a>
-            <p class="login-wrapper-footer-text">Não tem conta? <a href="#!" class="text-reset">Regista-te</a></p>
+            <a href="#!" class="forgot-password-link"></a>
+            <p class="login-wrapper-footer-text">Não tem conta? <a href="{{route('gm.registarlogin')}}" class="text-reset">Regista-te</a></p>
           </div>
         </div>
-        <div class="col-sm-6 px-0 d-none d-sm-block">
+        <div class="col-sm-6 px-0 d-none d-sm-block img-fluid">
           <img src="{{asset('img/12.jpg')}}" alt="login image" class="login-img">
         </div>
       </div>
