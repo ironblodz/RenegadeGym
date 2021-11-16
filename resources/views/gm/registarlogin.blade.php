@@ -43,7 +43,7 @@
           </div>
         </div>
         <div class="col-sm-6 px-0 d-none d-sm-block">
-          <img src="{{asset('img/12.jpg')}}" alt="login image" class="login-img">
+          <img src="{{asset('img/13.jpg')}}" alt="login image" class="login-img">
         </div>
       </div>
     </div>
