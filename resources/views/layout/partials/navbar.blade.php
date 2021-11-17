@@ -19,7 +19,7 @@
               <a class="nav-link" href="{{route('gm.Sobrenos')}}">Sobre</a>
             </li>
             <li class="nav-item @if ($menuOption=='C') active @endif">
-              <a class="nav-link" href="{{route('gm.clube')}}">Clube</a>
+              <a class="nav-link" href="{{route('gm.clube')}}">Ginásios</a>
             </li>
             <li class="nav-item @if ($menuOption=='D') active @endif">
               <a class="nav-link" href="{{route('gm.blog')}}">Blog</a>
