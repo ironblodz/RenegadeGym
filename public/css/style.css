@@ -92,14 +92,14 @@ button {
     font-size: 16px;
     padding: 0 30px;
     margin: 3px;
-    background: #e96b56;
+    background: #ad2836;
     color: #fff;
     transition: 0.3s;
     border-radius: 50px;
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-    background: #e6573f;
+    background: #ad2836;
 }
 
 #footer .footer-top {
@@ -145,7 +145,7 @@ button {
 }
 
 #footer .footer-top .social-links a:hover {
-    background: #e96b56;
+    background: #ad2836;
     color: #fff;
     text-decoration: none;
 }
@@ -171,7 +171,7 @@ button {
 
 #footer .footer-top .footer-links ul i {
     padding-right: 2px;
-    color: #ec7f6d;
+    color: #ad2836;
     font-size: 18px;
     line-height: 1;
 }
@@ -191,10 +191,11 @@ button {
     transition: 0.3s;
     display: inline-block;
     line-height: 1;
+    text-decoration: none;
 }
 
 #footer .footer-top .footer-links ul a:hover {
-    color: #e96b56;
+    color: #ad2836;
 }
 
 #footer .footer-top .footer-contact {
