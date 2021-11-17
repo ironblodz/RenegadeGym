@@ -6,10 +6,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function master(){
-        return view ('master')->with('menuOption', 'I');
-    }
-
     public function index(){
         return view('gm.index')->with('menuOption', 'I');
     }

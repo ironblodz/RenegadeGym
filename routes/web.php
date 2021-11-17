@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 
-Route::get('/', [PageController::class,'master'])->name('master');
+Route::get('/', [PageController::class,'index'])->name('gm.index');
 
 Route::get('/blog', [PageController::class,'blog'])->name('gm.blog');
 
@@ -15,7 +15,5 @@ Route::get('/login', [PageController::class,'login'])->name('gm.login');
 Route::get('/registarlogin', [PageController::class,'registarlogin'])->name('gm.registarlogin');
 
 Route::get('/Sobrenos', [PageController::class,'Sobrenos'])->name('gm.Sobrenos');
-
-Route::get('/index', [PageController::class,'index'])->name('gm.index');
 
 Route::get('/clube', [PageController::class,'clube'])->name('gm.clube');
