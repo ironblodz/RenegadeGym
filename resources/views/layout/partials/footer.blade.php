@@ -20,6 +20,10 @@
                         <li><i class="bx bx-chevron-right"></i> <a id="footer-text" href="{{route('gm.blog')}}">Blog</a></li>
                     </ul>
                 </div>
+                <div class="col-lg-3 col-md-6 footer-local">
+                    <h4>Onde estamos?</h4>
+                    <p> Porto <br> Coimbra <br> Leiria <br> Lisboa <br> Faro <br><br> </p>
+                </div>
                 <div class="col-lg-3 col-md-6 footer-contact">
                     <h4>Contacta-nos</h4>
                     <p> Rua Álvaro Pires Miranda <br> Leiria <br> Portugal <br><br> <strong>Telefone:</strong> +351 926 629 767<br> <strong>Email:</strong> renegadegym@gmail.com<br> </p>
