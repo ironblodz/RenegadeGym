@@ -26,7 +26,7 @@
             <form action="#!">
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="form-control" placeholder="escreve a tua email">
+                <input type="email" name="email" id="email" class="form-control" placeholder="escreve o teu email">
               </div>
               <div class="form-group mb-4">
                 <label for="password">Password</label>
