@@ -28,7 +28,7 @@
               <a class="nav-link" href="{{route('gm.contacts')}}">Contactos</a>
             </li>
             <li class="nav-item @if ($menuOption=='F') active @endif">
-              <a class="nav-link" href="{{route('gm.login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
+              <a class="nav-link" href="{{route('login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
             </li>
           </ul>
         </div>

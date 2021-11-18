@@ -26,11 +26,11 @@ class PageController extends Controller
         return view ('gm.contacts')->with('menuOption', 'E');
     }
     public function login(){
-        return view ('gm.login')->with('menuOption', 'F');
+        return view ('login')->with('menuOption', 'F');
     }
 
-    public function registarlogin(){
-        return view ('gm.registarlogin');
+    public function register(){
+        return view ('register');
     }
 
     public function inscricao(){
