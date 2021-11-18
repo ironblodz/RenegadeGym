@@ -6,11 +6,10 @@ use App\Http\Controllers\PageController;
 
 use Illuminate\Support\Facades\Auth;
 
-Route::group(['middleware' => ['auth','verified']], function(){
-	Route::get('/users/{user}/send_rea
-		tivate_mail'),
+Route::group(['middleware'=>['auth','verified']], function(){
+	Route::get('/users/{user}/send_reactivate_mail',
 	[UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');
-}
+});
 
 Route::get('/', [PageController::class,'index'])->name('gm.index');
 
