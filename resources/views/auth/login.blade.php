@@ -22,7 +22,7 @@
             <img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo">
           </div> 
           <div class="login-wrapper my-auto">
-            <h1 class="login-title">Log in</h1>
+            <h1 class="login-title">Login</h1>
             <form action="#!">
               <div class="form-group">
                 <label for="email">Email</label>
