@@ -6,6 +6,16 @@ use App\Http\Controllers\PageController;
 
 use Illuminate\Support\Facades\Auth;
 
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\CategoryController;
+
+Route::resource('users', UserController::class);
+Route::resource('posts', PostController::class);
+Route::resource('categories',CategoryController::class);
+
+
+
 Route::group(['middleware'=>['auth','verified']], function(){
 	Route::get('/users/{user}/send_reactivate_mail',
 	[UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');
