@@ -29,7 +29,11 @@ textarea {
 }
 
 .contact-info-form {
+<<<<<<< HEAD
     background-color: #D50000;
+=======
+    background-color: #800000;
+>>>>>>> 5ba7e0c1e850df2a042561751ac259d6bf62a367
     position: relative
 }
 
@@ -127,10 +131,17 @@ textarea.input {
 
 .btn {
     padding: 0.6rem 1.3rem;
+<<<<<<< HEAD
     background-color: #fff;
     border: 2px solid #fafafa;
     font-size: 0.95rem;
     color: #1abc9c;
+=======
+    background-color: white;
+    border: 2px solid #fafafa;
+    font-size: 0.95rem;
+    color: #fff;
+>>>>>>> 5ba7e0c1e850df2a042561751ac259d6bf62a367
     line-height: 1;
     border-radius: 4px;
     outline: none;

@@ -4,18 +4,29 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PageController;
 
-Route::get('/', [PageController::class,'master'])->name('master');
+use Illuminate\Support\Facades\Auth;
+
+Route::group(['middleware'=>['auth','verified']], function(){
+	Route::get('/users/{user}/send_reactivate_mail',
+	[UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');
+});
+
+Route::get('/', [PageController::class,'index'])->name('gm.index');
 
 Route::get('/blog', [PageController::class,'blog'])->name('gm.blog');
 
 Route::get('/contacts', [PageController::class,'contacts'])->name('gm.contacts');
 
-Route::get('/login', [PageController::class,'login'])->name('gm.login');
+Route::get('/login', [PageController::class,'login'])->name('login');
 
-Route::get('/registarlogin', [PageController::class,'registarlogin'])->name('gm.registarlogin');
+Route::get('/register', [PageController::class,'register'])->name('register');
 
 Route::get('/Sobrenos', [PageController::class,'Sobrenos'])->name('gm.Sobrenos');
 
-Route::get('/index', [PageController::class,'index'])->name('gm.index');
-
 Route::get('/clube', [PageController::class,'clube'])->name('gm.clube');
+
+Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');
+
+Auth::routes();
+
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');

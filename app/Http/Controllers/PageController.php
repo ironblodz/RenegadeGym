@@ -6,10 +6,6 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    public function master(){
-        return view ('master')->with('menuOption', 'I');
-    }
-
     public function index(){
         return view('gm.index')->with('menuOption', 'I');
     }
@@ -30,12 +26,15 @@ class PageController extends Controller
         return view ('gm.contacts')->with('menuOption', 'E');
     }
     public function login(){
-        return view ('gm.login')->with('menuOption', 'F');
+        return view ('login')->with('menuOption', 'F');
     }
 
-    public function registarlogin(){
-        return view ('gm.registarlogin');
+    public function register(){
+        return view ('register');
     }
 
+    public function inscricao(){
+        return view ('gm.inscricao')->with('menuOption', 'O');
+    }
 
 }

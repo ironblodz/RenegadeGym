@@ -12,14 +12,14 @@
             <li class="nav-item active @if ($menuOption=='I') active @endif" >
               <a class="nav-link" href="{{route('gm.index')}}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Inscrição</a>
+            <li class="nav-item @if ($menuOption=='O') active @endif">
+              <a class="nav-link" href="{{route('gm.inscricao')}}">Inscrição</a>
             </li>
             <li class="nav-item @if ($menuOption=='B') active @endif">
               <a class="nav-link" href="{{route('gm.Sobrenos')}}">Sobre</a>
             </li>
             <li class="nav-item @if ($menuOption=='C') active @endif">
-              <a class="nav-link" href="{{route('gm.clube')}}">Clube</a>
+              <a class="nav-link" href="{{route('gm.clube')}}">Ginásios</a>
             </li>
             <li class="nav-item @if ($menuOption=='D') active @endif">
               <a class="nav-link" href="{{route('gm.blog')}}">Blog</a>
@@ -28,7 +28,7 @@
               <a class="nav-link" href="{{route('gm.contacts')}}">Contactos</a>
             </li>
             <li class="nav-item @if ($menuOption=='F') active @endif">
-              <a class="nav-link" href="{{route('gm.login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
+              <a class="nav-link" href="{{route('login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
             </li>
           </ul>
         </div>

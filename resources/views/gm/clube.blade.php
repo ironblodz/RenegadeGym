@@ -14,9 +14,9 @@
     <section class="u-align-left u-clearfix u-white u-section-1" id="sec-cfca">
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <div class="u-align-center u-radius-15 u-shape u-shape-round u-white u-shape-1"></div>
-        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-1">Clube</h1>
+        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-1">Ginásios</h1>
         <h2 class="u-custom-font u-font-roboto-condensed u-subtitle u-text u-text-2">O nosso espaço</h2>
-        <p class="u-large-text u-text u-text-variant u-text-3"> Nós no nosso ginásio damos ao cliente a vantagem de ter vários ginásios em zonas diferentes com várias máquinas e equipamentos</p>
+        <p class="u-large-text u-text u-text-variant u-text-3"> Damos ao cliente a vantagem de praticar exercicio em vários ginásios em zonas diferentes escolhidas por nós.</p>
         <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="{{asset('img/gym1.png')}}" alt="" data-image-width="972" data-image-height="610">
       </div>
     </section>
