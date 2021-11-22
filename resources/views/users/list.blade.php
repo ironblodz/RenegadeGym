@@ -3,13 +3,13 @@
 @section("content")
 <div class="container-fluid">
 	<!-- Page Heading -->
-	<h1 class="h3 mb-2 text-gray-800">Users</h1>
+	<h1 class="h3 mb-2 text-gray-800">Utilizadores</h1>
 
 
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
 			<a class="btn btn-primary" href="{{route('users.create')}}">
-				<i class="fas fa-plus"></i> Add User
+				<i class="fas fa-plus"></i> Adicionar Utilizador
 			</a>
 		</div>
 		<div class="card-body">
@@ -22,7 +22,7 @@
 
 
 						<div class="form-group">
-							<label for="inputName">Name</label>
+							<label for="inputName">Nome</label>
 							<input type="text" class="form-control" name="name" id="inputName"
 							value="{{request()->get('name')}}" />
 						</div>
@@ -40,7 +40,7 @@
 
 						<br>
 						<div class="form-group">
-							<button type="submit" class="btn btn-success">Search</button>
+							<button type="submit" class="btn btn-success">Procurar</button>
 						</div>
 
 					</form>
@@ -52,11 +52,11 @@
 						<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
 							<thead>
 								<tr>
-									<th>Photo</th>
-									<th>Name</th>
+									<th>Foto</th>
+									<th>Nome</th>
 									<th>Email</th>
-									<th>Role</th>
-									<th>Actions</th>
+									<th>Tipo</th>
+									<th>Ações</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -104,7 +104,7 @@
 				</div>
 			</div>
 			@else
-			<h6>No users registered</h6>
+			<h6>Não há utilizadores registados</h6>
 			@endif
 		</div>
 	</div>

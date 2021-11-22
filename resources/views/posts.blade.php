@@ -10,14 +10,14 @@
         <div class="row">
             <div class="col-md-12">
                 <h4>
-                    <strong><a href="#" class="post-title">Post title</a></strong></h4>
+                    <strong><a href="#" class="post-title">Titlo do Post</a></strong></h4>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12 post-header-line">
-                <i class="fas fa-user"></i></span>by <a href="#">User Name</a> | <i class="fas fa-calendar-alt"></i>
+                <i class="fas fa-user"></i></span>by <a href="#">Nome do Utilizador</a> | <i class="fas fa-calendar-alt"></i>
                 23-04-2019 | <i class="fas fa-object-group"></i>
-                News
+                Novidades
             </div>
         </div>
         <div class="row post-content">

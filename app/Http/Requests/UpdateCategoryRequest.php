@@ -23,10 +23,11 @@ class UpdateCategoryRequest extends FormRequest
      */
     public function rules()
     {
-        return [
-           "name" => 'required|min:3|max:20|unique:categories,name,'.
-           $this->category->id.'|regex:/^[A-ZÀ-úa-z\s]+$/',
-           "description" => 'required'
+       return [
+           "name" => 'required|min:3|max:40|regex:/^[A-ZÀ-úa-z\s]+$/',
+           "email" => 'required|email|unique:users,email,'.$this->user->id,
+           "role" => 'sometimes|in:N,A',
+           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
        ];
    }
    public function messages()

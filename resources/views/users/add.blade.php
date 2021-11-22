@@ -7,7 +7,7 @@
 
      <div class="card shadow mb-4">
         <div class="card-header py-3">
-			Add User
+			Adicionar Utilizador
         </div>
         <div class="card-body">
 		
@@ -16,8 +16,8 @@
 			@include('users.partials.add-edit')
 
 			<div class="form-group">
-				<button type="submit" class="btn btn-success" name="ok">Save</button>
-				<a href="{{route('users.index')}}" class="btn btn-default">Cancel</a>
+				<button type="submit" class="btn btn-success" name="ok">Gravar</button>
+				<a href="{{route('users.index')}}" class="btn btn-default">Cancela</a>
 			</div>
 		</form>
 		</div>
