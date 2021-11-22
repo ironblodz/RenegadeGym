@@ -13,7 +13,7 @@ class StoreCategoryRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,14 @@ class StoreCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            "name" => 'required|min:3|max:20|unique:categories,name|regex:/^[A-ZÀ-úa-z\s]+$/',
+            "description" => 'required'
         ];
     }
+    public function messages()
+    {
+       return [
+           'name.regex' => 'Name should contain only letters and spaces'
+       ];
+   }
 }

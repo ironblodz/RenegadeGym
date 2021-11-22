@@ -18,7 +18,7 @@
     rel="stylesheet">
 
   <!-- Custom styles for this template -->
-  <link href="{{asset('css/sb-admin-2.css')}}" rel="stylesheet">
+  <link href="{{asset('css/sb-admin-3.css')}}" rel="stylesheet">
 
   <!-- Custom styles for this page -->
   <link href="{{asset('vendor/datatables/dataTables.bootstrap4.min.css')}}" rel="stylesheet">
@@ -145,6 +145,13 @@
 
         </nav>
         <!-- End of Topbar -->
+
+        @if ($errors->any())
+ @include ('partials.errors')
+@endif
+@if (!empty(session('success')))
+ @include ('partials.success')
+@endif
 
         <!-- Begin Page Content -->
         @yield("content")
