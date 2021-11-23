@@ -1,62 +1,63 @@
-@extends('master')
+@extends ('master')
 
-@section('title', 'Contactos')
+@section ('title','Contacto')
 
 @section('content')
-<link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css')}}">
-<link rel="preconnect" href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}">
-<script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')}}" ></script>
-<link rel="stylesheet" href="{{asset('css/contact1.css')}}">
+
+<script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')}}"></script>
+<link href="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')}}" rel="stylesheet">
+<link href="{{asset('css/contact1.css')}}" rel="stylesheet">
 
 
-<div class="container">
-    <div class="form">
-        <div class="contact-info">
-<<<<<<< HEAD
-            <h3 class="title">Esclareça as suas dúvidas connosco</h3>
-=======
-            <h3 class="title">Esclareça as suas dúvidas</h3>
->>>>>>> 5ba7e0c1e850df2a042561751ac259d6bf62a367
-            <p class="text"> Preencha o formulário com o que é pedido </p>
-            <div class="info">
-                <div class="social-information"> <i class="fa fa-map-marker"></i>
-                    <p>Rua Álvaro Pires Miranda, Leiria/p>
-                </div>
-                <div class="social-information"> <i class="fa fa-envelope-o"></i>
-                    <p>renegadegym@gmail.com</p>
-                </div>
-                <div class="social-information"> <i class="fa fa-mobile-phone"></i>
-                    <p>+351 92 662 9 767 </p>
-                </div>
-            </div>
-            <div class="social-media">
-                <p>Conecte-se conosco :</p>
-<<<<<<< HEAD
-                <div class="social-icons"> <a href="#"> <i class="fa fa-facebook-f"></i> </a> <a href="#"> <i class="fa fa-twitter"></i> </a> <a href="#"> <i class="fa fa-instagram"></i> </a> <a href="#"> <i class="fa fa-linkedin"></i> </a> </div>
-=======
-                <div class="social-icons"> <a href="#"> <i class="fa fa-facebook-f"></i> </a> <a href="#"> <i class="fa fa-twitter"></i> </a> <a href="#"> <i class="fa fa-instagram"></i> </a>  </div>
->>>>>>> 5ba7e0c1e850df2a042561751ac259d6bf62a367
-            </div>
-        </div>
-        <div class="contact-info-form"> <span class="circle one"></span> <span class="circle two"></span>
-            <form action="#" onclick="return false;" autocomplete="off">
-<<<<<<< HEAD
-                <h3 class="title">Escreva-nos</h3>
-                <div class="social-input-containers"> <input type="text" name="name" class="input" placeholder="Name" /> </div>
-                <div class="social-input-containers"> <input type="email" name="email" class="input" placeholder="Email" /> </div>
-                <div class="social-input-containers"> <input type="tel" name="phone" class="input" placeholder="Phone" /> </div>
-                <div class="social-input-containers textarea"> <textarea name="message" class="input" placeholder="Message"></textarea> </div> <input type="submit" value="Send" class="btn" />
-=======
-                <h3 class="title">Fale connosco</h3>
-                <div class="social-input-containers"> <input type="text" name="name" class="input" placeholder="Nome" /> </div>
-                <div class="social-input-containers"> <input type="email" name="email" class="input" placeholder="Email" /> </div>
-                <div class="social-input-containers"> <input type="tel" name="phone" class="input" placeholder="Telefone" /> </div>
-                <div class="social-input-containers textarea"> <textarea name="message" class="input" placeholder="Mensagem"></textarea> </div> <input type="submit" value="Enviar" class="btn" />
->>>>>>> 5ba7e0c1e850df2a042561751ac259d6bf62a367
-            </form>
-        </div>
-    </div>
-</div>
+ <div class="contact_info">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-10 offset-lg-1">
+                 <div class="contact_info_container d-flex flex-lg-row flex-column justify-content-between align-items-between">
+                     <!-- Contact Item -->
+                     <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+                         <div class="contact_info_image"><img src="https://img.icons8.com/windows/32/fa314a/two-smartphones.png"/></div>
+                         <div class="contact_info_content">
+                             <div class="contact_info_title">Telefone</div>
+                             <div class="contact_info_text">+351 936487912</div>
+                         </div>
+                     </div> <!-- Contact Item -->
+                     <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+                         <div class="contact_info_image"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/fa314a/external-email-ui-essentials-flatart-icons-outline-flatarticons.png"/></div>
+                         <div class="contact_info_content">
+                             <div class="contact_info_title">Email</div>
+                             <div class="contact_info_text">renegadegym@gmail.com</div>
+                         </div>
+                     </div> <!-- Contact Item -->
+                     <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
+                         <div class="contact_info_image"><img src="https://img.icons8.com/ios/50/fa314a/address--v1.png"/></div>
+                         <div class="contact_info_content">
+                             <div class="contact_info_title">Endereço</div>
+                             <div class="contact_info_text">Rua Álvaro Pires Miranda, Leiria</div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div> <!-- Contact Form -->
+ <div class="contact_form">
+     <div class="container">
+         <div class="row">
+             <div class="col-lg-10 offset-lg-1">
+                 <div class="contact_form_container">
+                     <div class="contact_form_title">Fale connosco</div>
+                     <form action="#" id="contact_form">
+                         <div class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between"> <input type="text" id="contact_form_name" class="contact_form_name input_field" placeholder="O teu nome" required="required" data-error="Name is required."> <input type="text" id="contact_form_email" class="contact_form_email input_field" placeholder="O teu email" required="required" data-error="Email is required."> <input type="text" id="contact_form_phone" class="contact_form_phone input_field" placeholder="O teu telemóvel"> </div>
+                         <div class="contact_form_text"> <textarea id="contact_form_message" class="text_field contact_form_message" name="message" rows="4" placeholder="A tua mensagem" required="required" data-error="Por favor, escreva a sua mensagem"></textarea> </div>
+                         <div class="contact_form_button"> <button type="submit" class="button contact_submit_button btn-danger">Enviar mensagem</button> </div>
+                     </form>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="panel"></div>
+ </div>
 
-@endsection
+ @endsection

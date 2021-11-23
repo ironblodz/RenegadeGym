@@ -48,7 +48,7 @@
               <button name="login" id="login" class="btn btn-block btn-danger" type="submit">{{ __('Login') }}</button>
               @if (Route::has('password.request'))
                                     <a class="forgot-password-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
+                                        {{ __('Perdeste a tua password?') }}
                                     </a>
                                 @endif
               </div>
