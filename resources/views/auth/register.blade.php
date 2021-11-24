@@ -5,7 +5,7 @@
 @endsection
 @section('content')
           <div class="login-wrapper my-auto">
-            <h1 class="login-title">Regista-te</h1>
+            <h1 class="login-title">Registar</h1>
             <form method="POST" action="{{route('register')}}">
               @csrf
             	<div class="form-group">
@@ -42,6 +42,7 @@
                 <input type="password" name="password_confirmation" id="cpassword" class="form-control" placeholder="confirma a tua password">
               </div>
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
+              <br>
               <p>Já tem conta? <a href="{{route('login')}}" class="text-reset">Dê login</a></p>
             </form>
 
