@@ -17,6 +17,8 @@ Route::group(['middleware'=>['auth','verified']], function(){
 Route::resource('users', UserController::class);
 Route::resource('posts', PostController::class);
 Route::resource('categories',CategoryController::class);
+Route::get('/alterpass',[UserController::class,'editpass'])->name('users.editpass');
+Route::post('/alterpass',[UserController::class,'updatepass'])->name('users.updatepass');
 
 });
 
@@ -36,6 +38,9 @@ Route::get('/clube', [PageController::class,'clube'])->name('gm.clube');
 
 Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');
 
-Auth::routes();
+Auth::routes(['verify'=> True]);
 
 Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
+
+Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');
+

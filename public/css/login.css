@@ -1,5 +1,8 @@
+.invalid-feedback{
+display: block !important;
+}
 body {
-  font-family: "Karla", sans-serif;
+00  font-family: "Karla", sans-serif;
   background-color: white;
   min-height: 100vh; }
 
