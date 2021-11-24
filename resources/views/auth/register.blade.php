@@ -43,7 +43,7 @@
                <div class="form-group mb-4">
                 <label for="cpassword">Confirme a password:</label>
                 <input type="password" name="password_confirmation" id="cpassword" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
-                value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus" placeholder="confirma a tua password">
+                value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="confirma a tua password">
               </div>
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
               <br>
