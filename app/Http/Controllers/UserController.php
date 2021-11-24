@@ -53,7 +53,7 @@ class UserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    
+
     public function store(StoreUserRequest $request)
     {
        $fields = $request->validated();
@@ -66,7 +66,7 @@ class UserController extends Controller
        }
        $user->save();
        $user->sendEmailVerificationNotification();
-       return redirect()->route('users.index')->with('success', 'User successfully created');
+       return redirect()->route('users.index')->with('success', 'Utilizador criado com sucesso');
    }
 
    public function show(User $user)
@@ -104,8 +104,8 @@ class UserController extends Controller
            $user->photo = basename($photo_path);
        }
        $user->save();
-       return redirect()->route('users.index')->with('success', 'User successfully updated');
-   } 
+       return redirect()->route('users.index')->with('success', 'Utilizador atualizado com sucesso');
+   }
 
     /**
      * Remove the specified resource from storage.
@@ -116,20 +116,20 @@ class UserController extends Controller
     public function destroy(User $user)
     {
      $user->delete();
-     return redirect()->route('users.index')->with('success', 'User successfully deleted');
+     return redirect()->route('users.index')->with('success', 'O utilizador foi eliminado com sucesso');
  }
 
  public function send_reactivate_email(User $user)
  {
    $user->sendEmailVerificationNotification();
-   return redirect()->route('users.index')->with('success', 'The email was sent to the user');
+   return redirect()->route('users.index')->with('success', 'O email foi enviado ao utilizador');
 }
 
 public function editpass(){
 return view('auth.alterarpass');
 
 }
- 
+
 public function updatepass(AlterarPasswordRequest $request ){
        $fields = $request->validated();
 

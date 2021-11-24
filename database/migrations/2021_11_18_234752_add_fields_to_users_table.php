@@ -11,6 +11,8 @@ class AddFieldsToUsersTable extends Migration
      *
      * @return void
      */
+
+     /*
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
@@ -24,7 +26,7 @@ class AddFieldsToUsersTable extends Migration
             $table->softDeletes();
         });
     }
-
+*/
     /**
      * Reverse the migrations.
      *
