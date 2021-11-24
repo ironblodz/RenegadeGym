@@ -38,14 +38,11 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function roleToStr(){
         switch($this->role){
-            case 'C':
-            return 'Cliente';
+            case 'N':
+            return 'Normal';
             case 'A':
             return 'Admin';
-            case 'P':
-            return 'PT';
-            case 'N':
-            return 'Nutri';
+
         }
     }
 

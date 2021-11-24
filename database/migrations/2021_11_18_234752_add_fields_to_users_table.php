@@ -12,21 +12,18 @@ class AddFieldsToUsersTable extends Migration
      * @return void
      */
 
-     /*
+
+
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
             $table->id();
-            $table->string('prim_nome', 25)->nullable(false);
-            $table->string('apelido',25)->nullable(false);
-            $table->string('contacto', 9);
-            $table->string('genero')->nullable();
-            $table->date('data_nasc')->nullable();
-            $table->enum('role', ['C', 'A', 'P', 'N'])->default('C');
+            $table->string('name')->nullable();
+            $table->enum('role', ['A','N'])->default('N');
             $table->softDeletes();
         });
     }
-*/
+
     /**
      * Reverse the migrations.
      *
