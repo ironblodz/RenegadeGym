@@ -4,7 +4,7 @@
 }
 #mainn {
     position: relative;
-    height: 55vh;
+    height: 20vh;
     color: #fff;
 }
 .containerr {
@@ -14,7 +14,8 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background: url("./assets/bg.jpg") no-repeat center center/cover;
+    /*background: url("./assets/bg.jpg") no-repeat center center/cover;*/
+    background-color: #242424;
     z-index: -1;
 }
 .containerr:after {
