@@ -15,10 +15,7 @@ class CreateInscricao extends Migration
     {
         Schema::create('inscricao', function (Blueprint $table) {
             $table->id();
-            $table->string('nome', 100);
-            $table->string('email');
-            $table->Int('contacto', 9);
-            $table->float('contribuinte', 9);
+            
             $table->timestamps();
         });
     }
