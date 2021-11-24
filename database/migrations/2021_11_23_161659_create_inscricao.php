@@ -17,7 +17,7 @@ class CreateInscricao extends Migration
             $table->id();
             $table->string('nome', 100);
             $table->string('email');
-            $table->float('contacto', 9);
+            $table->Int('contacto', 9);
             $table->float('contribuinte', 9);
             $table->timestamps();
         });

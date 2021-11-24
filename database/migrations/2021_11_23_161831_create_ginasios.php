@@ -16,6 +16,7 @@ class CreateGinasios extends Migration
         Schema::create('ginasios', function (Blueprint $table) {
             $table->id();
             $table->string('localizacao');
+            $table->string('description');
             $table->timestamps();
         });
     }

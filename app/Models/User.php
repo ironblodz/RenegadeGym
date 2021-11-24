@@ -31,17 +31,21 @@ class User extends Authenticatable implements MustVerifyEmail
      *
      * @var array
      */
-    
+
     public function posts(){
         return $this->hasMany(Post::class,"user_id","id");
     }
 
     public function roleToStr(){
         switch($this->role){
-            case 'N':
-            return 'Normal';
+            case 'C':
+            return 'Cliente';
             case 'A':
             return 'Admin';
+            case 'P':
+            return 'PT';
+            case 'N':
+            return 'Nutri';
         }
     }
 

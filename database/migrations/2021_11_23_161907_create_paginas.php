@@ -15,6 +15,7 @@ class CreatePaginas extends Migration
     {
         Schema::create('paginas', function (Blueprint $table) {
             $table->id();
+            $table->String('descricao');
             $table->timestamps();
         });
     }
