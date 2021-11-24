@@ -7,9 +7,9 @@
 
     <section id="mainn">
       <div class="containerr">
-        <video class="video" autoplay muted loop>
+        <!--<video class="video" autoplay muted loop>
           <source src="{{asset('videos/blog.mp4')}}" type="video/mp4" />
-        </video>
+        </video>-->
       </div>
       <div class="page-content">
       <h1 id="blog-title">Blog</h1>
