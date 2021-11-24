@@ -42,8 +42,9 @@
                 <input type="password" name="password_confirmation" id="cpassword" class="form-control" placeholder="confirma a tua password">
               </div>
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
+              <p>Já tem conta? <a href="{{route('login')}}" class="text-reset">Dê login</a></p>
             </form>
-            <a href="#!" class="forgot-password-link"></a>
-            <p class="login-wrapper-footer-text">Já tem conta? <a href="{{route('login')}}" class="text-reset">Dê login</a></p>
+
+
           </div>
-          @endsection 
+          @endsection

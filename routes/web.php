@@ -1,13 +1,14 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
-use App\Http\Controllers\PageController;
-
 use Illuminate\Support\Facades\Auth;
 
-use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Route;
+
+use App\Http\Controllers\HomeController;
+
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 
 
@@ -40,7 +41,7 @@ Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao
 
 Auth::routes(['verify'=> True]);
 
-Route::get('/admin', [App\Http\Controllers\HomeController::class, 'index'])->name('admin');
+Route::get('/admin', [HomeController::class, 'index'])->name('admin');
 
 Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');
 
