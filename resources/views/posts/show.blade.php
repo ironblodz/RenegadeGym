@@ -1,4 +1,3 @@
-
 @extends('layout.admin')
 
 @section('content')
@@ -9,14 +8,18 @@
 			Post Information
         </div>
         <div class="card-body">
-		
-			<div>
-				<img alt="Post image" src="xxx">
-			</div>
+            @if ($post->image)
 
-			<div><strong>Title:</strong> xxx </div>
-			<div><strong>Description:</strong> xxx </div>
-		</div>
+			<div>
+				<img alt="Post image" src="{{asset('storage/posts_images/'.$post->image)}}">
+
+			</div>
+            @endif
+            <div><strong>Date:</strong> {{$post->date}} </div>
+            <div><strong>Category:</strong> {{$post->category->name}} </div>
+            <div><strong>Title:</strong> {{$post->title}} </div>
+            <div><strong>Description:</strong> {{$post->description}} </div>
+            <div><strong>Author:</strong> {{$post->user->name}} </div>
 	</div>
 </div>
 @endsection

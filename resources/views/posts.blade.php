@@ -1,6 +1,9 @@
-@extends("layout.master")
-@section("title","Games and Multimedia - Admission")
+
 @section("content")
+
+<link href="{{asset('vendor/fontawesome-free/css/all.min.css')}}" rel=" stylesheet"
+ type="text/css">
+
 <h2 class="section-heading mb-4 text-center ">
     Posts
 </h2>
