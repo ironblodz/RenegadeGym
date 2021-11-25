@@ -29,6 +29,7 @@
                                     </span>
                                 @enderror
               </div>
+
               <div class="form-group mb-4">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" name="password"
@@ -45,6 +46,9 @@
                 <input type="password" name="password_confirmation" id="cpassword" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
                 value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="confirma a tua password">
               </div>
+
+              
+
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
               <br>
               <p>Já tem conta? <a href="{{route('login')}}" class="text-reset">Dê login</a></p>
