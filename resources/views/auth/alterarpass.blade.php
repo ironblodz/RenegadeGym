@@ -22,10 +22,10 @@
             <img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo">
           </div>
           <div class="login-wrapper my-auto">
-            <h1 class="login-title">Regista-te</h1>
+            <h1 class="login-title">Alterar Password</h1>
             <form method="POST" action="{{route('users.updatepass')}}">
               @csrf
-              @dump($errors)
+
               <div class="form-group mb-4">
                 <label for="apassword">password antiga:</label>
                 <input type="password" name="password_ant" id="apassword" class="form-control" placeholder="escreve a tua password antiga">
@@ -59,6 +59,6 @@
       </div>
     </div>
   </main>
-  
+
 </body>
 </html>
