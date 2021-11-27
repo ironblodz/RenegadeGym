@@ -45,9 +45,27 @@
                 <label for="cpassword">Confirme a password:</label>
                 <input type="password" name="password_confirmation" id="cpassword" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
                 value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="confirma a tua password">
-              </div>
 
-              
+                @error('cpassword')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            </div>
+
+            <div class="form-group mb-4">
+                <label for="nif">Nif</label>
+                <input type="number" name="nif" id="cpassword" class="form-control @error('nif') is-invalid @enderror" name="password_confirmation"
+                value="{{ old('nif') }}" required autocomplete="nif" autofocus placeholder="Escreve o teu nif">
+
+                @error('nif')
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+            @enderror
+            </div>
+
+
 
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
               <br>

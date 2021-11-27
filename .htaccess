@@ -1,1 +1,2 @@
-DirectoryIndex index.blade.php
+ErrorDocument 401 "Houve um erro, resolva"
+
