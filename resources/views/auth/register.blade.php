@@ -53,20 +53,6 @@
             @enderror
             </div>
 
-            <div class="form-group mb-4">
-                <label for="nif">Nif</label>
-                <input type="number" name="nif" id="cpassword" class="form-control @error('nif') is-invalid @enderror" name="password_confirmation"
-                value="{{ old('nif') }}" required autocomplete="nif" autofocus placeholder="Escreve o teu nif">
-
-                @error('nif')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            </div>
-
-
-
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
               <br>
               <p>Já tem conta? <a href="{{route('login')}}" class="text-reset">Dê login</a></p>

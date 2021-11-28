@@ -21,7 +21,7 @@ class AddFieldsToUsersTable extends Migration
             $table->date('birthdate')->nullable();
             $table->integer('nif')->nullable();
             $table->enum('gender', ['M','F'])->nullable();
-            $table->enum('role', ['admin','pt', 'nutri', 'client'])->default('client');
+            $table->enum('role', ['A', 'N'])->default('N');
             $table->softDeletes();
         });
     }
