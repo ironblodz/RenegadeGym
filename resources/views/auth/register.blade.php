@@ -1,7 +1,7 @@
 @extends ('layout.auth')
 @section ('title', 'Login')
 @section ('image')
-{{asset('img/13.jpg')}}
+{{asset('img/15.jpg')}}
 @endsection
 @section('content')
           <div class="login-wrapper my-auto">
@@ -41,6 +41,8 @@
                                     </span>
                                 @enderror
               </div>
+
+
                <div class="form-group mb-4">
                 <label for="cpassword">Confirme a password:</label>
                 <input type="password" name="password_confirmation" id="cpassword" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
@@ -52,6 +54,64 @@
                 </span>
             @enderror
             </div>
+
+            <div class="form-group mb-4">
+                <label for="birthdate">Data de Nascimento</label>
+                <input type="date" name="birthdate" id="birthdate" class="form-control @error('birthdate') is-invalid @enderror" name="birthdate"
+                value="{{ old('birthdate') }}" required autocomplete="birthdate" autofocus placeholder="escreve a tua birthdate">
+
+                 @error('birthdate')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+              </div>
+
+
+            <div class="form-group mb-4">
+                <label for="nif">nif</label>
+                <input type="number" name="nif" id="nif" class="form-control @error('nif') is-invalid @enderror" name="nif"
+                value="{{ old('nif') }}" required autocomplete="nif" autofocus placeholder="escreve a tua nif">
+
+                 @error('nif')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+              </div>
+
+
+              <div class="form-group mb-4">
+                <label for="contact">contacto</label>
+                <input type="number" name="contact" id="contact" class="form-control @error('contact') is-invalid @enderror" name="contact"
+                value="{{ old('contact') }}" required autocomplete="contact" autofocus placeholder="escreve a tua contact">
+
+                 @error('contact')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+              </div>
+
+              <div class="form-group mb-4">
+                <div class="form-check">
+                    <input type="radio" name="gender" id="genderM" value="M" class="form-check-input @error('gender') is-invalid @enderror" name="gender"
+                    value="{{ old('gender') }}" required autocomplete="gender" autofocus placeholder="escreve a tua gender">
+                    <label class="form-check-label" for="genderM">Masculino</label>
+                    <br/>
+                    <input type="radio" name="gender" id="genderF" value="x" class="form-check-input @error('gender') is-invalid @enderror" name="gender"
+                    value="{{ old('gender') }}" required autocomplete="gender" autofocus placeholder="escreve a tua gender">
+                    <label class="form-check-label" for="genderF">Feminino</label>
+                </div>
+
+
+                 @error('gender')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+              </div>
+
 
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">
               <br>

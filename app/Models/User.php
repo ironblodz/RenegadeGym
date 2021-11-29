@@ -23,7 +23,13 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
-        'role'
+        'password',
+        'cpassword',
+        'birthdate',
+        'nif',
+        'contact',
+        'gender',
+        'role',
     ];
 
     /**
@@ -38,20 +44,24 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function roleToStr(){
         switch($this->role){
-            case 'N':
-            return 'Normal';
+            case 'C':
+            return 'Cliente';
             case 'A':
             return 'Admin';
-
+            case 'N':
+            return 'Nutri';
+            case 'p':
+            return 'PT';
         }
     }
 
     public function isAdmin(){
-        return $this->role=='A';
+        return $this->role=='C';
     }
 
     protected $hidden = [
         'password',
+        'cpassword',
         'remember_token',
     ];
 

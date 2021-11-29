@@ -1,7 +1,7 @@
 @extends ('layout.auth')
 @section ('title', 'Reset Password')
 @section ('image')
-{{asset('img/14.jpg')}}
+{{asset('img/17.jpg')}}
 @endsection
 @section('content')
 <div class="login-title">Reset Password</div>
