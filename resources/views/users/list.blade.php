@@ -28,14 +28,37 @@
 						</div>
 						<div class="form-group">
 							<label for="inputEmail">Email</label>
-							<input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email address"
+							<input type="email" class="form-control" name="email" id="inputEmail"
 							value="{{request()->get('email')}}" />
 						</div>
+                        <div class="form-group">
+							<label for="inputNif">Nif</label>
+							<input type="number" class="form-control" name="nif" id="nif"
+							value="{{request()->get('nif')}}" />
+						</div>
+                        <div class="form-group">
+							<label for="inputContact">Contact</label>
+							<input type="number" class="form-control" name="contact" id="contact"
+							value="{{request()->get('contact')}}" />
+						</div>
+                        <div class="form-group">
+							<label for="inputGender">Gender</label>
+							<input type="text" class="form-control" name="gender" id="gender"
+							value="{{request()->get('gender')}}" />
+						</div>
+                        <div class="form-group">
+							<label for="inputBirthday">Birthday</label>
+							<input type="text" class="form-control" name="Birthday" id="Birthday" 
+							value="{{request()->get('Birthday')}}" />
+						</div>
+
 						<label for="inputRole">Role</label>
 						<select name="role" id="inputRole" class="form-control">
 							<option value="">All</option>
-							<option {{(request()->get('role')=='A')?"selected":""}} value="A">Admin</option>
-							<option {{(request()->get('role')=='N')?"selected":""}}value="N">Normal</option>
+							<option {{(request()->get('role')=='C')?"selected":""}} value="C">Cliente</option>
+							<option {{(request()->get('role')=='A')?"selected":""}}value="A">Admin</option>
+                            <option {{(request()->get('role')=='N')?"selected":""}}value="N">Nutri</option>
+                            <option {{(request()->get('role')=='P')?"selected":""}}value="P">PT</option>
 						</select>
 
 						<br>
@@ -55,7 +78,11 @@
 									<th>Foto</th>
 									<th>Nome</th>
 									<th>Email</th>
-									<th>Tipo</th>
+                                    <th>Nif</th>
+                                    <th>Contact</th>
+                                    <th>Gender</th>
+                                    <th>Birthday</th>
+                                    <th>Tipo</th>
 									<th>Ações</th>
 								</tr>
 							</thead>
@@ -95,7 +122,7 @@
 											<button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
 										</form>
 									</td>
-								</tr>				
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -113,12 +140,12 @@
 @endsection
 
 @section("moreScripts")
-<script> 
+<script>
 
 	$('#dataTable').dataTable( {
 		destroy: true,
 		"bFilter": false,
-		"order": [[ 1, 'asc' ]],  
+		"order": [[ 1, 'asc' ]],
 		"columns": [
 		{ "orderable": false },
 		null,

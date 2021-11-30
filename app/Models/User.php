@@ -48,7 +48,7 @@ class User extends Authenticatable implements MustVerifyEmail
             return 'Admin';
             case 'N':
             return 'Nutri';
-            case 'p':
+            case 'P':
             return 'PT';
         }
     }
@@ -59,7 +59,7 @@ class User extends Authenticatable implements MustVerifyEmail
 
     protected $hidden = [
         'password',
-        'cpassword',
+        'password_confirmation',
         'remember_token',
     ];
 
