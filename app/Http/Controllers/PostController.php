@@ -28,7 +28,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        $categorias = Category::orderBy("name")->get();
+        $categories = Category::orderBy("name")->get();
         $post = new Post;
         return view('posts.add', compact("categories", "post"));
     }
@@ -120,5 +120,5 @@ class PostController extends Controller
         $posts = Post::orderBy("date", "desc")->paginate('10');
         return view('posts', compact('posts'))->with('menuOption', 'P');
     }
-  
+
 }
