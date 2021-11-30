@@ -31,25 +31,29 @@
 							<input type="email" class="form-control" name="email" id="inputEmail"
 							value="{{request()->get('email')}}" />
 						</div>
+
                         <div class="form-group">
 							<label for="inputNif">Nif</label>
 							<input type="number" class="form-control" name="nif" id="nif"
 							value="{{request()->get('nif')}}" />
 						</div>
+
                         <div class="form-group">
 							<label for="inputContact">Contact</label>
 							<input type="number" class="form-control" name="contact" id="contact"
 							value="{{request()->get('contact')}}" />
 						</div>
+
                         <div class="form-group">
 							<label for="inputGender">Gender</label>
 							<input type="text" class="form-control" name="gender" id="gender"
 							value="{{request()->get('gender')}}" />
 						</div>
+
                         <div class="form-group">
-							<label for="inputBirthday">Birthday</label>
-							<input type="text" class="form-control" name="Birthday" id="Birthday" 
-							value="{{request()->get('Birthday')}}" />
+							<label for="inputBirthdate">Birthday</label>
+							<input type="text" class="form-control" name="birthdate" id="birthdate"
+							value="{{request()->get('birthdate')}}" />
 						</div>
 
 						<label for="inputRole">Role</label>
@@ -81,7 +85,7 @@
                                     <th>Nif</th>
                                     <th>Contact</th>
                                     <th>Gender</th>
-                                    <th>Birthday</th>
+                                    <th>Birthdate</th>
                                     <th>Tipo</th>
 									<th>Ações</th>
 								</tr>
@@ -98,6 +102,10 @@
 									</td>
 									<td>{{$user->name}}</td>
 									<td>{{$user->email}}</td>
+                                    <td>{{$user->nif}}</td>
+                                    <td>{{$user->contact}}</td>
+                                    <td>{{$user->gender}}</td>
+                                    <td>{{$user->birthdate}}</td>
 									<td>{{$user->roleToStr()}}</td>
 									<td nowrap>
 										<a class="btn btn-xs btn-primary btn-p" href="{{route('users.show',$user)}}"><i class="fas fa-eye fa-xs"></i></a>
@@ -110,19 +118,7 @@
 									</td>
 								</tr>
 								@endforeach
-								<tr>
-									<td><img src="img\default_user.jpg" class="img-post" alt="User photo"></td>
-									<td>Joana Marques</td>
-									<td>joana.mar@gmail.com</td>
-									<td>Normal</td>
-									<td nowrap>
-										<a class="btn btn-xs btn-primary btn-p" href="#"><i class="fas fa-eye fa-xs"></i></a>
-										<a class="btn btn-xs btn-warning btn-p" href="#"><i class="fas fa-pen fa-xs"></i></a>
-										<form method="POST" action="#" role="form" class="inline">
-											<button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
-										</form>
-									</td>
-								</tr>
+
 							</tbody>
 						</table>
 					</div>
