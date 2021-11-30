@@ -43,17 +43,17 @@
               </div>
 
 
-               <div class="form-group mb-4">
-                <label for="cpassword">Confirme a password:</label>
-                <input type="password" name="password_confirmation" id="cpassword" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
-                value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="confirma a tua password">
+              <div class="form-group mb-4">
+                <label for="password_confirmation">Password</label>
+                <input type="password" name="password_confirmation" id="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
+                value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="escreve a tua password">
 
-                @error('cpassword')
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-            @enderror
-            </div>
+                 @error('password_confirmation')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+              </div>
 
             <div class="form-group mb-4">
                 <label for="birthdate">Data de Nascimento</label>
