@@ -9,7 +9,7 @@
             <form method="POST" action="{{route('register')}}">
               @csrf
             	<div class="form-group">
-                <label for="name">Nome Próprio</label>
+                <label for="name">Nome</label>
                 <input type="text" name="name" id="nome" class="form-control @error('name') is-invalid @enderror" name="name"
                 value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="escreve o teu nome">
                  @error('name')
