@@ -22,8 +22,8 @@ class PageController extends Controller
         return view ('gm.blog')->with('menuOption', 'D');
     }
 
-    public function contacts(){
-        return view ('gm.contacts')->with('menuOption', 'E');
+    public function contact(){
+        return view ('gm.contact')->with('menuOption', 'E');
     }
     public function login(){
         return view ('login')->with('menuOption', 'F');

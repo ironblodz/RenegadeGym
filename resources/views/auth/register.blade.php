@@ -84,7 +84,7 @@
               <div class="form-group mb-4">
                 <label for="contact">contacto</label>
                 <input type="number" name="contact" id="contact" class="form-control @error('contact') is-invalid @enderror" name="contact"
-                value="{{ old('contact') }}" required autocomplete="contact" autofocus placeholder="escreve a tua contact">
+                value="{{ old('contact') }}" required autocomplete="contact" autofocus placeholder="escreve o teu contacto">
 
                  @error('contact')
                                     <span class="invalid-feedback" role="alert">
