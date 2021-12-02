@@ -8,7 +8,7 @@
 
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			<a class="btn btn-primary" href="{{route('users.create')}}">
+			<a class="btn btn-danger" href="{{route('users.create')}}">
 				<i class="fas fa-plus"></i> Adicionar Utilizador
 			</a>
 		</div>
