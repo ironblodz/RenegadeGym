@@ -20,7 +20,7 @@ class IsAdmin
     {
         if ($request->user() && $request->user()->role == 'A')
             return $next($request);
-
+        //return redirect()->route('403');
         throw new AccessDeniedHttpException('Unauthorized.');
     }
 }
