@@ -95,7 +95,7 @@
 								<tr>
 									<td>
 										@if($user->photo)
-										<img src="{{asset('storasge/users_photos/'.$user->photo)}}" class="img-post" alt="User photo">
+										<img src="{{asset('storage/users_photos/'.$user->photo)}}" class="img-post" alt="User photo">
 										@else
 										<img src="{{asset('img/default_user.jpg')}}" class="img-post" alt="User photo">
 										@endif

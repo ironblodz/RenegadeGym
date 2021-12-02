@@ -12,16 +12,14 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 
 
-
-Route::group(['middleware'=>['auth','verified']], function(){
-	Route::get('/users/{user}/send_reactivate_mail',
-	[UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');
-Route::resource('users', UserController::class);
-Route::resource('posts', PostController::class);
-Route::resource('categories',CategoryController::class);
-Route::get('/alterpass',[UserController::class,'editpass'])->name('users.editpass');
-Route::post('/alterpass',[UserController::class,'updatepass'])->name('users.updatepass');
-
+Route::middleware(['role', 'auth', 'verified'])->group(function () {
+    Route::get('/users/{user}/send_reactivate_mail', [UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');
+    Route::resource('users', UserController::class);
+    Route::resource('posts', PostController::class);
+    Route::resource('categories',CategoryController::class);
+    Route::get('/alterpass',[UserController::class,'editpass'])->name('users.editpass');
+    Route::post('/alterpass',[UserController::class,'updatepass'])->name('users.updatepass');
+    Route::get('/admin', [HomeController::class, 'index'])->name('admin');
 });
 
 Route::get('/', [PageController::class,'index'])->name('gm.index');
@@ -42,7 +40,5 @@ Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao
 
 Auth::routes(['verify'=> True]);
 
-Route::get('/admin', [HomeController::class, 'index'])->name('admin');
 
 Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');
-
