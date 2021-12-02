@@ -34,7 +34,6 @@
                         {{ Auth::user()->name }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Perfil</a>
                       <form action="{{route('logout')}}" method="post" class="inline d-none" id="logout-form">
                         @csrf
                       </form>

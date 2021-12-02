@@ -20,15 +20,15 @@
       <div class="row">
         <div class="col-sm-6 login-section-wrapper">
           <div>
-            <img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo">
-          </div> 
- 
+            <a href="{{route('gm.index')}}"><img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo"></a>
+          </div>
+
 
                     @yield('content')
 
 
-                             
-    
+
+
         </div>
      <div class="col-sm-6 px-0 d-none d-sm-block img-fluid">
           <img src="@yield('image')" alt="login image" class="login-img">
@@ -36,9 +36,8 @@
     </div>
 </div>
   </main>
-  
+
 </body>
 </html>
 
 
- 
