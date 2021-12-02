@@ -67,7 +67,7 @@
 
 						<br>
 						<div class="form-group">
-							<button type="submit" class="btn btn-success">Procurar</button>
+							<button type="submit" class="btn btn-danger">Procurar</button>
 						</div>
 
 					</form>

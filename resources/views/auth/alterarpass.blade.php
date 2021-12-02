@@ -20,7 +20,7 @@
       <div class="row">
         <div class="col-sm-6 login-section-wrapper">
           <div>
-            <img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo">
+            <a href="{{route('admin')}}"><img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo"></a>
           </div>
           <div class="login-wrapper my-auto">
             <h1 class="login-title">Alterar Password</h1>

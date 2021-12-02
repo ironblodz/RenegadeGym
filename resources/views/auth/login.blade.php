@@ -1,7 +1,7 @@
 @extends ('layout.auth')
 @section('title', 'Login')
 @section('image')
-    {{ asset('img/16.jpg') }}
+    {{ asset('img/565.jpg') }}
 @endsection
 
 @section('content')

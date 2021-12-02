@@ -10,14 +10,19 @@
         </div>
         <div class="card-body">
         	@if ($user->photo)
-		
+
 			<div>
-				<img alt="Photo" src="{{asset('storage/users_photos/'.$user->photo)}}">
+				<img alt="Photo" height="120px" width="120px" src="{{asset('storage/users_photos/'.$user->photo)}}">
 			</div>
 			@endif
 
-			<div><strong>Nome:</strong>{{$user->name}}</div>
-			<div><strong>Email:</strong> {{$user->email}} </div>
+			<br><div><strong>Nome:</strong>{{$user->name}}</div><br>
+			<div><strong>Email:</strong> {{$user->email}} </div><br>
+            <div><strong>Nif:</strong> {{$user->nif}} </div><br>
+            <div><strong>Contacto:</strong> {{$user->contact}} </div><br>
+            <div><strong>Género:</strong> {{$user->gender}} </div><br>
+            <div><strong>Birthdate:</strong> {{$user->birthdate}} </div><br>
+            <div><strong>Role:</strong> {{$user->role}} </div>
 		</div>
 	</div>
 </div>

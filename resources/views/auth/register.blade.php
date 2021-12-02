@@ -1,7 +1,7 @@
 @extends ('layout.auth')
 @section ('title', 'Login')
 @section ('image')
-{{asset('img/15.jpg')}}
+{{asset('img/56.jpg')}}
 @endsection
 @section('content')
           <div class="login-wrapper my-auto">
