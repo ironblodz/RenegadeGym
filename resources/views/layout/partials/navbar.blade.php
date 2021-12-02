@@ -27,8 +27,20 @@
             <li class="nav-item @if ($menuOption=='E') active @endif">
               <a class="nav-link" href="{{route('gm.contact')}}">Contacto</a>
             </li>
-            <li class="nav-item @if ($menuOption=='F') active @endif">
+            <li class="nav-item dropdown @if ($menuOption=='F') active @endif">
               <a class="nav-link" href="{{route('login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
+                @auth
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {{ Auth::user()->name }}
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Perfil</a>
+                      <form action="{{route('logout')}}" method="post" class="inline d-none" id="logout-form">
+                        @csrf
+                      </form>
+                      <a class="dropdown-item" href="#" id="logout-link">Logout</a>
+                    </div>
+                @endauth
             </li>
           </ul>
         </div>
@@ -37,3 +49,8 @@
 
 
     <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js')}}" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("#logout-link").click(function() {
+            $("#logout-form").submit();
+        });
+    </script>
