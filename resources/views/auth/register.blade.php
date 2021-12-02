@@ -6,7 +6,7 @@
 @section('content')
           <div class="login-wrapper my-auto">
             <h1 class="login-title">Registar</h1>
-            <form method="POST" action="{{route('register')}}">
+            <form method="POST" action="{{route('register')}}" enctype="multipart/form-data">
               @csrf
             	<div class="form-group">
                 <label for="name">Nome</label>
@@ -111,6 +111,18 @@
                                     </span>
                                 @enderror
               </div>
+
+
+              <div class="form-group mb-4">
+                <label for="image">image</label>
+                <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror">
+
+                @error('image')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
+            </div>
 
 
               <input name="login" id="login" class="btn btn-block btn-danger" type="submit" value="Registar">

@@ -50,7 +50,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'photo' => ['string'],
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
@@ -69,14 +69,20 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        $image_name = "";
+        if (request()->hasFile('image')) {
+            $img_path = request()->file('image')->store('public/users_photos');
+            $image_name = basename($img_path);
+        }
+
         return User::create([
-            
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
             'birthdate' => $data['birthdate'],
             'nif' => $data['nif'],
             'contact' => $data['contact'],
+            'photo' => $image_name,
             'gender' => $data['gender'],
         ]);
     }
