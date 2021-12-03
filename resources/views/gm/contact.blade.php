@@ -1,102 +1,123 @@
-@extends ('master')
+@extends('master')
 
-@section ('title','Contacto')
+@section('tile','contacto')
 
-@section('content')
+@section ('content')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V6</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('fonts/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/animate/animate.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/css-hamburgers/hamburgers.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/animsition/css/animsition.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/select2/select2.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('vendor/daterangepicker/daterangepicker.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{asset('css/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/main.css')}}">
+<!--===============================================================================================-->
+</head>
+<body>
 
-<script src="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js')}}"></script>
-<script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')}}"></script>
-<link href="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css')}}" rel="stylesheet">
-<link href="{{asset('css/contact1.css')}}" rel="stylesheet">
+
+	<div class="container-contact100">
+		<div class="contact100-map" data-scrollwhell="0" data-draggable="2"><img src="img/gps.png" height="1500px"></div>
+
+		<button class="contact100-btn-show">
+			<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		</button>
+
+		<div class="wrap-contact100">
+			<button class="contact100-btn-hide">
+				<i class="fa fa-close" aria-hidden="true"></i>
+			</button>
+
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Fala connosco!
+				</span>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">O teu Nome</span>
+					<input class="input100" type="text" name="name" placeholder="Escreve o teu nome">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<span class="label-input100">Email</span>
+					<input class="input100" type="text" name="email" placeholder="Escreve o teu email">
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="wrap-input100 validate-input" data-validate = "Message is required">
+					<span class="label-input100">Mensagem</span>
+					<textarea class="input100" name="message" placeholder="Escreve a tua mensagem"></textarea>
+					<span class="focus-input100"></span>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Enviar
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+
+		</div>
+	</div>
 
 
- <div class="contact_info">
-     <div class="container">
-         <div class="row">
-             <div class="col-lg-10 offset-lg-1">
-                 <div class="contact_info_container d-flex flex-lg-row flex-column justify-content-between align-items-between">
-                     <!-- Contact Item -->
-                     <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
-                         <div class="contact_info_image"><img src="https://img.icons8.com/windows/32/fa314a/two-smartphones.png"/></div>
-                         <div class="contact_info_content">
-                             <div class="contact_info_title">Telefone</div>
-                             <div class="contact_info_text">+351 936487912</div>
-                         </div>
-                     </div> <!-- Contact Item -->
-                     <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
-                         <div class="contact_info_image"><img src="https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/fa314a/external-email-ui-essentials-flatart-icons-outline-flatarticons.png"/></div>
-                         <div class="contact_info_content">
-                             <div class="contact_info_title">Email</div>
-                             <div class="contact_info_text">renegadegym@gmail.com</div>
-                         </div>
-                     </div> <!-- Contact Item -->
-                     <div class="contact_info_item d-flex flex-row align-items-center justify-content-start">
-                         <div class="contact_info_image"><img src="https://img.icons8.com/ios/50/fa314a/address--v1.png"/></div>
-                         <div class="contact_info_content">
-                             <div class="contact_info_title">Endereço</div>
-                             <div class="contact_info_text">Rua Álvaro Pires Miranda, Leiria</div>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div> <!-- Contact Form -->
- <div class="contact_form">
-     <div class="container">
-         <div class="row">
-             <div class="col-lg-10 offset-lg-1">
-                 <div class="contact_form_container">
-                     <div class="contact_form_title">Fale connosco</div>
-                     <form method="POST" action="{{route('gm.contact')}}" id="contact_form">
-                         <div class="contact_form_inputs d-flex flex-md-row flex-column justify-content-between align-items-between">
-                             <input type="text"name="name" id="contact_form_name" class="contact_form_name input_field  @error('name') is-invalid @enderror" name="name"
-                             value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="escreve o teu nome">
-                              @error('name')
-                                                 <span class="invalid-feedback" role="alert">
-                                                     <strong>{{ $message }}</strong>
-                                                 </span>
-                                             @enderror
-                           </div>
-                             <input type="text" name="email" id="contact_form_email" class="contact_form_email input_field"  @error('email') is-invalid @enderror" name="email"
-                             value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="escreve o teu email">
 
-                              @error('email')
-                                                 <span class="invalid-feedback" role="alert">
-                                                     <strong>{{ $message }}</strong>
-                                                 </span>
-                                             @enderror
-                           </div>
-                           <br>
-                             <input type="text" name="contact" id="contact_form_phone" class="contact_form_phone input_field @error('contact') is-invalid @enderror" name="contact"
-                             value="{{ old('contact') }}" required autocomplete="contact" autofocus placeholder="escreve o teu contacto">
+	<div id="dropDownSelect1"></div>
 
-                              @error('contact')
-                                                 <span class="invalid-feedback" role="alert">
-                                                     <strong>{{ $message }}</strong>
-                                                 </span>
-                                             @enderror
-                           </div>
-                        </div>
-                        <br>
-                         <div class="contact_form_text">
-                             <textarea  name="message" id="contact_form_message" class="text_field contact_form_message @error('message') is-invalid @enderror" name="message"
-                             value="{{ old('message') }}" required autocomplete="message" autofocus placeholder="escreve a tua mensagem">
+<!--===============================================================================================-->
+	<script src="{{asset('vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{asset('vendor/animsition/js/animsition.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{asset('vendor/bootstrap/js/popper.js')}}"></script>
+	<script src="{{asset('vendor/bootstrap/js/bootstrap.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{asset('vendor/select2/select2.min.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{asset('vendor/daterangepicker/moment.min.js')}}"></script>
+	<script src="{{asset('vendor/daterangepicker/daterangepicker.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{asset('vendor/countdowntime/countdowntime.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="{{asset('js/map-custom.js')}}"></script>
+<!--===============================================================================================-->
+	<script src="{{asset('js/main.js')}}"></script>
 
-                              @error('message')
-                                                 <span class="invalid-feedback" role="alert">
-                                                     <strong>{{ $message }}</strong>
-                                                 </span>
-                                             @enderror
-                                            </textarea>
-                                        </div>
-                         <div class="contact_form_button"> <button type="submit" class="button contact_submit_button btn-danger">Enviar mensagem</button> </div>
-                     </form>
-                 </div>
-             </div>
-         </div>
-     </div>
-     <div class="panel"></div>
- </div>
 
- @endsection
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
+@endsection
