@@ -16,6 +16,7 @@ p {
     background-color: white;
     padding-left: 4rem !important;
     padding-right: 4rem !important;
+    font-family: "Raleway", sans-serif !important;
 }
 #bg-color-toggler {
     background-color: #dc3545;
@@ -28,7 +29,7 @@ p {
 }
 .nav-link {
     color: rgb(48, 48, 48) !important;
-    font-size: 1.2rem;
+    font-size: 18px !important;
 }
 
 .navbar-brand {
@@ -46,7 +47,7 @@ button {
 }
 @media only screen and (max-width: 991px) {
     .nav-link {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 }
 /* ----------- FOOTER -----------*/
@@ -55,9 +56,10 @@ button {
     background: #404040;
     padding: 0 0 30px 0;
     color: #fff;
-    font-size: 14px;
-    z-index: 4;
+    font-size: 14px !important;
+    z-index: 8 !important;
     margin-top: -70px;
+    position: relative;
 }
 
 #footer .footer-newsletter {
@@ -67,7 +69,7 @@ button {
 }
 
 #footer .footer-newsletter h4 {
-    font-size: 24px;
+    font-size: 24px !important;
     margin: 0 0 20px 0;
     padding: 0;
     line-height: 1;
@@ -98,7 +100,7 @@ button {
     bottom: 0;
     border: 0;
     background: none;
-    font-size: 16px;
+    font-size: 16px !important;
     padding: 0 30px;
     margin: 3px;
     background: #ad2836;
@@ -136,16 +138,16 @@ button {
 }
 
 #footer .footer-top .footer-info p {
-    font-size: 14px;
+    font-size: 14px !important;
     line-height: 24px;
     margin-bottom: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif !important;
     color: #fff;
     z-index: 4;
 }
 
 #footer .footer-top .social-links a {
-    font-size: 18px;
+    font-size: 18px !important;
     display: inline-block;
     background: #545454;
     color: #fff;
@@ -168,7 +170,7 @@ button {
 }
 
 #footer .footer-top h4 {
-    font-size: 16px;
+    font-size: 16px !important;;
     font-weight: bold;
     color: #fff;
     text-transform: uppercase;
@@ -192,7 +194,7 @@ button {
 #footer .footer-top .footer-links ul i {
     padding-right: 2px;
     color: #ad2836;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 1;
 }
 
