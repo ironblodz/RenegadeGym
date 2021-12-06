@@ -40,5 +40,3 @@ Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao
 
 Auth::routes(['verify'=> True]);
 
-
-Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');

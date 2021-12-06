@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contact V6</title>
+	<title>Contacto</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -36,7 +36,7 @@
 
 
 	<div class="container-contact100">
-		<div class="contact100-map" data-scrollwhell="0" data-draggable="2"><img src="img/gps.png" height="1500px" class="img-fluid"></div>
+		<div class="contact100-map" data-scrollwhell="0" data-draggable="2" ><img src="img/gps1.png" height="1800px" width="2000px" ></div>
 
 		<button class="contact100-btn-show">
 			<i class="fa fa-envelope-o" aria-hidden="true"></i>
@@ -52,7 +52,7 @@
 					Fala connosco!
 				</span>
 
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Name is required">
+				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Nome">
 					<span class="label-input100">O teu Nome</span>
 					<input class="input100" type="text" name="name" placeholder="Escreve o teu nome">
 					<span class="focus-input100"></span>
