@@ -163,10 +163,6 @@ iframe {
   z-index: 1;
 }
 
-img{
-  height: 1200px;
-}
-
 .contact100-map {
   position: absolute;
   z-index: -2;
