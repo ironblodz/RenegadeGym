@@ -14,8 +14,6 @@ p {
     /*background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
     background: linear-gradient(to right, #ff5e62, #ff9966);*/
     background-color: white;
-    padding-left: 4rem !important;
-    padding-right: 4rem !important;
     font-family: "Raleway", sans-serif !important;
 }
 #bg-color-toggler {

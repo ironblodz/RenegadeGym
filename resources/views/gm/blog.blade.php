@@ -5,7 +5,7 @@
 @section('content')
     <link rel="stylesheet" href="{{asset('css/blog.css')}}">
 
-    <main class="flex-shrink-0">
+    <main class="flex-shrink-0 m-5">
             <!-- Section -->
             <section class="py-0">
                 <div class="container px-5">

@@ -91,6 +91,23 @@
       </div>
     </li>
 
+    <!-- BLOG -->
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlogs" aria-expanded="true"
+        aria-controls="collapseBlogs">
+        <i class="fas fa-fw fa-folder"></i>
+        <span>Blog</span>
+      </a>
+      <div id="collapseBlogs" class="collapse" aria-labelledby="headingBlogs" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <h6 class="collapse-header">Blogs:</h6>
+          <a class="collapse-item" href="{{route('blogs.index')}}">List Blogs</a>
+          <a class="collapse-item" href="{{route('blogs.create')}}">Add Blog</a>
+        </div>
+      </div>
+    </li>
+
 
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">

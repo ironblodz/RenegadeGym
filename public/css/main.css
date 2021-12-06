@@ -25,6 +25,9 @@ body, html {
 
 }
 
+.contact100-map{
+  background: url("../img/gps1.png") no-repeat center center/cover;
+}
 /*---------------------------------------------*/
 a {
 	font-family: "Raleway", sans-serif !important;
@@ -158,6 +161,10 @@ iframe {
   background: transparent;
   position: relative;
   z-index: 1;
+}
+
+img{
+  height: 1200px;
 }
 
 .contact100-map {
