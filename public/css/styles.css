@@ -52,7 +52,7 @@ button {
 }
 /* ----------- FOOTER -----------*/
 
-  a {
+a {
     -webkit-transition: .3s all ease;
     -o-transition: .3s all ease;
     transition: .3s all ease; }
@@ -60,23 +60,27 @@ button {
       text-decoration: none !important; }
 
   .content {
-    height: 70vh; }
+    height: 40vh; }
 
   .footer-48201 {
     padding: 7rem 0;
-    background-color: #000;
-    color: #777; }
+    background-color: rgb(53, 53, 53);
+    color: white; }
     .footer-48201 .footer-site-logo {
       font-size: 1.5rem;
       color: #fff; }
+
+      .footer-site-logo:hover{
+        color: #dc3545;
+      }
     .footer-48201 .nav-links li {
       margin-bottom: 10px; }
       .footer-48201 .nav-links li a {
-        color: gray; }
+        color: white; }
         .footer-48201 .nav-links li a:hover {
-          color: #fff; }
+          color: #dc3545; }
     .footer-48201 .btn.btn-tertiary {
-      background-color: #e42c64;
+      background-color: #dc3545;
       color: #fff;
       border-radius: 30px;
       border: none;
@@ -84,9 +88,9 @@ button {
     .footer-48201 .social li {
       display: inline-block; }
       .footer-48201 .social li a {
-        color: gray;
+        color: white;
         padding: 7px; }
         .footer-48201 .social li a:hover {
-          color: #fff; }
+          color: #dc3545; }
     .footer-48201 .copyright {
       border-top: 1px solid #404040; }

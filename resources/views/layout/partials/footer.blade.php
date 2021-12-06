@@ -1,44 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-<link href="{{asset('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap')}}" rel="stylesheet">
-  <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css')}}">
-  <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css')}}">
-  <link rel="stylesheet" href="{{asset('css/style.css')}}">
-  <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js')}}"></script>
-  <script src="{{asset('https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js')}}"></script>
-  <script src="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js')}}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
 
-<footer id="footer">
-       <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 footer-links">
-                    <h4>Links Principais</h4>
-                    <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a id="footer-text" href="{{route('gm.index')}}">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a id="footer-text" href="{{route('gm.Sobrenos')}}">Sobre nós</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a id="footer-text" href="{{route('gm.clube')}}">Ginásios</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a id="footer-text" href="{{route('gm.blog')}}">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-local">
-                    <h4>Onde estamos?</h4>
-                    <p> Porto <br> Coimbra <br> Leiria <br> Lisboa <br> Faro <br><br> </p>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contacta-nos</h4>
-                    <p> Rua Álvaro Pires Miranda <br> Leiria <br> Portugal <br><br> <strong>Telefone:</strong> +351 926 629 767<br> <strong>Email:</strong> renegadegym@gmail.com<br> </p>
-                </div>
-                <div class="col-lg-3 col-md-6 footer-info">
-                    <h3>Sobre Renegade Gym</h3>
-                    <p>A instituição Renegade é uma entidade sem fins lucrativos que foi criada com o ambito
-                  de ajudar e oferecer o bem estar fisico e mental ao utiliziador, oferecendo uma variedade
-                  de serviços para o ajudar a melhorar o seu estado de vida com o desporto.</p>
-                    <div class="social-links mt-3"> <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> </div>
-                </div>
-            </div>
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{asset('fonts/icomoon/style.css')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/bootstrap/bootstrap-gride.css')}}">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{{asset('css/styles.css')}}">
+
+    <title>Footer 07</title>
+  </head>
+  <body>
+
+    <footer class="footer-48201">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pr-md-5">
+            <a href="{{route('gm.index')}}" class="footer-site-logo d-block mb-4">Renegade Gym</a>
+            <p>Somos um ginásio aberto ao público, sem fins lucrativos</p>
+          </div>
+          <div class="col-md">
+            <ul class="list-unstyled nav-links">
+              <li><a href="{{route('gm.index')}}">Home</a></li>
+              <li><a href="{{route('gm.Sobrenos')}}">Sobre nós</a></li>
+              <li><a href="{{route('gm.clube')}}">Ginásios</a></li>
+              <li><a href="{{route('gm.blog')}}">Blog</a></li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <ul class="list-unstyled nav-links">
+              <li><a href="#">Clients</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Testimonials</a></li>
+            </ul>
+          </div>
+          <div class="col-md text-md-center">
+            <ul class="social list-unstyled">
+              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="#"><span class="icon-twitter"></span></a></li>
+              <li><a href="#"><span class="icon-facebook"></span></a></li>
+              <li><a href="#"><span class="icon-pinterest"></span></a></li>
+              <li><a href="#"><span class="icon-dribbble"></span></a></li>
+            </ul>
+            <p class=""><a href="{{route('gm.contact')}}" class="btn btn-tertiary">Contacta-nos</a></p>
+          </div>
         </div>
-    </div>
-    <div class="container">
-        <div class="copyright"> © Copyright <strong><span>Renegade Gym</span></strong>.</div>
-    </div>
-</footer>
+
+
+    </footer>
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

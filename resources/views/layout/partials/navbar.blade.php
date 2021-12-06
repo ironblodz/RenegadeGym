@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{asset('css/style.css')}}">
+<link rel="stylesheet" href="{{asset('css/styles.css')}}">
 <link rel="stylesheet" href="{{asset('https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css')}}" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -12,9 +12,6 @@
             <li class="nav-item active @if ($menuOption=='I') active @endif" >
               <a class="nav-link" href="{{route('gm.index')}}">Home</a>
             </li>
-            <li class="nav-item @if ($menuOption=='O') active @endif">
-              <a class="nav-link" href="{{route('gm.inscricao')}}">Inscrição</a>
-            </li>
             <li class="nav-item @if ($menuOption=='B') active @endif">
               <a class="nav-link" href="{{route('gm.Sobrenos')}}">Sobre</a>
             </li>
@@ -27,6 +24,9 @@
             <li class="nav-item @if ($menuOption=='E') active @endif">
               <a class="nav-link" href="{{route('gm.contact')}}">Contacto</a>
             </li>
+            <li>
+                <a class="nav-link" href="https://renegadegym.biz/wp/Loja" target="_blank">Loja</a>
+              </li>
             <li class="nav-item dropdown @if ($menuOption=='F') active @endif">
               <a class="nav-link" href="{{route('login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
                 @auth

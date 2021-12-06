@@ -33,8 +33,5 @@ class PageController extends Controller
         return view ('register');
     }
 
-    public function inscricao(){
-        return view ('gm.inscricao')->with('menuOption', 'O');
-    }
 
 }

@@ -36,7 +36,5 @@ Route::get('/Sobrenos', [PageController::class,'Sobrenos'])->name('gm.Sobrenos')
 
 Route::get('/clube', [PageController::class,'clube'])->name('gm.clube');
 
-Route::get('/inscricao',[PageController::class,'inscricao'])->name('gm.inscricao');
-
 Auth::routes(['verify'=> True]);
 
