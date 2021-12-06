@@ -41,10 +41,8 @@
           </div>
           <div class="col-md">
             <ul class="list-unstyled nav-links">
-              <li><a href="#">Clients</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Career</a></li>
-              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="https://renegadegym.biz/wp/Loja" target="_blank">Loja</a></li>
             </ul>
           </div>
           <div class="col-md text-md-center">
