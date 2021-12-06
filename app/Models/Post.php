@@ -13,11 +13,15 @@ class Post extends Model
     use HasFactory;
 
     protected $fillable = [
-        'title', 'description', 'date', 'category_id', 'user_id', 'viewMore'
+        "title",
+        "content",
+        "image",
+        "category_id",
+        "user_id"
     ];
 
     public function category(){
-        return $this->belongsTo(Category::class,"category_id","i");
+        return $this->belongsTo(Category::class,"category_id","id");
     }
 
     public function user(){

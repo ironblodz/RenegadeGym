@@ -10,6 +10,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BlogsController;
 
 
 Route::middleware(['role', 'auth', 'verified'])->group(function () {
@@ -35,6 +36,8 @@ Route::get('/register', [PageController::class,'register'])->name('register');
 Route::get('/Sobrenos', [PageController::class,'Sobrenos'])->name('gm.Sobrenos');
 
 Route::get('/clube', [PageController::class,'clube'])->name('gm.clube');
+
+Route::resource("blogs", BlogsController::class);
 
 Auth::routes(['verify'=> True]);
 
