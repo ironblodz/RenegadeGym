@@ -140,8 +140,6 @@ iframe {
 }
 
 
-
-
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
@@ -177,7 +175,7 @@ iframe {
   background: #fff;
   border-radius: 10px;
   padding: 82px 180px 82px 180px;
-  top: -50px;
+  top: -20px;
   position: relative;
   display: none;
 }
