@@ -16,8 +16,8 @@
 				@include('posts.partials.add-edit')
 
 				<div class="form-group">
-					<button type="submit" class="btn btn-success" name="ok">Save</button>
-					<a href="{{route('posts.index')}}" class="btn btn-default">Cancel</a>
+					<button type="submit" class="btn btn-danger" name="ok">Save</button>
+					<a href="{{route('posts.index')}}" class="btn btn-danger">Cancel</a>
 				</div>
 			</form>
 		</div>

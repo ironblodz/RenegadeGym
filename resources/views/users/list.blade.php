@@ -108,8 +108,8 @@
                                     <td>{{$user->birthdate}}</td>
 									<td>{{$user->roleToStr()}}</td>
 									<td nowrap>
-										<a class="btn btn-xs btn-primary btn-p" href="{{route('users.show',$user)}}"><i class="fas fa-eye fa-xs"></i></a>
-										<a class="btn btn-xs btn-warning btn-p" href="{{route('users.edit',$user)}}"><i class="fas fa-pen fa-xs"></i></a>
+										<a class="btn btn-xs btn-danger btn-p" href="{{route('users.show',$user)}}"><i class="fas fa-eye fa-xs"></i></a>
+										<a class="btn btn-xs btn-danger btn-p" href="{{route('users.edit',$user)}}"><i class="fas fa-pen fa-xs"></i></a>
 										<form method="POST" action="{{route('users.destroy',$user)}}" role="form" class="inline" onsubmit="return confirm('Are you sure you wante to delete this record?');">
 											@csrf
 											@method('DELETE')
