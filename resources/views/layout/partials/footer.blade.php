@@ -23,54 +23,8 @@
   </head>
   <body>
 
-    <!--<footer class="footer-48201">
-
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 pr-md-5">
-            <a href="{{route('gm.index')}}" class="footer-site-logo d-block mb-4">Renegade Gym</a>
-            <p>Somos um ginásio aberto ao público, sem fins lucrativos</p>
-          </div>
-          <div class="col-md">
-            <ul class="list-unstyled nav-links">
-              <li><a href="{{route('gm.index')}}">Home</a></li>
-              <li><a href="{{route('gm.Sobrenos')}}">Sobre nós</a></li>
-              <li><a href="{{route('gm.clube')}}">Ginásios</a></li>
-              <li><a href="{{route('gm.blog')}}">Blog</a></li>
-            </ul>
-          </div>
-          <div class="col-md">
-            <ul class="list-unstyled nav-links">
-              <li><a href="#">FAQ</a></li>
-              <li><a href="https://renegadegym.biz/wp/Loja" target="_blank">Loja</a></li>
-            </ul>
-          </div>
-          <div class="col-md text-md-center">
-            <ul class="social list-unstyled">
-              <li><a href="#"><span class="icon-instagram"></span></a></li>
-              <li><a href="#"><span class="icon-twitter"></span></a></li>
-              <li><a href="#"><span class="icon-facebook"></span></a></li>
-              <li><a href="#"><span class="icon-pinterest"></span></a></li>
-              <li><a href="#"><span class="icon-dribbble"></span></a></li>
-            </ul>
-            <p class=""><a href="{{route('gm.contact')}}" class="btn btn-tertiary">Contacta-nos</a></p>
-          </div>
-        </div>
-
-
-    </footer>-->
 
     <footer>
-      <div class="footer-content">
-        <h3>RenegadeGym</h3>
-        <p>Somos um ginásio aberto ao público, sem fins lucrativos</p>
-        <ul class="socials">
-          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
       <div class="footer-bottom">
         <p>RenegadeGym</p>
       </div>

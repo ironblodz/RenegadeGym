@@ -88,7 +88,7 @@
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
-          <i class="fas fa-4x -bottom-0fa-tags text-center tm-icon"></i>
+          <i class="fas fa-4x fa-tags text-center tm-icon"></i>
           <h4 class="text-center text-danger mb-4">Fusce sed nisi sagittis</h4>
           <p>
             Donec vestibulum libero nisl. Curabitur ac orci ac lorem blandit
