@@ -77,17 +77,17 @@
 
 					<div class="table-responsive">
 						<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-							<thead>
+							<thead class="thead-dark">
 								<tr>
-									<th>Foto</th>
-									<th>Nome</th>
-									<th>Email</th>
-                                    <th>Nif</th>
-                                    <th>Contact</th>
-                                    <th>Gender</th>
-                                    <th>Birthdate</th>
-                                    <th>Tipo</th>
-									<th>Ações</th>
+									<th scope="col">Foto</th>
+									<th scope="col">Nome</th>
+									<th scope="col">Email</th>
+                                    <th scope="col">Nif</th>
+                                    <th scope="col">Contact</th>
+                                    <th scope="col">Gender</th>
+                                    <th scope="col">Birthdate</th>
+                                    <th scope="col">Tipo</th>
+									<th scope="col">Ações</th>
 								</tr>
 							</thead>
 							<tbody>
