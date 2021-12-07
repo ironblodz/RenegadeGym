@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Support\Facades\DB;
+use App\Http\Requests\PostRequest;
 
 
 class BlogsController extends Controller
@@ -42,7 +43,11 @@ class BlogsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $fields=$request->validated();
+        $blogs=new Blog();
+        $blogs->fill($fields);
+        $blogs->save();
+        return redirect()->route('blogs.index')->with('success', 'Post created successfully');
     }
 
     /**
