@@ -203,7 +203,7 @@ a:focus {
 }
 
 .tm-down-arrow {
-    color: #c57e7d;
+    color: #dc3545;
     cursor: pointer;
     background: white;
     border-radius: 50%;
@@ -214,7 +214,7 @@ a:focus {
 .tm-down-arrow:hover,
 .tm-down-arrow:focus {
     color: white;
-    background: #3496d8;
+    background: #dc3545;
 }
 
 /* Introduction */
