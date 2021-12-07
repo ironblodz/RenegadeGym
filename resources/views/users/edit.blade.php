@@ -16,8 +16,8 @@
 			@method("PUT")
 			@include('users.partials.add-edit')
 			<div class="form-group">
-				<button type="submit" class="btn btn-success" name="ok">Gravar</button>
-				<a href="{{route('users.index')}}" class="btn btn-default">Cancelar</a>
+				<button type="submit" class="btn btn-danger" name="ok">Gravar</button>
+				<a href="{{route('users.index')}}" class="btn btn-danger">Cancelar</a>
 			</div>
 		</form>
 		<a href="{{route('users.sendActivationEmail',$user)}}" class="btn btn-primary">

@@ -8,8 +8,8 @@
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <a class="btn btn-primary" href="{{route('categories.create')}}">
-        <i class="fas fa-plus"></i> Add Category
+      <a class="btn btn-danger" href="{{route('categories.create')}}">
+        <i class="fas fa-plus"></i> Adicionar Categoria
       </a>
     </div>
     <div class="card-body">
@@ -18,9 +18,9 @@
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
           <thead>
             <tr>
-              <th>Name</th>
-              <th>Description</th>
-              <th>Actions</th>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -29,8 +29,8 @@
               <td>{{$category->name}}</td>
               <td>{{$category->description}}</td>
               <td nowrap>
-                <a class="btn btn-xs btn-primary btn-p" href="{{route('categories.show',$category)}}"><i class="fas fa-eye fa-xs"></i></a>
-                <a class="btn btn-xs btn-warning btn-p" href="{{route('categories.edit',$category)}}"><i class="fas fa-pen fa-xs"></i></a>
+                <a class="btn btn-xs btn-danger btn-p" href="{{route('categories.show',$category)}}"><i class="fas fa-eye fa-xs"></i></a>
+                <a class="btn btn-xs btn-danger btn-p" href="{{route('categories.edit',$category)}}"><i class="fas fa-pen fa-xs"></i></a>
                 <form method="POST" action="{{route('categories.destroy',$category)}}" role="form" class="inline" onsubmit="return confirm('Are you sure you want to delete this record?');">
                   @csrf
                   @method('DELETE')
@@ -42,8 +42,8 @@
               <td>Events</td>
               <td>Category about events</td>
               <td nowrap>
-                <a class="btn btn-xs btn-primary btn-p" href="#"><i class="fas fa-eye fa-xs"></i></a>
-                <a class="btn btn-xs btn-warning btn-p" href="#"><i class="fas fa-pen fa-xs"></i></a>
+                <a class="btn btn-xs btn-danger btn-p" href="#"><i class="fas fa-eye fa-xs"></i></a>
+                <a class="btn btn-xs btn-danger btn-p" href="#"><i class="fas fa-pen fa-xs"></i></a>
                 <form method="POST" action="#" role="form" class="inline">
                   <button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
                 </form>
@@ -54,7 +54,7 @@
         </table>
       </div>
       @else
-      <h6>No Categories Registered</h6>
+      <h6>Não Categorias registadas</h6>
       @endif
     </div>
   </div>
@@ -65,7 +65,7 @@
 <script>
   $('#dataTable').dataTable( {
   destroy: true,
-    "order": [[ 0, 'asc' ]],  
+    "order": [[ 0, 'asc' ]],
 	"columns": [
 	  null,
     null,

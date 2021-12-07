@@ -92,12 +92,12 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlogs" aria-expanded="true"
         aria-controls="collapseBlogs">
-        <i class="fas fa-folder-plus"></i>
+        <i class="fab fa-blogger"></i>
         <span>Blog</span>
       </a>
       <div id="collapseBlogs" class="collapse" aria-labelledby="headingBlogs" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('blogs.index')}}"><i class="fab fa-blogger"></i>Ver Artigos</a>
+          <a class="collapse-item" href="{{route('blogs.index')}}"><i class="fas fa-folder-plus"></i></i>Ver Artigos</a>
           <a class="collapse-item" href="{{route('blogs.create')}}"><i class="fas fa-blog"></i>Adicionar Artigo</a>
         </div>
       </div>

@@ -18,7 +18,7 @@
                                         <div class="h2 fw-bolder">Alimentação Vs Treino</div>
                                         <p>Hoje no dia Mundial da Alimentação vamos analisar o impacto da alimentação na atividade física e acredite é bastante!</p>
                                         <a class="stretched-link text-decoration-none" href="#!">
-                                            <button type="button" class="btn" id="button-blog">Ler mais</button>
+                                            <button type="button" class="btn-danger" id="button-blog">Ler mais</button>
                                         </a>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <!-- Call to action-->
-                    
+
                 </div>
             </section>
         </main>

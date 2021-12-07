@@ -8,7 +8,7 @@
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <a class="btn btn-primary" href="{{route('posts.create')}}">
+      <a class="btn btn-danger" href="{{route('posts.create')}}">
         <i class="fas fa-plus"></i> Add Post
       </a>
     </div>
@@ -51,8 +51,8 @@
                   @endif
                 </td>
                 <td nowrap>
-                  <a class="btn btn-xs btn-primary btn-p" href="{{route('posts.show',$post)}}"><i class="fas fa-eye fa-xs"></i></a>
-                  <a class="btn btn-xs btn-warning btn-p" href="{{route('posts.edit',$post)}}"><i class="fas fa-pen fa-xs"></i></a>
+                  <a class="btn btn-xs btn-danger btn-p" href="{{route('posts.show',$post)}}"><i class="fas fa-eye fa-xs"></i></a>
+                  <a class="btn btn-xs btn-danger btn-p" href="{{route('posts.edit',$post)}}"><i class="fas fa-pen fa-xs"></i></a>
                 <form method="POST" action="{{route('posts.destroy',$post)}}" role="form" class="inline" onsubmit="return confirm('Are you sure you want to delete this record?');">
                  @csrf
                  @method("DELETE")
@@ -76,7 +76,7 @@
 <script>
   $('#dataTable').dataTable( {
     destroy: true,
-    "order": [[ 1, 'desc' ]],  
+    "order": [[ 1, 'desc' ]],
     "columns": [
     { "orderable": false },
     null,
