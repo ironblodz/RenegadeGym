@@ -36,7 +36,7 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>RenegadeGym</p>
+        <p>Copyright by Staff</p>
       </div>
     </footer>
 
