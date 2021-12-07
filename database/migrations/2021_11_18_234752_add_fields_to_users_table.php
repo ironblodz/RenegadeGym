@@ -17,8 +17,8 @@ class AddFieldsToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('photo');
-            $table->integer('contact');
+            $table->string('photo')->nullable();
+            $table->string('contact', 14);
             $table->date('birthdate');
             $table->integer('nif');
             $table->enum('gender', ['M','F']);

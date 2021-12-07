@@ -13,6 +13,23 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\User::factory(10)->create();
+
+        $nomes_cat = ['Nutri', 'Exercicio'];
+
+        foreach ($nomes_cat as $um_nome) {
+
+            $c = new \App\Models\Category();
+            $c -> name= $um_nome;
+            $c->save();
+        }
+
+        #for($posts=0;$posts<=10;$posts++) {
+         #   DB::table('posts')->insert([
+          #      'title' => str_random(10),
+           #     'content' => str_random(100)
+            #]);
+        #}
+
     }
 }
