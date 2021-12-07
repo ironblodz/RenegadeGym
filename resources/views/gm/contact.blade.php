@@ -49,27 +49,47 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form class="contact100-form validate-form">
+			<form method="POST" action="#" class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Fala connosco!
 				</span>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Nome">
 					<span class="label-input100">O teu Nome</span>
-					<input class="input100" type="text" name="name" placeholder="Escreve o teu nome">
+					<input type="text" class="input100  @error('name') is-invalid @enderror" name="name"
+                    value="{{ old('name') }}" required autocomplete="name" autofocus>
+                @error('name')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 					<span class="label-input100">Email</span>
-					<input class="input100" type="text" name="email" placeholder="Escreve o teu email">
+					<input class="input100  @error('email') is-invalid @enderror" name="email"
+                    value="{{ old('email') }}" required autocomplete="email" autofocus>
+                @error('email')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                @enderror
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Mensagem</span>
-					<textarea class="input100" name="message" placeholder="Escreve a tua mensagem"></textarea>
-					<span class="focus-input100"></span>
+					<textarea class="input100  @error('message') is-invalid @enderror" name="message"
+                    value="{{ old('message') }}" required autocomplete="message" autofocus>
+                @error('message')
+                    <span class="invalid-feedback" role="alert">
+                        <strong>{{ $message }}</strong>
+                    </span>
+                    <span class="focus-input100"></span>
+                @enderror
+            </textarea>
+
 				</div>
 
 				<div class="container-contact100-form-btn">

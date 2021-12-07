@@ -48,7 +48,7 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item">
         <a class="nav-link" href="/admin">
-          <i class="fas fa-fw fa-tachometer-alt"></i> <span>Dashboard</span></a>
+            <i class="fas fa-crown"></i> <span>Dashboard</span></a>
         </li>
 
         <!-- Divider -->
@@ -60,14 +60,14 @@
         <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsers" aria-expanded="true"
           aria-controls="collapseUsers">
-          <i class="fas fa-users"></i>
-          <span>Users</span>
+          <i class="fas fa-users-cog"></i>
+          <span>Utilizadores</span>
         </a>
         <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
 
-            <a class="collapse-item" href="{{route('users.index')}}">List Users</a>
-            <a class="collapse-item" href="{{route('users.create')}}">Add User</a>
+            <a class="collapse-item" href="{{route('users.index')}}"> <i class="fas fa-address-book"></i></i>Ver Utilizadores</a>
+            <a class="collapse-item" href="{{route('users.create')}}"><i class="fas fa-user-secret"></i>Adicionar Utilizador</a>
           </div>
         </div>
       </li>
@@ -75,18 +75,14 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePosts" aria-expanded="true"
         aria-controls="collapsePosts">
-        <i class="fas fa-fw fa-folder"></i>
-        <span>Posts</span>
+        <i class="fas fa-wallet"></i>
+        <span>Categorias</span>
       </a>
       <div id="collapsePosts" class="collapse" aria-labelledby="headingPosts" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">Categories:</h6>
-          <a class="collapse-item" href="{{route('categories.index')}}">List Categories</a>
-          <a class="collapse-item" href="{{route('categories.create')}}">Add Category</a>
+          <a class="collapse-item" href="{{route('categories.index')}}"><i class="fas fa-folder-plus"></i>Ver Categorias</a>
+          <a class="collapse-item" href="{{route('categories.create')}}"><i class="fas fa-folder-plus"></i>Adicionar Categorias</a>
           <div class="collapse-divider"></div>
-          <h6 class="collapse-header">Posts:</h6>
-          <a class="collapse-item" href="{{route('posts.index')}}">List Posts</a>
-          <a class="collapse-item" href="{{route('posts.create')}}">Add Post</a>
         </div>
       </div>
     </li>
@@ -96,14 +92,13 @@
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlogs" aria-expanded="true"
         aria-controls="collapseBlogs">
-        <i class="fas fa-fw fa-folder"></i>
+        <i class="fas fa-folder-plus"></i>
         <span>Blog</span>
       </a>
       <div id="collapseBlogs" class="collapse" aria-labelledby="headingBlogs" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <h6 class="collapse-header">Blogs:</h6>
-          <a class="collapse-item" href="{{route('blogs.index')}}">List Blogs</a>
-          <a class="collapse-item" href="{{route('blogs.create')}}">Add Blog</a>
+          <a class="collapse-item" href="{{route('blogs.index')}}"><i class="fab fa-blogger"></i>Ver Artigos</a>
+          <a class="collapse-item" href="{{route('blogs.create')}}"><i class="fas fa-blog"></i>Adicionar Artigo</a>
         </div>
       </div>
     </li>
@@ -228,10 +223,10 @@ aria-hidden="true">
     </div>
     <div class="modal-body">Selecione "Logout" abaixo se estiver pronto para encerrar a sessão atual</div>
     <div class="modal-footer">
-      <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+      <button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
       <form action="{{route('logout')}}" method="post" class="inline">
         @csrf
-        <button class="btn btn-primary" type="submit">Logout</button>
+        <button class="btn btn-danger" type="submit">Logout</button>
       </form>
     </div>
   </div>
