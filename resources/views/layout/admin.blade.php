@@ -31,7 +31,7 @@
   <div id="wrapper">
 
     <!-- Sidebar -->
-    <ul class="navbar-nav dark sidebar sidebar-dark accordion" id="accordionSidebar">
+    <ul class="navbar-nav bg-dark sidebar sidebar-dark bg-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
@@ -109,7 +109,7 @@
 
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
-      <button class="rounded-circle border-0" id="sidebarToggle"></button>
+      <button class="rounded-circle border-0 btn-danger" id="sidebarToggle"></button>
     </div>
 
   </ul>
@@ -122,10 +122,10 @@
     <div id="content">
 
       <!-- Topbar -->
-      <nav class="navbar navbar-expand navbar-nav dark topbar mb-4 static-top shadow">
+      <nav class="navbar navbar-expand navbar-nav bg-dark topbar mb-4 static-top shadow">
 
         <!-- Sidebar Toggle (Topbar) -->
-        <button id="sidebarToggleTop" class="btn btn-danger d-md-none rounded-circle mr-3">
+        <button id="sidebarToggleTop" class="btn-danger d-md-none rounded-circle mr-3">
           <i class="fa fa-bars"></i>
         </button>
 

@@ -17,7 +17,7 @@
 
 				<div class="form-group">
 					<button type="submit" class="btn btn-danger" name="ok">Guardar</button>
-					<a href="{{route('categories.index')}}" class="btn btn-default">Cancelar</a>
+					<a href="{{route('categories.index')}}" class="btn btn-danger">Cancelar</a>
 				</div>
 			</form>
 		</div>

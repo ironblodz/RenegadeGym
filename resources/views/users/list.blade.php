@@ -75,9 +75,9 @@
 				<div class="col-md-10" style="border:1px solid #dee2e6;">
 
 
-					<div class="table-responsive">
+					<div class="table-responsive " >
 						<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-							<thead class="thead-dark">
+							<thead class="bg-dark text-white">
 								<tr>
 									<th scope="col">Foto</th>
 									<th scope="col">Nome</th>
