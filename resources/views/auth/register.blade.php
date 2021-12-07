@@ -1,7 +1,7 @@
 @extends ('layout.auth')
 @section ('title', 'Login')
 @section ('image')
-{{asset('img/56.jpg')}}
+{{asset('img/risen-wang-20jX9b35r_M-unsplash.jpg')}}
 @endsection
 @section('content')
           <div class="login-wrapper my-auto">
@@ -11,7 +11,7 @@
             	<div class="form-group">
                 <label for="name">Nome</label>
                 <input type="text" name="name" id="nome" class="form-control @error('name') is-invalid @enderror" name="name"
-                value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="escreve o teu nome">
+                value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Insira o seu nome">
                  @error('name')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
@@ -21,7 +21,7 @@
               <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror" name="email"
-                value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="escreve o teu email">
+                value="{{ old('email') }}" required autocomplete="email" autofocus placeholder="Insira o seu email">
 
                  @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -33,7 +33,7 @@
               <div class="form-group mb-4">
                 <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control @error('password') is-invalid @enderror" name="password"
-                value="{{ old('password') }}" required autocomplete="password" autofocus placeholder="escreve a tua password">
+                value="{{ old('password') }}" required autocomplete="password" autofocus placeholder="Password">
 
                  @error('password')
                                     <span class="invalid-feedback" role="alert">
@@ -46,7 +46,7 @@
               <div class="form-group mb-4">
                 <label for="password_confirmation">Password</label>
                 <input type="password" name="password_confirmation" id="password_confirmation" class="form-control @error('password_confirmation') is-invalid @enderror" name="password_confirmation"
-                value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="escreve a tua password">
+                value="{{ old('password_confirmation') }}" required autocomplete="password_confirmation" autofocus placeholder="Confirme a Password">
 
                  @error('password_confirmation')
                                     <span class="invalid-feedback" role="alert">
@@ -69,9 +69,9 @@
 
 
             <div class="form-group mb-4">
-                <label for="nif">nif</label>
+                <label for="nif">NIF</label>
                 <input type="number" name="nif" id="nif" class="form-control @error('nif') is-invalid @enderror" name="nif"
-                value="{{ old('nif') }}" required autocomplete="nif" autofocus placeholder="escreve a tua nif">
+                value="{{ old('nif') }}" required autocomplete="nif" autofocus placeholder="Insira o seu NIF">
 
                  @error('nif')
                                     <span class="invalid-feedback" role="alert">
@@ -82,9 +82,9 @@
 
 
               <div class="form-group mb-4">
-                <label for="contact">contacto</label>
+                <label for="contact">Contacto</label>
                 <input type="number" name="contact" id="contact" class="form-control @error('contact') is-invalid @enderror" name="contact"
-                value="{{ old('contact') }}" required autocomplete="contact" autofocus placeholder="escreve o teu contacto">
+                value="{{ old('contact') }}" required autocomplete="contact" autofocus placeholder="Contacto">
 
                  @error('contact')
                                     <span class="invalid-feedback" role="alert">
@@ -114,7 +114,7 @@
 
 
               <div class="form-group mb-4">
-                <label for="image">image</label>
+                <label for="image">Imagem</label>
                 <input type="file" name="image" id="image" class="form-control @error('image') is-invalid @enderror">
 
                 @error('image')
