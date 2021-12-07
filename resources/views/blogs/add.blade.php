@@ -7,7 +7,7 @@
 
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			Add Post
+			Adicionar Artigo
 		</div>
 		<div class="card-body">
 

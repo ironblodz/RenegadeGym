@@ -8,8 +8,8 @@
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
-      <a class="btn btn-primary" href="{{route('blogs.create')}}">
-        <i class="fas fa-plus"></i> Add Blog
+      <a class="btn btn-danger" href="{{route('blogs.create')}}">
+        <i class="fas fa-plus"></i> Adicionar Artigo
       </a>
     </div>
     <div class="card-body">
@@ -21,7 +21,7 @@
               <th>Imagem</th>
               <th>Titulo</th>
               <th>Descriçao</th>
-              <th>Actions</th>
+              <th>Acões</th>
             </tr>
           </thead>
           <tbody>
@@ -41,7 +41,7 @@
                 <td nowrap>
                   <a class="btn btn-xs btn-danger btn-p" href="{{route('blogs.show',$blog)}}"><i class="fas fa-eye fa-xs"></i></a>
                   <a class="btn btn-xs btn-danger btn-p" href="{{route('blogs.edit',$blog)}}"><i class="fas fa-pen fa-xs"></i></a>
-                <form method="POST" action="{{route('blogs.destroy',$blog)}}" role="form" class="inline" onsubmit="return confirm('Are you sure you want to delete this record?');">
+                <form method="POST" action="{{route('blogs.destroy',$blog)}}" role="form" class="inline" onsubmit="return confirm('Tens acerteza que queres eliminar isto?');">
                  @csrf
                  @method("DELETE")
                  <button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
@@ -53,7 +53,7 @@
        </table>
      </div>
       @else
- <h6>No blogs registered</h6>
+ <h6>Não há artigos registados</h6>
  @endif
    </div>
  </div>
