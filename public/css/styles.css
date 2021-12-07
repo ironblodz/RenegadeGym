@@ -112,7 +112,7 @@ footer{
   text-transform: capitalize;
   line-height: 3rem;
 }
-.footer-content p{
+#texto--footer{
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;

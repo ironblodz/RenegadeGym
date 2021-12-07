@@ -14,6 +14,10 @@
   background: #fff;
   color: #ad2836;
 }
+#btn-blogg{
+  background: #dc3545;
+  color: #fff;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
