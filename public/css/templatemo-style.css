@@ -232,7 +232,7 @@ a:focus {
 .tm-icon {
     display: block;
     margin-bottom: 55px;
-    color: #3496d8;
+    color: #dc3545;
 }
 
 /* Work */
@@ -484,4 +484,3 @@ figure.effect-honey:hover h2 i {
 .tm-btn-submit {
     margin-left: 20px;
 }
-
