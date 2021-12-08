@@ -12,9 +12,6 @@
         <i class="fas fa-plus"></i> Adicionar Categoria
       </a>
     </div>
-    <div class=" card shadow mb-4">
-      <div class="card-header py-3">
-        
     <div class="card-body">
       @if(count($categories))
       <div class="table-responsive">
