@@ -21,6 +21,7 @@
               <th>Imagem</th>
               <th>Titulo</th>
               <th>Descriçao</th>
+              <th>Categoria</th>
               <th>Acões</th>
             </tr>
           </thead>
@@ -37,6 +38,7 @@
                 @endif
                 <td>{{$blog->title}}</td>
                 <td>{{$blog->content}}</td>
+                <td>{{$blog->category_id}}</td>
 
                 <td nowrap>
                   <a class="btn btn-xs btn-danger btn-p" href="{{route('blogs.show',$blog)}}"><i class="fas fa-eye fa-xs"></i></a>
