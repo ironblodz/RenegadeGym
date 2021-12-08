@@ -17,7 +17,7 @@
 
 
 			<div class="row">
-				<div class="col-md-2" style="border:1px solid #dee2e6;">
+				<div class="col-md-2">
 					<form method="GET" action="{{route('users.index')}}" class="form-group">
 
 
@@ -72,7 +72,7 @@
 
 					</form>
 				</div>
-				<div class="col-md-10" style="border:1px solid #dee2e6;">
+				<div class="col-md-10">
 
 
 					<div class="table-responsive " >

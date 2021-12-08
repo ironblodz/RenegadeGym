@@ -634,6 +634,7 @@ pre code {
     flex-wrap: wrap;
     margin-right: -0.75rem;
     margin-left: -0.75rem;
+    background: #212529;
 }
 
 .no-gutters {
@@ -1470,7 +1471,7 @@ pre code {
 .table {
     width: 100%;
     margin-bottom: 1rem;
-    color: #858796;
+    color: white;
 }
 
 .table th,
@@ -1955,6 +1956,8 @@ textarea.form-control {
 
 .form-group {
     margin-bottom: 1rem;
+    background: #212529;
+    color:white;
 }
 
 .form-text {
@@ -4656,8 +4659,8 @@ input[type="button"].btn-block {
 .card-header {
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
-    background-color: #f8f9fc;
-    border-bottom: 1px solid #e3e6f0;
+    background-color: #212529;
+    color:white;
 }
 
 .card-header:first-child {
@@ -7909,6 +7912,7 @@ button.bg-dark:focus {
 .mb-4,
 .my-4 {
     margin-bottom: 1.5rem !important;
+    background:#212529;
 }
 
 .ml-4,
