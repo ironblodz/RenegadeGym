@@ -1,23 +1,20 @@
-@extends ('master')
+@extends('master')
 
-@section ('content')
+@section('content')
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>The Town HTML CSS Template</title>
+    <title>Sobre Nós</title>
     <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
     <link rel="stylesheet" href="{{asset('slick/slick.css')}}">
     <link rel="stylesheet" href="{{asset('slick/slick-theme.css')}}">
     <link rel="stylesheet" href="{{asset('magnific-popup/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/templatemo-style.css')}}" />
-    <!--
-	The Town
-	https://templatemo.com/tm-525-the-town
-	-->
+
   </head>
   <body>
     <!-- Hero section -->
