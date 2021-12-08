@@ -26,10 +26,7 @@ class PostRequest extends FormRequest
         return [
             "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            "date" => 'required|date|before_or_equal:now|date_format:"Y-m-d H:i:s"',
-            "description" => 'required',
-            "viewMore" => 'nullable|url',
-            'category' => 'required|exists:categories,id'
+            "content" => 'required'
         ];
     }
     public function messages()

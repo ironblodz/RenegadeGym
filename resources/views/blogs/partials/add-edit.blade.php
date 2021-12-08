@@ -5,7 +5,7 @@
 
 <div class="form-group">
     <label for="inputDescription">Descrição</label>
-    <textarea class="form-control" name="description" id="inputDescription">{{old('description',$blog->description)}}</textarea>
+    <textarea class="form-control" name="content" id="inputDescription">{{old('description',$blog->description)}}</textarea>
 </div>
 
 <div class="form-group">

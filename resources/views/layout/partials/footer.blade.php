@@ -19,7 +19,6 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="{{asset('css/styles.css')}}">
 
-    <title>Footer 07</title>
   </head>
   <body>
 
@@ -29,10 +28,10 @@
         <h3>RenegadeGym</h3>
         <p id="texto--footer">Somos um ginásio aberto ao público, sem fins lucrativos</p>
         <ul class="socials">
-          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li class="pr-4"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i id="icons-color" class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i id="icons-color" class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i id="icons-color" class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="pr-4"><a href="#"><i id="icons-color" class="fa fa-twitter" aria-hidden="true"></i></a></li>
         </ul>
       </div>
       <div class="footer-bottom">

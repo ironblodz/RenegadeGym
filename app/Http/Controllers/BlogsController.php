@@ -41,12 +41,13 @@ class BlogsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostRequest $request)
     {
         $fields=$request->validated();
-        $blogs=new Blog();
-        $blogs->fill($fields);
-        $blogs->save();
+        $blog=new Post();
+        $blog->fill($fields);
+        $blog->category_id = $fields["category"];
+        $blog->save();
         return redirect()->route('blogs.index')->with('success', 'Post created successfully');
     }
 

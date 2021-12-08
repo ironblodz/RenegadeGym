@@ -132,7 +132,7 @@ footer{
   text-decoration: none;
   color: #fff;
 }
-.socials a i{
+#icons-color{
   font-size: 1.1rem;
   transition: color .4s ease;
 }
