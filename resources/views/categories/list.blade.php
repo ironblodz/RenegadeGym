@@ -12,6 +12,9 @@
         <i class="fas fa-plus"></i> Adicionar Categoria
       </a>
     </div>
+    <div class=" card shadow mb-4">
+      <div class="card-header py-3">
+        
     <div class="card-body">
       @if(count($categories))
       <div class="table-responsive">
@@ -39,8 +42,8 @@
               </td>
             </tr>
             <tr>
-              <td>Events</td>
-              <td>Category about events</td>
+              <td>Eventos </td>
+              <td>Categoria sobre eventos</td>
               <td nowrap>
                 <a class="btn btn-xs btn-danger btn-p" href="#"><i class="fas fa-eye fa-xs"></i></a>
                 <a class="btn btn-xs btn-danger btn-p" href="#"><i class="fas fa-pen fa-xs"></i></a>
