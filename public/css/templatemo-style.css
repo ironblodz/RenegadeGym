@@ -5,7 +5,18 @@ The Town
 https://templatemo.com/tm-525-the-town
 
 */
-
+#iconssss{
+    color: #dc3545;
+    font-size: 80px;
+}
+.see-more-btn{
+    background: #dc3545;
+    color: #fff;
+}
+.see-more-btn:hover{
+    background: #bb2837 !important;
+    color: #fff;
+}
 html {
     font-size: 18px;
 }

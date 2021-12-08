@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Town HTML CSS Template</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
+    <!--<link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />-->
     <link rel="stylesheet" href="{{asset('slick/slick.css')}}">
     <link rel="stylesheet" href="{{asset('slick/slick-theme.css')}}">
     <link rel="stylesheet" href="{{asset('magnific-popup/magnific-popup.css')}}">
@@ -33,14 +33,16 @@
               Somos uma instituição sem fins lucrativos
               <br> Mais informações, abaixo..
             </p>
+            <button type="button" class="btn see-more-btn mt-4">Ver mais</button>
         </div>
       </div>
 
-      <div class="tm-next tm-intro-next">
+  
+      <!--<div class="tm-next tm-intro-next">
         <a href="#introduction" class="text-center tm-down-arrow-link">
           <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
         </a>
-      </div>
+      </div>-->
     </section>
 
     <section id="introduction" class="tm-section-pad-top">
@@ -66,7 +68,7 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
 
         <div class="row tm-section-pad-top">
           <div class="col-lg-4">
-            <i class="fas fa-4x fa-home text-center tm-icon"></i>
+          <i class="fa fa-home d-flex pb-3 justify-content-center" id="iconssss" aria-hidden="true"></i>
             <h4 class="text-center text-danger mb-4">Ginásios</h4>
             <p>
               Estamos abertos em 5 cidades do paí, façanos uma visita e usufrua do melhor e único ginásio grátis.
@@ -74,14 +76,14 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
           </div>
 
         <div class="col-lg-4 mt-5 mt-lg-0">
-          <i class="fas fa-4x fa-users text-center tm-icon"></i>
+        <i class="fa fa-users d-flex pb-3 justify-content-center" id="iconssss" aria-hidden="true"></i>
           <h4 class="text-center text-danger  mb-4">Aulas de grupo</h4>
           <p>
            Ofereçemos uma basta variedade de aulas de grupo todos os dias, é só fazer a sua reserva e poderá participar em cada uma, todas elas em diferentes horários
           </p>
         </div>
         <div class="col-lg-4 mt-5 mt-lg-0">
-          <i class="fas fa-4x fa-tags text-center tm-icon"></i>
+        <i class="fa fa-sign-language pb-3 d-flex justify-content-center" id="iconssss" aria-hidden="true"></i>
           <h4 class="text-center text-danger mb-4">Modalidades</h4>
           <p>
             Escolhemos a dedo as modalidades, todas elas importantes e com diferentes objetivos para o cliente
