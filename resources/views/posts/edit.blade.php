@@ -18,7 +18,6 @@
 					<button type="submit" class="btn btn-danger" name="ok">Guardar</button>
 
 					<a href="{{route('posts.index')}}" class="btn btn-danger">Cancelar</a>
-
 				</div>
 
 			</form>
