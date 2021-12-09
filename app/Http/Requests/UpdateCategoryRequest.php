@@ -25,9 +25,8 @@ class UpdateCategoryRequest extends FormRequest
     {
        return [
            "name" => 'required|min:3|max:40|regex:/^[A-ZÀ-úa-z\s]+$/',
-           "email" => 'required|email|unique:users,email,'.$this->user->id,
-           "role" => 'sometimes|in:N,A',
-           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+           "content" => 'required|min:3|max:200|regex:/^[A-ZÀ-úa-z\s]+$/',
+
        ];
    }
    public function messages()

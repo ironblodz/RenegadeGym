@@ -10,7 +10,7 @@
 		</div>
 		<div class="card-body">
 				<div><strong>Nome:</strong> {{$category->name}} </div>
-				<div><strong>Email:</strong>{{$category->email}} </div>
+				<div><strong>Descrição:</strong>{{$category->content}} </div>
 			</div>
 		</div>
 	</div>

@@ -15,14 +15,15 @@
 				<img alt="Photo" height="120px" width="120px" src="{{asset('storage/users_photos/'.$user->photo)}}">
 			</div>
 			@endif
-            <div><strong>Imagem:</strong>{{$user->image}}</div><br>
-			<div><strong>Nome:</strong>{{$user->name}}</div><br>
+
+            <div>{{$user->image}}</div><br>
+			<div><strong>Nome:</strong> {{$user->name}}</div><br>
 			<div><strong>Email:</strong> {{$user->email}} </div><br>
             <div><strong>Nif:</strong> {{$user->nif}} </div><br>
             <div><strong>Contacto:</strong> {{$user->contact}} </div><br>
-            <div><strong>Género:</strong> {{$user->gender}} </div><br>
-            <div><strong>Birthdate:</strong> {{$user->birthdate}} </div><br>
-            <div><strong>Role:</strong> {{$user->role}} </div>
+            <div><strong>Genero:</strong> {{$user->gender}} </div><br>
+            <div><strong>Data de Nascimento:</strong> {{$user->birthdate}} </div><br>
+            <div><strong>Tipo:</strong> {{$user->role}} </div>
 		</div>
 	</div>
 </div>
