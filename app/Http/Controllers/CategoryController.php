@@ -39,14 +39,7 @@ class CategoryController extends Controller
      */
     public function store(StoreCategoryRequest $request)
     {
-        $fields=$request->validate(
-         [
-             'name' => 'required|min:3|max:20|unique:categories,name|regex:/^[A-ZÀ-úa-z\s]+$/',
-             'description' => 'required'
-         ],[
-             'name.regex' => 'Name should contain only letters and spaces'
-         ]
-     );
+
         $fields=$request->validated();
         $category=new Category();
         $category->fill($fields);

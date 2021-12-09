@@ -24,16 +24,14 @@ class StoreCategoryRequest extends FormRequest
     public function rules()
     {
         return [
-           "name" => 'required|min:3|max:40|regex:/^[A-ZÀ-úa-z\s]+$/',
-           "email" => 'required|email|unique:users,email',
-           "role" => 'required|in:N,A',
-           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'name' => 'required|min:3|max:20|unique:categories,name|regex:/^[A-ZÀ-úa-z\s]+$/',
+            'content' => 'required'
        ];
    }
    public function messages()
    {
        return [
-           'name.regex' => 'Name should contain only letters and spaces'
+        'name.regex' => 'O nome deve conter apenas letras e espaços'
        ];
    }
 }

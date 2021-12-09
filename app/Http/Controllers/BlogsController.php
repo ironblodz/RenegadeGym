@@ -32,7 +32,7 @@ class BlogsController extends Controller
     {
         $blog = new Post;
         $categories = Category::orderBy("name")->get();
-        return view('blogs.add', compact('blog', 'categories')); 
+        return view('blogs.add', compact('blog', 'categories'));
     }
 
     /**
@@ -46,7 +46,6 @@ class BlogsController extends Controller
         $fields=$request->validated();
         $blog=new Post();
         $blog->fill($fields);
-        $blog->category_id = $fields["category"];
         $blog->save();
         return redirect()->route('blogs.index')->with('success', 'Post created successfully');
     }
