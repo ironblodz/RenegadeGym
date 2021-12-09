@@ -7,6 +7,7 @@ use App\Models\Post;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Requests\UpdatePostRequest;
 
 class PostController extends Controller
 {
@@ -90,8 +91,13 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(PostRequest $request, Post $post)
+    public function update(UpdatePostRequest $request, Post $post)
     {
+        $fields=$request->validated();
+        $posts->fill($fields);
+        $posts->save();
+        return redirect()->route('posts.index')->with('success', 'Post successfully updated');
+
         #$fields = $request->validated();
         #$post->fill($fields);
         #if ($request->hasFile('image')) {
