@@ -113,17 +113,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        if($posts->posts()->exists()){
-            return redirect()->route('posts.index')->withErrors(['delete'=>'Category has related posts']);
-        }
-        $posts->delete();
-            return redirect()->route('posts.index')->with('success', 'Category successfully deleted');
-
-        #if (!empty($post->image)) {
-        #    Storage::disk('public')->delete('posts_images/' . $post->image);
-        #}
-        #$post->delete();
-        #return redirect()->route('posts.index')->with('success', 'Post successfully deleted');
+            $post->delete();
+            return redirect()->route('posts.index')->with('success', 'O Post foi eliminado com sucesso!');
     }
 
     public function posts()
