@@ -18,7 +18,6 @@
                                 <a href="http://renegadegym.test/" style="display:block; width:407px; height:100px; margin:0 auto 30px;">
                                     <img src="{{asset('img/logo.png')}}" width="400" height="400" alt="logo" style="display:block; border:0; position:relative; z-index: 2;">
                                 </a>
-
                                 <!-- begin wrapper -->
                                 <table cellpadding="0" cellspacing="0" border="0" width="100%">
                                     <tbody>
@@ -30,7 +29,7 @@
 
                                         <tr>
                                             <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-left-top.png) no-repeat 100% 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td colspan="3" rowspan="3" bgcolor="#FFFFFF" style="padding:0 0 30px;">
+                                            <td colspan="3" rowspan="3" bgcolor="#FFFFFF" style="padding:0 0 0; margin-bottom:-20px">
                                                 <!-- begin content -->
                                                 <img src="{{asset('img/mailfundo.jpg')}}" width="950" height="700" alt="summer‘s coming trimm your sheeps" style="display:block;  position:relative; border:0; margin:-200px 0px 10px 0px; background:#eeeeee;">
                                                 <p style="margin:0px 30px 10px; text-align:center; text-transform:uppercase; font-size:24px; line-height:30px; font-weight:bold; color:white; Z-index: 5;">

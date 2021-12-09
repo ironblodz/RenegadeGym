@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
@@ -13,6 +15,9 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-       
+       DB::table('categories')->insert([
+           'name'=> Str::random(10),
+           'content' => Str::random(10).'@gmail.com',
+       ]);
     }
 }
