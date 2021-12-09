@@ -44,6 +44,9 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
 }
+#dashbcolor{
+    background-color: #f8f9fc;
+}
 
 *,
 *::before,

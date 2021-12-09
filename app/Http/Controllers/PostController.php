@@ -67,7 +67,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('posts.edit', compact('post'));
+        return view('posts.show', compact("post"));
     }
 
     /**
@@ -78,6 +78,7 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        return view('posts.edit', compact('post'));
         #$categories = Category::orderBy("name")->get();
         #return view('posts.edit', compact('categories', 'post'));
     }
@@ -113,13 +114,8 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        
-
-        #if (!empty($post->image)) {
-        #    Storage::disk('public')->delete('posts_images/' . $post->image);
-        #}
-        #$post->delete();
-        #return redirect()->route('posts.index')->with('success', 'Post successfully deleted');
+            $post->delete();
+            return redirect()->route('posts.index')->with('success', 'O Post foi eliminado com sucesso!');
     }
 
     public function posts()

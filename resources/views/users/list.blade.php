@@ -82,11 +82,11 @@
 									<th scope="col">Foto</th>
 									<th scope="col">Nome</th>
 									<th scope="col">Email</th>
-                                    <th scope="col">Nif</th>
-                                    <th scope="col">Contact</th>
-                                    <th scope="col">Gender</th>
-                                    <th scope="col">Birthdate</th>
-                                    <th scope="col">Tipo</th>
+                                    <th scope="col">NIF</th>
+                                    <th scope="col">Contacto</th>
+                                    <th scope="col">Género</th>
+                                    <th scope="col">Data Nascimento</th>
+                                    <th scope="col">Cargo</th>
 									<th scope="col">Ações</th>
 								</tr>
 							</thead>

@@ -66,8 +66,8 @@
         <div id="collapseUsers" class="collapse" aria-labelledby="headingUsers" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
 
-            <a class="collapse-item" href="{{route('users.index')}}"> <i class="fas fa-address-book"></i></i>Ver Utilizadores</a>
-            <a class="collapse-item" href="{{route('users.create')}}"><i class="fas fa-user-secret"></i>Adicionar Utilizador</a>
+            <a class="collapse-item" href="{{route('users.index')}}"> <i class="fas fa-address-book pr-2"></i></i>Ver Utilizadores</a>
+            <a class="collapse-item" href="{{route('users.create')}}"><i class="fas fa-user-secret pr-2"></i>Adicionar Utilizador</a>
           </div>
         </div>
       </li>
@@ -80,8 +80,8 @@
       </a>
       <div id="collapsePosts" class="collapse" aria-labelledby="headingPosts" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('categories.index')}}"><i class="fas fa-folder-plus"></i>Ver Categorias</a>
-          <a class="collapse-item" href="{{route('categories.create')}}"><i class="fas fa-folder-plus"></i>Adicionar Categorias</a>
+          <a class="collapse-item" href="{{route('categories.index')}}"><i class="fas fa-folder-plus pr-2"></i>Ver Categorias</a>
+          <a class="collapse-item" href="{{route('categories.create')}}"><i class="fas fa-folder-plus pr-2"></i>Adicionar Categorias</a>
           <div class="collapse-divider"></div>
         </div>
       </div>
@@ -97,8 +97,8 @@
       </a>
       <div id="collapseBlogs" class="collapse" aria-labelledby="headingBlogs" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('posts.index')}}"><i class="fas fa-folder-plus"></i></i>Ver Artigos</a>
-          <a class="collapse-item" href="{{route('posts.create')}}"><i class="fas fa-blog"></i>Adicionar Artigo</a>
+          <a class="collapse-item" href="{{route('posts.index')}}"><i class="fas fa-folder-plus pr-2"></i></i>Ver Artigos</a>
+          <a class="collapse-item" href="{{route('posts.create')}}"><i class="fas fa-blog pr-2"></i>Adicionar Artigo</a>
         </div>
       </div>
     </li>
