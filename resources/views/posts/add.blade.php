@@ -7,7 +7,7 @@
 
 	<div class="card shadow mb-4">
 		<div class="card-header py-3">
-			Add Post
+			Adicionar Artigo
 		</div>
 		<div class="card-body">
 
@@ -16,8 +16,8 @@
 				@include('posts.partials.add-edit')
 
 				<div class="form-group">
-					<button type="submit" class="btn btn-danger" name="ok">Save</button>
-					<a href="{{route('posts.index')}}" class="btn btn-danger">Cancel</a>
+					<button type="submit" class="btn btn-danger" name="ok">Guardar</button>
+					<a href="{{route('posts.index')}}" class="btn btn-danger">Cancelar</a>
 				</div>
 			</form>
 		</div>
