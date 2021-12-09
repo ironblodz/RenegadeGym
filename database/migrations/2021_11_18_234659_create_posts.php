@@ -16,11 +16,11 @@ class CreatePosts extends Migration
        Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('title','20');
-            $table->datetime('date');
+            $table->datetime('date')->nullable();
             $table->text('content')->nullable();
             $table->string('image')->nullable();
-            $table->unsignedBigInteger('category_id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();

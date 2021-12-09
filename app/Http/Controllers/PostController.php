@@ -67,7 +67,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('posts.edit', compact('post'));
+        return view('posts.show', compact("post"));
     }
 
     /**
@@ -113,7 +113,11 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        
+        if($posts->posts()->exists()){
+            return redirect()->route('posts.index')->withErrors(['delete'=>'Category has related posts']);
+        }
+        $posts->delete();
+            return redirect()->route('posts.index')->with('success', 'Category successfully deleted');
 
         #if (!empty($post->image)) {
         #    Storage::disk('public')->delete('posts_images/' . $post->image);

@@ -15,11 +15,10 @@
 
 			</div>
             @endif
-            <div><strong>Date:</strong> {{$post->date}} </div>
-            <div><strong>Category:</strong> {{$post->category->name}} </div>
-            <div><strong>Title:</strong> {{$post->title}} </div>
-            <div><strong>Description:</strong> {{$post->description}} </div>
-            <div><strong>Author:</strong> {{$post->user->name}} </div>
+            <div><strong>Date:</strong> {{$post->date}} </div><br>
+            <div><strong>Category:</strong> {{$post->category}} </div><br>
+            <div><strong>Title:</strong> {{$post->title}} </div><br>
+            <div><strong>Description:</strong> {{$post->content}} </div><br>
 	</div>
 </div>
 @endsection
