@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <div class="row justify-content-center">
+    <div id="dashbcolor" class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Dashboard') }}</div>
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('Efetuou o login com bastante sucesso') }}
+                    {{ __('Efetuou o login com sucesso') }}
                 </div>
             </div>
         </div>

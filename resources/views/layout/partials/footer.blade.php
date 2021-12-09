@@ -35,7 +35,7 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <p>Copyright by Staff</p>
+        <p>Copyright © Renegade Gym 2021</p>
       </div>
     </footer>
 

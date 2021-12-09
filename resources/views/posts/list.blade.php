@@ -20,9 +20,9 @@
             <tr>
               <th>Imagem</th>
               <th>Titulo</th>
-              <th>Descriçao</th>
+              <th>Descrição</th>
               <th>Categoria</th>
-              <th>Acões</th>
+              <th>Ações</th>
             </tr>
           </thead>
           <tbody>
