@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title></title>
 </head>
-<body style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color:#f0f2ea; margin:0; padding:0; color:#333333;">
+<body style="font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color:#f0f2ea; margin:0px 0px -200px 0px; padding:0; color:#333333;">
 
 <table width="100%" bgcolor="#f0f2ea" cellpadding="0" cellspacing="0" border="0">
     <tbody>
@@ -42,22 +42,15 @@
                                                         <tr valign="top">
                                                             <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
                                                             <td>
-
+                                                                <img src="{{asset('img/produtos1.png')}}" height="200px" width="350px">
                                                                 <p style="font-size:14px; line-height:22px; font-weight:bold; color:#333333; margin:0 0 5px;"><a href="https://renegadegym.biz/wp/Loja/" style="color:#dc3545; text-decoration:none;">Entre na nossa Loja e veja os produtos que vendemos</a></p>
                                                                 <p style="margin:0 0 35px; font-size:12px; line-height:18px; color:#333333;">Vendemos todo o tipo de produtos, desde material de musculação, roupa, acessórios entre outros</p>
                                                             </td>
                                                             <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
                                                             <td>
+                                                                <img src="{{asset('img/aventura.png')}}">
                                                                 <p style="font-size:14px; line-height:22px; font-weight:bold; color:#333333; margin:0 0 5px;"><a href="http://renegadegym.test/" style="color:#dc3545; text-decoration:none;">Junte-se a nós, venha treinar no nosso espaço de forma grátis</a></p>
                                                                 <p style="margin:0 0 35px; font-size:12px; line-height:18px; color:#333333;">Temos um espaço para musculação, crossfit, Cardio e Aulas de grupo, não hexite em participar</p>
-                                                            </td>
-                                                            <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                                        </tr>
-                                                        <tr valign="top">
-                                                            <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                                            <td colspan="3">
-                                                                <p style="font-size:14px; line-height:22px; font-weight:bold; color:#333333; margin:0 0 5px;"><a href="http://pixelbuddha.net/" style="color:#dc3545; text-decoration:none;">What is it like to be young and free minded in North Korea</a></p>
-                                                                <p style="margin:0 0 35px; font-size:12px; line-height:18px; color:#333333;">Fusce amet ligula ornare tempus vulputate ipsum semper. Praesent non lorem odio. Fusce sed dui massa, eu viverra erat.</p>
                                                             </td>
                                                             <td width="30"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
                                                         </tr>
@@ -81,42 +74,10 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- end content -->
-                                            </td>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-right-top.png) no-repeat 0 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td width="4" style="background:url(http://demo.artlance.ru/email/shadow-left-center.png) repeat-y 100% 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td width="4" style="background:url(http://demo.artlance.ru/email/shadow-right-center.png) repeat-y 0 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-left-bottom.png) repeat-y 100% 100%;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-right-bottom.png) repeat-y 0 100%;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-bottom-corner-left.png) no-repeat 100% 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-bottom-left.png) no-repeat 100% 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td height="4" style="background:url(http://demo.artlance.ru/email/shadow-bottom-center.png) repeat-x 0 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-bottom-right.png) no-repeat 0 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                            <td width="4" height="4" style="background:url(http://demo.artlance.ru/email/shadow-bottom-corner-right.png) no-repeat 0 0;"><p style="margin:0; font-size:1px; line-height:1px;">&nbsp;</p></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- end wrapper-->
-                                <p style="margin:0; padding:34px 0 0; text-align:center; font-size:11px; line-height:13px; color:#333333;">
-                                    Copyright By Staff Renegade Gym<a href="http://pixelbuddha.net/" style="color:#333333; text-decoration:underline;">here</a>
+                                                <br><br>
+                                <p style="margin-top: 20px; padding:50px 0 0; text-align:center; font-size:11px; line-height:30px; color:white; background-color: #212529;">
+                                    Copyright By Staff Renegade Gym <a href="http://renegadegym.test/" style="color:white; background-color: #212529; text-decoration:underline;"> here</a>
                                 </p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- end main block -->
-            </td>
-        </tr>
-    </tbody>
-</table>
+
 </body>
 </html>

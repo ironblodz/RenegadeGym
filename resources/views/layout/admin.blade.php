@@ -57,6 +57,7 @@
 
 
         <!-- Nav Item - Pages Collapse Menu -->
+        @if(Auth::user()->role == "A")
         <li class="nav-item">
           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsers" aria-expanded="true"
           aria-controls="collapseUsers">
@@ -71,6 +72,7 @@
           </div>
         </div>
       </li>
+      @endif
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePosts" aria-expanded="true"

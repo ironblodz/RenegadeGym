@@ -28,8 +28,8 @@ class ContactInfo extends Mailable
      */
     public function build(Request $request)
     {
-        return $this->from('example@example.com')
-        ->subject('Your order has shipped')
+        return $this->from('iamjoaoperes19@outlook.pt')
+        ->subject('A sua mensagem foi enviada')
         ->view('emails.contact');
     }
 }

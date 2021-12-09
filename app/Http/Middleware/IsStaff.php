@@ -17,7 +17,7 @@ class IsStaff
      */
     public function handle(Request $request, Closure $next)
     {
-        if ($request->user() && ($request->user()->role == 'P' || $request->user()->role == 'N'))
+        if ($request->user() && ($request->user()->role == 'P' || $request->user()->role == 'N' || $request->user()->role == 'A'))
             return $next($request);
         //return redirect()->route('403');
         throw new AccessDeniedHttpException('Unauthorized.');
