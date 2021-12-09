@@ -97,8 +97,8 @@
       </a>
       <div id="collapseBlogs" class="collapse" aria-labelledby="headingBlogs" data-parent="#accordionSidebar">
         <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('blogs.index')}}"><i class="fas fa-folder-plus"></i></i>Ver Artigos</a>
-          <a class="collapse-item" href="{{route('blogs.create')}}"><i class="fas fa-blog"></i>Adicionar Artigo</a>
+          <a class="collapse-item" href="{{route('posts.index')}}"><i class="fas fa-folder-plus"></i></i>Ver Artigos</a>
+          <a class="collapse-item" href="{{route('posts.create')}}"><i class="fas fa-blog"></i>Adicionar Artigo</a>
         </div>
       </div>
     </li>

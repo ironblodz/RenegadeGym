@@ -41,17 +41,22 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $fields = $request->validated();
-        $post = new Post;
-        $post->fill($fields);
-        $post->user_id = auth()->user()->id;
-        $post->category_id = $fields["category"];
-        if ($request->hasFile('image')) {
-            $img_path = $request->file('image')->store('public/posts_images');
-            $post->image = basename($img_path);
-        }
-        $post->save();
-        return redirect()->route('posts.index')->with('success', 'Post successfully created');
+        $fields=$request->validated();
+        $blog=new Post();
+        $blog->fill($fields);
+        $blog->save();
+        return redirect()->route('posts.index')->with('success', 'Post created successfully');
+        #$fields = $request->validated();
+        #$post = new Post;
+        #$post->fill($fields);
+        #$post->user_id = auth()->user()->id;
+        #$post->category_id = $fields["category"];
+        #if ($request->hasFile('image')) {
+        #    $img_path = $request->file('image')->store('public/posts_images');
+        #    $post->image = basename($img_path);
+        #}
+        #$post->save();
+        #return redirect()->route('posts.index')->with('success', 'Post successfully created');
     }
 
     /**
@@ -62,7 +67,7 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        return view('posts.show', compact('post'));
+        return view('posts.edit', compact('post'));
     }
 
     /**
@@ -73,8 +78,8 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        $categories = Category::orderBy("name")->get();
-        return view('posts.edit', compact('categories', 'post'));
+        #$categories = Category::orderBy("name")->get();
+        #return view('posts.edit', compact('categories', 'post'));
     }
 
     /**
@@ -86,18 +91,18 @@ class PostController extends Controller
      */
     public function update(PostRequest $request, Post $post)
     {
-        $fields = $request->validated();
-        $post->fill($fields);
-        if ($request->hasFile('image')) {
-            if (!empty($post->image)) {
-                Storage::disk('public')->delete('posts_images/' . $post->image);
-            }
-            $img_path = $request->file('image')->store('public/posts_images');
-            $post->image = basename($img_path);
-        }
-        $post->category_id = $fields['category'];
-        $post->save();
-        return redirect()->route('posts.index')->with('success', 'Post successfully updated');
+        #$fields = $request->validated();
+        #$post->fill($fields);
+        #if ($request->hasFile('image')) {
+        #    if (!empty($post->image)) {
+        #        Storage::disk('public')->delete('posts_images/' . $post->image);
+        #    }
+        #    $img_path = $request->file('image')->store('public/posts_images');
+         #   $post->image = basename($img_path);
+        #}
+        #$post->category_id = $fields['category'];
+        #$post->save();
+        #return redirect()->route('posts.index')->with('success', 'Post successfully updated');
     }
 
     /**
@@ -108,17 +113,19 @@ class PostController extends Controller
      */
     public function destroy(Post $post)
     {
-        if (!empty($post->image)) {
-            Storage::disk('public')->delete('posts_images/' . $post->image);
-        }
-        $post->delete();
-        return redirect()->route('posts.index')->with('success', 'Post successfully deleted');
+        
+
+        #if (!empty($post->image)) {
+        #    Storage::disk('public')->delete('posts_images/' . $post->image);
+        #}
+        #$post->delete();
+        #return redirect()->route('posts.index')->with('success', 'Post successfully deleted');
     }
 
     public function posts()
     {
-        $posts = Post::orderBy("date", "desc")->paginate('10');
-        return view('posts', compact('posts'))->with('menuOption', 'P');
+        #$posts = Post::orderBy("date", "desc")->paginate('10');
+        #return view('posts', compact('posts'))->with('menuOption', 'P');
     }
 
 }
