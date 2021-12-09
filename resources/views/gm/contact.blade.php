@@ -49,7 +49,7 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form method="POST" action="#" class="contact100-form validate-form">
+			<form method="post" action="{{route('gm.contact')}}" class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Fala connosco!
 				</span>
@@ -93,7 +93,7 @@
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button class="contact100-form-btn">
+					<button type="submit" class="contact100-form-btn">
 						<span>
 							Enviar
 							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>

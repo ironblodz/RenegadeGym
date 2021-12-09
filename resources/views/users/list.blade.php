@@ -39,24 +39,24 @@
 						</div>
 
                         <div class="form-group">
-							<label for="inputContact">Contact</label>
+							<label for="inputContact">Contacto</label>
 							<input type="number" class="form-control" name="contact" id="contact"
 							value="{{request()->get('contact')}}" />
 						</div>
 
                         <div class="form-group">
-							<label for="inputGender">Gender</label>
+							<label for="inputGender">Género</label>
 							<input type="text" class="form-control" name="gender" id="gender"
 							value="{{request()->get('gender')}}" />
 						</div>
 
                         <div class="form-group">
-							<label for="inputBirthdate">Birthday</label>
+							<label for="inputBirthdate">Data de Nascimento</label>
 							<input type="text" class="form-control" name="birthdate" id="birthdate"
 							value="{{request()->get('birthdate')}}" />
 						</div>
 
-						<label for="inputRole">Role</label>
+						<label for="inputRole">Tipo</label>
 						<select name="role" id="inputRole" class="form-control">
 							<option value="">All</option>
 							<option {{(request()->get('role')=='C')?"selected":""}} value="C">Cliente</option>

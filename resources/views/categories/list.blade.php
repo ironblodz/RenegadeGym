@@ -27,7 +27,7 @@
             @foreach($categories as $category)
             <tr>
               <td>{{$category->name}}</td>
-              <td>{{$category->description}}</td>
+              <td>{{$category->content}}</td>
               <td nowrap>
                 <a class="btn btn-xs btn-danger btn-p" href="{{route('categories.show',$category)}}"><i class="fas fa-eye fa-xs"></i></a>
                 <a class="btn btn-xs btn-danger btn-p" href="{{route('categories.edit',$category)}}"><i class="fas fa-pen fa-xs"></i></a>
@@ -35,17 +35,6 @@
                   @csrf
                   @method('DELETE')
                 <button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
-                </form>
-              </td>
-            </tr>
-            <tr>
-              <td>Eventos </td>
-              <td>Categoria sobre eventos</td>
-              <td nowrap>
-                <a class="btn btn-xs btn-danger btn-p" href="#"><i class="fas fa-eye fa-xs"></i></a>
-                <a class="btn btn-xs btn-danger btn-p" href="#"><i class="fas fa-pen fa-xs"></i></a>
-                <form method="POST" action="#" role="form" class="inline">
-                  <button type="submit" class="btn btn-xs btn-danger btn-p"><i class="fas fa-trash fa-xs"></i></button>
                 </form>
               </td>
             </tr>

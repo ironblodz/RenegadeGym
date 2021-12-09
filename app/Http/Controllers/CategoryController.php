@@ -45,7 +45,7 @@ class CategoryController extends Controller
         $category->fill($fields);
         $category->save();
         return redirect()->route('categories.index')->with('success',
-         'Category successfully created');
+         'Categoria criada com sucesso');
     }
 
     /**
@@ -82,7 +82,7 @@ class CategoryController extends Controller
         $fields=$request->validated();
         $category->fill($fields);
         $category->save();
-        return redirect()->route('categories.index')->with('sucess', 'Category successfully updated');
+        return redirect()->route('categories.index')->with('sucess', 'Categoria atualizada com sucesso');
     }
 
     /**
@@ -98,6 +98,6 @@ class CategoryController extends Controller
                ['delete'=>'Category has related posts'] );
        }
        $category->delete();
-       return redirect()->route('categories.index')->with('success', 'Category successfully deleted');
+       return redirect()->route('categories.index')->with('success', 'Categoria eliminada com sucesso');
    }
 }
