@@ -28,6 +28,7 @@ Route::get('/', [PageController::class,'index'])->name('gm.index');
 Route::get('/blog', [PageController::class,'blog'])->name('gm.blog');
 
 Route::get('/contact', [PageController::class,'contact'])->name('gm.contact');
+Route::post('/contact', [PageController::class,'contactSendEmail'])->name('gm.contact.send');
 
 Route::get('/login', [PageController::class,'login'])->name('login');
 

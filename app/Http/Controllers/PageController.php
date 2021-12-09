@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ContactInfo;
 
 class PageController extends Controller
 {
@@ -31,6 +33,12 @@ class PageController extends Controller
 
     public function register(){
         return view ('register');
+    }
+
+
+
+    public function contactSendEmail(Request $request){
+        Mail::to($request->email)->send(new ContactInfo($request));
     }
 
 

@@ -49,7 +49,8 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 
-			<form method="post" action="{{route('gm.contact')}}" class="contact100-form validate-form">
+			<form method="post" action="{{route('gm.contact.send')}}" class="contact100-form validate-form">
+                @csrf
 				<span class="contact100-form-title">
 					Fala connosco!
 				</span>
