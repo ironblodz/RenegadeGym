@@ -7,13 +7,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-<<<<<<< HEAD
+
     <title>Sobre Nós</title>
-    <link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />
-=======
-    <title>The Town HTML CSS Template</title>
+
+
+    <title>Sobre nos</title>
     <!--<link rel="stylesheet" href="fontawesome-5.5/css/all.min.css" />-->
->>>>>>> 60b1f1249f44984d2edf85ea1c26750bd4d0f551
+
     <link rel="stylesheet" href="{{asset('slick/slick.css')}}">
     <link rel="stylesheet" href="{{asset('slick/slick-theme.css')}}">
     <link rel="stylesheet" href="{{asset('magnific-popup/magnific-popup.css')}}">
@@ -35,16 +35,11 @@
               Somos uma instituição sem fins lucrativos
               <br> Mais informações, abaixo..
             </p>
-            <button type="button" class="btn see-more-btn mt-4">Ver mais</button>
+
         </div>
       </div>
 
-  
-      <!--<div class="tm-next tm-intro-next">
-        <a href="#introduction" class="text-center tm-down-arrow-link">
-          <i class="fas fa-3x fa-caret-down tm-down-arrow"></i>
-        </a>
-      </div>-->
+
     </section>
 
     <section id="introduction" class="tm-section-pad-top">
