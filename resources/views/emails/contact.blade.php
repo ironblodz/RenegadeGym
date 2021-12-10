@@ -72,11 +72,7 @@
                                                         </tr>
                                                     </tbody>
                                                 </table>
-                                                <!-- end content -->
-                                                <br><br>
-                                <p style="margin-top: 20px; padding:50px 0 0; text-align:center; font-size:11px; line-height:30px; color:white; background-color: #212529;">
-                                    Copyright By Staff Renegade Gym <a href="http://renegadegym.test/" style="color:white; background-color: #212529; text-decoration:underline;"> here</a>
-                                </p>
+                                                <br>
 
 </body>
 </html>

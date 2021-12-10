@@ -26,8 +26,9 @@ p {
     text-align: right;
 }
 .nav-link {
-    color: rgb(48, 48, 48) !important;
+    color: black !important;
     font-size: 18px !important;
+    font-weight: bold;
 }
 
 .navbar-brand {

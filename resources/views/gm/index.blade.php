@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="col mb-5 mb-md-0 h-100">
                                     <div class="feature bg-danger bg-gradient text-white rounded-3 mb-3"><i class="bi bi-minecart-loaded"></i></div>
-                                    <h2 class="h5">Produtos próprios na nossa loja</h2>
+                                    <h2 class="h5">Produtos próprios</h2>
                                     <p class="mb-0">Todos os produtos da nossa loja são exclusivos e limitados.</p>
                                 </div>
                                 <div class="col h-100">
