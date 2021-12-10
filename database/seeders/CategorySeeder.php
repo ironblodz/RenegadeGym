@@ -15,9 +15,12 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
+        for($categories=0;$categories<=10;$categories++){
        DB::table('categories')->insert([
            'name'=> Str::random(10),
            'content' => Str::random(10).'@gmail.com',
        ]);
+    }
+
     }
 }

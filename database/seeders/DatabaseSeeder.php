@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -23,6 +24,8 @@ class DatabaseSeeder extends Seeder
             $c -> name= $um_nome;
             $c->save();
         }
+
+        $this->call(CategorySeeder::class);
 
         #for($posts=0;$posts<=10;$posts++) {
          #   DB::table('posts')->insert([
