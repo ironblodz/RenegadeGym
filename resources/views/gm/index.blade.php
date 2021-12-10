@@ -35,10 +35,10 @@
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
                             <div class="my-5 text-center text-xl-start">
                                 <h1 class="display-5 fw-bolder text-white mb-2">Bem vindo ao nosso website</h1>
-                                <p class="lead fw-normal text-white-50 mb-4">Aqui poderas encontrar diversos planos de treino bem como acompanhamento e vários produtos na nossa loja.</p>
+                                <p class="lead fw-normal text-white mb-4">Aqui poderas encontrar diversos planos de treino bem como acompanhamento e vários produtos na nossa loja.</p>
                                 <div class="gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
                                     <a class="btn btn-danger btn-lg px-4 me-sm-3" href="https://renegadegym.biz/wp/Loja" target="_blank">Loja</a>
-                                    <a class="btn btn-outline-light btn-lg px-4" href="#!">Planos de treino</a>
+                                    <a class="btn btn-danger btn-lg px-4" href="{{route('gm.contact')}}">Mais Informações</a>
                                 </div>
                             </div>
                         </div>
