@@ -81,7 +81,10 @@
                 </div>
             </section>4
             <!-- Testimonial section-->
-            <div class="py-5 bg-dark">
+            <div  style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom;">
                 <div class="container px-5 my-5">
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-10 col-xl-7">
