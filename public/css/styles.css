@@ -28,7 +28,7 @@ p {
 .nav-link {
     color: black !important;
     font-size: 18px !important;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .navbar-brand {
