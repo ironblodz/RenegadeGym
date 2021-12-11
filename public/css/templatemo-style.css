@@ -145,9 +145,11 @@ a:focus {
 #hero {
     background-image: url(../img/monkey2.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     min-height: 375px;
     position: relative;
+
 }
 
 @media (min-height: 830px) {
