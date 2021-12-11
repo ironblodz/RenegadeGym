@@ -29,7 +29,8 @@
             <!-- Header-->
             <header class="fundo_personalizado" style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
             background-size: cover;
-            background-repeat: no-repeat;">
+            background-repeat: no-repeat;
+            background-position: center;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -127,7 +128,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-
+                                            <img class="rounded-circle me-3" src="https://themusclemedics.com/wp-content/uploads/2018/04/Circle-Profile-PNG.png" height="40px" width="40px">
                                             <div class="small">
                                                 <div class="fw-bold">João Peres</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
@@ -148,7 +149,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-
+                                            <img class="rounded-circle me-3" src="https://www.seekpng.com/png/full/219-2190977_circle-profile-no-background-png-120dpi-page001-gentleman.png" height="40px" width="40px">
                                             <div class="small">
                                                 <div class="fw-bold">Rui Costa</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot;</div>
@@ -169,7 +170,7 @@
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
                                     <div class="d-flex align-items-end justify-content-between">
                                         <div class="d-flex align-items-center">
-
+                                            <img class="rounded-circle me-3" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Rubio_Circle.png" height="40px" width="40px">
                                             <div class="small">
                                                 <div class="fw-bold">Francisco Xavier</div>
                                                 <div class="text-muted">Novembro 12, 2021 &middot; </div>
