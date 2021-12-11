@@ -28,7 +28,7 @@
                 <a class="nav-link" href="https://renegadegym.biz/wp/Loja" target="_blank">Loja</a>
               </li>
             <li class="nav-item dropdown d-inline-flex @if ($menuOption=='F') active @endif">
-              <a class="nav-link" href="{{route('login')}}"><img class="account-icon" src="img/account-icon.jpg" alt=""></a>
+              <a class="nav-link" href="{{route('login')}}"><i class="fa fa-user" id="icon-userlogin" aria-hidden="true"></i></a>
                 @auth
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ Auth::user()->name }}
