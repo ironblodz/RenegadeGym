@@ -8,7 +8,7 @@
     <main class="flex-shrink-0 m-5">
             <!-- Section -->
             <section class="py-0">
-                <div class="container px-5">
+                <div class="container-m px-5">
                     <div class="card border-0 shadow rounded-3 overflow-hidden">
                         <div class="card-body p-0">
                             <div class="row gx-0">
@@ -30,7 +30,7 @@
             </section>
             <!-- Blog preview section-->
             <section class="pt-0 pb-5">
-                <div class="container px-5 my-5">
+                <div class="container-m px-5 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
