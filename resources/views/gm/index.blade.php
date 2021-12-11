@@ -29,7 +29,8 @@
             <!-- Header-->
             <header class="fundo_personalizado" style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
             background-size: cover;
-            background-repeat: no-repeat;">
+            background-repeat: no-repeat;
+            background-position: center;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
