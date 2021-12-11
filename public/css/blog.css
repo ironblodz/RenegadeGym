@@ -18,6 +18,9 @@
   background: #dc3545;
   color: #fff;
 }
+.container-m{
+  margin: 0 200px;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
