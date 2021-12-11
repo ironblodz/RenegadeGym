@@ -5,7 +5,7 @@
 
 <div class="form-group">
     <label for="inputDescription">Descrição</label>
-    <textarea class="form-control" name="content" id="inputDescription">{{old('description',$post->description)}}</textarea>
+    <textarea class="form-control" name="content" id="inputDescription">{{old('content',$post->content)}}</textarea>
 </div>
 
 <div class="form-group">
@@ -19,7 +19,7 @@
     <label for="inputCategory">Categoria</label>
     <select name="category" id="inputCategory" class="form-control">
        @foreach ($categories as $category)
- <option {{ old('$category', $post->category_id) == $category->id ? "selected":""}}
+ <option {{ old('category_id', $post->category_id) == $category->id ? "selected":""}}
  value="{{$category->id}}">{{$category->name}}</option>
  @endforeach
     </select>
