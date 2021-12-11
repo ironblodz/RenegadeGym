@@ -6,30 +6,8 @@
     <link rel="stylesheet" href="{{asset('css/blog.css')}}">
 
     <main class="flex-shrink-0 m-5">
-            <!-- Section -->
-            <section class="py-0">
-                <div class="container-m px-5">
-                    <div class="card border-0 shadow rounded-3 overflow-hidden">
-                        <div class="card-body p-0">
-                            <div class="row gx-0">
-                                <div class="col-lg-6 col-xl-5 py-lg-5">
-                                    <div class="p-4 p-md-5">
-                                        <div class="badge bg-gradient rounded-pill mb-2">News</div>
-                                        <div class="h2 fw-bolder">Alimentação Vs Treino</div>
-                                        <p>Hoje no dia Mundial da Alimentação vamos analisar o impacto da alimentação na atividade física e acredite é bastante!</p>
-                                        <a class="stretched-link text-decoration-none" href="#!">
-                                            <button type="button" id="btn-blogg" class="btn p-2 rounded" id="button-blog">Ler mais</button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-xl-7"><div class="bg-featured-blog" style="background-image: url('assets/pexels-marcus-aurelius-4063691.jpg')"></div></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- Blog preview section-->
-            <section class="pt-0 pb-5">
+            <section class="pt-0 pb-0">
                 <div class="container-m px-5 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5">
