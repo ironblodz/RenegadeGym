@@ -35,6 +35,10 @@ class PageController extends Controller
         return view ('register');
     }
 
+    public function faq(){
+        return view ('gm.faq')->with('menuOption','G');
+    }
+
 
 
     public function contactSendEmail(Request $request){

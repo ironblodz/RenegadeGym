@@ -24,8 +24,9 @@
             <li class="nav-item @if ($menuOption=='E') active @endif">
               <a class="nav-link" href="{{route('gm.contact')}}">Contacto</a>
             </li>
+
             <li>
-                <a class="nav-link" href="https://renegadegym.biz/wp/Loja" target="_blank">Loja</a>
+                <a class="nav-link" href="https://renegadegym.biz/wp/" target="_blank">Loja</a>
               </li>
             <li class="nav-item dropdown d-inline-flex @if ($menuOption=='F') active @endif">
               <a class="nav-link" href="{{route('login')}}"><i class="fa fa-user" id="icon-userlogin" aria-hidden="true"></i></a>
