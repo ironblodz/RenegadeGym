@@ -8,7 +8,7 @@
     <main class="flex-shrink-0 m-5">
             <!-- Blog preview section-->
             <section class="pt-0 pb-0">
-                <div class="container-m px-5 my-5">
+                <div class="container-m px-0 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
