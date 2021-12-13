@@ -39,7 +39,6 @@
                 <td>{{$post->title}}</td>
                 <td>{{$post->content}}</td>
                 <td> @foreach ($categories as $category)
-                  
                   @if($category->id==$post->category_id) {{ $category->name }} @endif
                   @endforeach
                 </td>
