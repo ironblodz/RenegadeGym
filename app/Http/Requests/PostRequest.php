@@ -25,8 +25,10 @@ class PostRequest extends FormRequest
     {
         return [
             "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            "content" => 'required'
+            "content" => 'required',
+            "category" => 'required',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            
         ];
     }
     public function messages()

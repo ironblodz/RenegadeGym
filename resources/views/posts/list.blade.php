@@ -38,7 +38,11 @@
                 @endif
                 <td>{{$post->title}}</td>
                 <td>{{$post->content}}</td>
-                <td>{{$post->category_id}}</td>
+                <td> @foreach ($categories as $category)
+                  
+                  @if($category->id==$post->category_id) {{ $category->name }} @endif
+                  @endforeach
+                </td>
 
                 <td nowrap>
                   <a class="btn btn-xs btn-danger btn-p" href="{{route('posts.show',$post)}}"><i class="fas fa-eye fa-xs"></i></a>
