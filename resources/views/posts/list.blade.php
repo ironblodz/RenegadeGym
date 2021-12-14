@@ -30,12 +30,12 @@
             <tr>
               <td>
                 @if ($post->image)
-                <img src="{{asset('storage/posts_images/'.$post->image)}}"
-                class="img-post" alt="Post image">
-                Ficha 4 – Laravel Página 25
+                <img src="{{ Storage::disk('public')->url('posts_images/').$post->image }}" alt="Imagem de {{ $post->title }}">
+              
                 @else
                 <img src="{{asset('img/no-image.png')}}" class="img-post" alt="Post image">
                 @endif
+                </td>
                 <td>{{$post->title}}</td>
                 <td>{{$post->content}}</td>
                 <td> @foreach ($categories as $category)

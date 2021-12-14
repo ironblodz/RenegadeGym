@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactInfo;
+use App\Models\Post;
 
 class PageController extends Controller
 {
@@ -21,7 +22,8 @@ class PageController extends Controller
     }
 
     public function blog(){
-        return view ('gm.blog')->with('menuOption', 'D');
+        $posts = Post::all();
+        return view ('gm.blog', compact('posts'))->with('menuOption', 'D');
     }
 
     public function contact(){
