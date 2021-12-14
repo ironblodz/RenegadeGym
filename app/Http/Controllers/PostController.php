@@ -49,7 +49,6 @@ class PostController extends Controller
         $blog->fill($fields);
         if ($request->hasFile('image')) {
             $image = $request->file('image')->store('public/posts_images');
-            dd($request);
             $blog->image = basename($image);
         }
         $blog->category_id = $fields["category"];
