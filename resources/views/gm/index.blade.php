@@ -111,7 +111,7 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
                             <div class="text-center">
-                                <h1 class="fw-bolder">Destaques do Blog</h1>
+                                <h1 class="fw-bolder">Destaques do Blog huun7hu</h1>
                                 <p class="lead fw-normal text-muted mb-5">Aqui encontras alguns posts do nosso blog.</p>
                             </div>
                         </div>
@@ -122,7 +122,7 @@
                                 <img class="card-img-top" src="{{asset('img/2.jpg')}}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-danger bg-gradient mb-2">Abdominais</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Concurso de abdominais</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="http://localhost/RenegadeGym/public/blog"><h5 class="card-title mb-3">Concurso de abdominais</h5></a>
                                     <p class="card-text mb-0">Este concurso é aberto a todos os sócios, o vencedor terá um prémio monetário</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -143,7 +143,7 @@
                                 <img class="card-img-top" src="{{asset('img/3.jpg')}}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-danger bg-gradient mb-2">Musculação</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Modalidades</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="http://localhost/RenegadeGym/public/blog"><h5 class="card-title mb-3">Modalidades</h5></a>
                                     <p class="card-text mb-0"> Oferecemos todos os tipos de modalidades, desde a musculação a cardio</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
@@ -164,7 +164,7 @@
                                 <img class="card-img-top" src="{{asset('img/grupo.jfif')}}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-danger bg-gradient mb-2">Running</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="#!"><h5 class="card-title mb-3">Aulas de grupo</h5></a>
+                                    <a class="text-decoration-none link-dark stretched-link" href="http://localhost/RenegadeGym/public/blog"><h5 class="card-title mb-3">Aulas de grupo</h5></a>
                                     <p class="card-text mb-0">Disponibilizamos uma vasta variedade de aulas de grupo, é só escolher e fazer a sua reserva</p>
                                 </div>
                                 <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
