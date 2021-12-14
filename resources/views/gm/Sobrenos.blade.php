@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="{{asset('magnific-popup/magnific-popup.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/templatemo-style.css')}}" />
+    <link rel="stylesheet" href="{{asset('css/our-team.css')}}" />
 
   </head>
   <body>
@@ -64,7 +65,7 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
         </div>
 
         <div class="row tm-section-pad-top">
-          <div class="col-lg-4">
+          <div class="col-lg-4 mb-5">
           <i class="fa fa-home d-flex pb-3 justify-content-center" id="iconssss" aria-hidden="true"></i>
             <h4 class="text-center text-danger mb-4">Ginásios</h4>
             <p>
@@ -92,6 +93,19 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
 
 
     </section>
+
+    <div class="contaiiner mt-5">
+      <h1 class="heading d-flex justify-content-center"><span>meet</span>Our Team</h1>
+
+      <div class="profiles">
+        <div class="profile">
+          <img src="img/565.jpg" class="profile-img">
+          <h3 class="user-name d-flex justify-content-center">Pedro</h3>
+          <h5 class="d-flex justify-content-center">Developer</h5>
+        </div>
+      </div>
+    </div>
+
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
     <script src="magnific-popup/jquery.magnific-popup.min.js"></script>
