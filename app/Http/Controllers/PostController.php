@@ -43,23 +43,18 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
+        
         $fields=$request->validated();
         $blog=new Post();
         $blog->fill($fields);
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('public/posts_images');
+            dd($request);
+            $blog->image = basename($image);
+        }
         $blog->category_id = $fields["category"];
         $blog->save();
         return redirect()->route('posts.index')->with('success', 'Post created successfully');
-        #$fields = $request->validated();
-        #$post = new Post;
-        #$post->fill($fields);
-        #$post->user_id = auth()->user()->id;
-        #$post->category_id = $fields["category"];
-        #if ($request->hasFile('image')) {
-        #    $img_path = $request->file('image')->store('public/posts_images');
-        #    $post->image = basename($img_path);
-        #}
-        #$post->save();
-        #return redirect()->route('posts.index')->with('success', 'Post successfully created');
     }
 
     /**
@@ -98,6 +93,10 @@ class PostController extends Controller
     {
         $fields=$request->validated();
         $post->fill($fields);
+        if ($request->hasFile('image')) {
+            $image = $request->file('image')->store('public/posts_images');
+            $blog->image = basename($image);
+        }
         $post->save();
         return redirect()->route('posts.index')->with('success', 'Post successfully updated');
 
