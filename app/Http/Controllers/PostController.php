@@ -56,7 +56,7 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with('success', 'Post created successfully');
     }
 
-    /**
+    /*****
      * Display the specified resource.
      *
      * @param  \App\Models\Post  $post
