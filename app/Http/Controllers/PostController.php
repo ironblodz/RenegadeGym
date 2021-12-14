@@ -43,7 +43,16 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $fields=$request->validated();
+
+        $fields=$request->validated([
+            'image' => 'required|mimes:jpg,png,jpeg|max:5048'
+        ]);
+
+        $newImageName = time() . '-' . $request->name . '-' .
+        $request->image->extension();
+
+        $request->image->move(public_path('img'), $newImageName);
+
         $blog=new Post();
         $blog->fill($fields);
         $blog->category_id = $fields["category"];
