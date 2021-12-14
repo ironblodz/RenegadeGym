@@ -43,7 +43,7 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        
+
         $fields=$request->validated();
         $blog=new Post();
         $blog->fill($fields);
@@ -95,7 +95,7 @@ class PostController extends Controller
         $post->fill($fields);
         if ($request->hasFile('image')) {
             $image = $request->file('image')->store('public/posts_images');
-            $blog->image = basename($image);
+            $post->image = basename($image);
         }
         $post->save();
         return redirect()->route('posts.index')->with('success', 'Post successfully updated');

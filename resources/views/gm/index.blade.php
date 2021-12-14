@@ -111,7 +111,7 @@
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
                             <div class="text-center">
-                                <h1 class="fw-bolder">Destaques do Blog huun7hu</h1>
+                                <h1 class="fw-bolder">Destaques do Blog</h1>
                                 <p class="lead fw-normal text-muted mb-5">Aqui encontras alguns posts do nosso blog.</p>
                             </div>
                         </div>
