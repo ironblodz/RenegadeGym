@@ -9,7 +9,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" >
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active @if ($menuOption=='I') active @endif" >
+            <li class="nav-item @if ($menuOption=='I') active @endif" >
               <a class="nav-link" href="{{route('gm.index')}}">Home</a>
             </li>
             <li class="nav-item @if ($menuOption=='B') active @endif">
@@ -28,8 +28,8 @@
             <li>
                 <a class="nav-link" href="https://renegadegym.biz/wp/" target="_blank">Loja</a>
               </li>
-            <li class="nav-item dropdown d-inline-flex @if ($menuOption=='F') active @endif">
-              <a class="nav-link" href="{{route('login')}}"><i class="fa fa-user" id="icon-userlogin" aria-hidden="true"></i></a>
+            <li class="nav-item dropdown d-flex justify-content-end @if ($menuOption=='F') active @endif">
+              <a class="nav-link" href="{{route('login')}}"><i class="fa fa-user mr-1" id="icon-userlogin" aria-hidden="true"></i></a>
                 @auth
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         {{ Auth::user()->name }}

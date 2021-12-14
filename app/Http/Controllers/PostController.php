@@ -18,8 +18,9 @@ class PostController extends Controller
      */
     public function index()
     {
+        $categories = Category::orderBy("name")->get();
         $posts = Post::all();
-        return view('posts.list', compact('posts'));
+        return view('posts.list', compact('categories', 'posts'));
     }
 
     /**
@@ -42,9 +43,19 @@ class PostController extends Controller
      */
     public function store(PostRequest $request)
     {
-        $fields=$request->validated();
+
+        $fields=$request->validated([
+            'image' => 'required|mimes:jpg,png,jpeg|max:5048'
+        ]);
+
+        $newImageName = time() . '-' . $request->name . '-' .
+        $request->image->extension();
+
+        $request->image->move(public_path('img'), $newImageName);
+
         $blog=new Post();
         $blog->fill($fields);
+        $blog->category_id = $fields["category"];
         $blog->save();
         return redirect()->route('posts.index')->with('success', 'Post created successfully');
         #$fields = $request->validated();
@@ -79,7 +90,8 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
-        return view('posts.edit', compact('post'));
+        $categories = Category::orderBy("name")->get();
+        return view('posts.edit', compact('categories','post'));
         #$categories = Category::orderBy("name")->get();
         #return view('posts.edit', compact('categories', 'post'));
     }
@@ -94,8 +106,8 @@ class PostController extends Controller
     public function update(UpdatePostRequest $request, Post $post)
     {
         $fields=$request->validated();
-        $posts->fill($fields);
-        $posts->save();
+        $post->fill($fields);
+        $post->save();
         return redirect()->route('posts.index')->with('success', 'Post successfully updated');
 
         #$fields = $request->validated();

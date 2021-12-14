@@ -19,7 +19,7 @@
   color: #fff;
 }
 .container-m{
-  margin: 0 10vh;
+  margin: 0 20vh;
 }
 @media only screen and (max-width: 1400px) {
   .container-m {

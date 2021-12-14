@@ -9,6 +9,9 @@
 p {
     font-weight: 300;
 }
+.active{
+  color: red;
+}
 /* --------- NAVBAR --------- */
 .navbar {
     /*background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
