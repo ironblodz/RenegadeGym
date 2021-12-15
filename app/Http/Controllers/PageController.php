@@ -10,7 +10,8 @@ use App\Models\Post;
 class PageController extends Controller
 {
     public function index(){
-        return view('gm.index')->with('menuOption', 'I');
+        $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
+        return view('gm.index', compact('posts'))->with('menuOption', 'I');
     }
 
     public function Sobrenos(){
