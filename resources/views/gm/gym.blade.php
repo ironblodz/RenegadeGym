@@ -7,9 +7,9 @@
 
 <link rel="stylesheet" href="{{asset('css/clubcss2.css')}}" media="screen">
 <link rel="stylesheet" href="{{asset('css/clubcss.css')}}" media="screen">
-<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>  
-    
-    
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+
 
     <section class="u-align-left u-clearfix u-white u-section-1" id="sec-cfca">
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
@@ -24,22 +24,9 @@
       <div class="u-align-left u-clearfix u-sheet u-sheet-1">
         <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-1">Localizações</h1>
         <h2 class="u-custom-font u-font-roboto-condensed u-subtitle u-text u-text-2">Onde estamos localizados</h2>
-        <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="{{asset('img/Mapa-geografico-representando-os-distritos-de-Portugal-Os-distritos-dos-quais-existem.png')}}" alt="" data-image-width="625" data-image-height="958">
-        <img class="u-image u-image-default u-preserve-proportions u-image-2" src="{{asset('img/home-5-32.png')}}" alt="" data-image-width="32" data-image-height="32">
-        <img class="u-image u-image-default u-preserve-proportions u-image-3" src="{{asset('img/home-5-32.png')}}" alt="" data-image-width="32" data-image-height="32">
-        <img class="u-image u-image-default u-preserve-proportions u-image-4" src="{{asset('img/home-5-32.png')}}" alt="" data-image-width="32" data-image-height="32">
-        <img class="u-image u-image-default u-preserve-proportions u-image-5" src="{{asset('img/home-5-32.png')}}" alt="" data-image-width="32" data-image-height="32">
-        <img class="u-image u-image-default u-preserve-proportions u-image-6" src="{{asset('img/home-5-256.png')}}" alt="" data-image-width="256" data-image-height="256">
-        <img class="u-image u-image-default u-preserve-proportions u-image-7" src="{{asset('img/home-5-256.png')}}" alt="" data-image-width="256" data-image-height="256">
-        <img class="u-image u-image-default u-preserve-proportions u-image-8" src="{{asset('img/home-5-256.png')}}" alt="" data-image-width="256" data-image-height="256">
-        <img class="u-image u-image-default u-preserve-proportions u-image-9" src="{{asset('img/home-5-256.png')}}" alt="" data-image-width="256" data-image-height="256">
-        <img class="u-image u-image-default u-preserve-proportions u-image-10" src="{{asset('img/home-5-256.png')}}" alt="" data-image-width="256" data-image-height="256">
-        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-3">Porto</h1>
-        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-4">Coimbra</h1>
-        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-5">Leiria</h1>
-        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-6">Lisboa</h1>
-        <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-7">Faro</h1>
-        <img class="u-image u-image-default u-preserve-proportions u-image-11" src="{{asset('img/home-5-32.png')}}" alt="" data-image-width="32" data-image-height="32">
+        @foreach($gyms as $gym)
+            <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-3">{{ $gym->title }}</h1>
+        @endforeach
       </div>
     </section>
     <section class="u-align-left u-clearfix u-white u-section-3" id="carousel_54fb">
@@ -57,10 +44,10 @@
         <img class="u-image u-image-default u-image-9" src="{{asset('img/Weights-gym-right-aligned.jpg')}}" alt="" data-image-width="4032" data-image-height="2384">
       </div>
     </section>
-    
-    
-   
 
 
 
-@endsection 
+
+
+
+@endsection

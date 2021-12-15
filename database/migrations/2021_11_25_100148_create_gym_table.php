@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGinasiosTable extends Migration
+class CreateGymTable extends Migration
 {
     /**
      * Run the migrations.
@@ -18,6 +18,11 @@ class CreateGinasiosTable extends Migration
             $table->string('title')->nullable();
             $table->text('address')->nullable();
             $table->text('description')->nullable();
+            $table->string('photo')->nullable();
+            $table->unsignedBigInteger('category_id')->nullable();
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

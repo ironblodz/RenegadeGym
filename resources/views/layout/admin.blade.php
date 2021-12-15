@@ -106,6 +106,22 @@
     </li>
 
 
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGym" aria-expanded="true"
+        aria-controls="collapseGym">
+        <i class="fas fa-wallet"></i>
+        <span>Ginásio</span>
+      </a>
+      <div id="collapseGym" class="collapse" aria-labelledby="headingGym" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <a class="collapse-item" href="{{route('gym.index')}}"><i class="fas fa-folder-plus pr-2"></i>Ver ginásio</a>
+          <a class="collapse-item" href="{{route('gym.create')}}"><i class="fas fa-folder-plus pr-2"></i>Adicionar ginásio</a>
+          <div class="collapse-divider"></div>
+        </div>
+      </div>
+    </li>
+
+
     <!-- Divider -->
     <hr class="sidebar-divider d-none d-md-block">
 

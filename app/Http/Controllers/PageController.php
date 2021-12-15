@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactInfo;
 use App\Models\Post;
+use App\Models\Gym;
 
 class PageController extends Controller
 {
@@ -17,8 +18,9 @@ class PageController extends Controller
         return view ('gm.Sobrenos')->with('menuOption', 'B');
     }
 
-    public function clube(){
-        return view ('gm.clube')->with('menuOption', 'C');
+    public function gym(){
+        $gyms = Gym::all();
+        return view ('gm.gym', compact('gyms'))->with('menuOption', 'C');
     }
 
     public function blog(){
