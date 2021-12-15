@@ -30,7 +30,7 @@
             <tr>
               <td>
                 @if ($post->image)
-                <img src="{{ Storage::disk('public')->url('posts_images/').$post->image }}" alt="Imagem de {{ $post->title }}">
+                <img style="width:100px;height:auto;" src="{{ asset('storage/posts_images/'.$post->image) }}" alt="Imagem de {{ $post->title }}">
               
                 @else
                 <img src="{{asset('img/no-image.png')}}" class="img-post" alt="Post image">
