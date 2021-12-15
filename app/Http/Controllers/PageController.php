@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactInfo;
 use App\Models\Post;
+use App\Models\User;
+use App\Http\Controllers\UserController;
 
 class PageController extends Controller
 {
@@ -14,7 +16,9 @@ class PageController extends Controller
     }
 
     public function Sobrenos(){
-        return view ('gm.Sobrenos')->with('menuOption', 'B');
+        $users = User::where('role', 'A')->get();
+        //return view('users.list', compact('users'));
+        return view ('gm.Sobrenos', compact('users'))->with('menuOption', 'B');
     }
 
     public function clube(){

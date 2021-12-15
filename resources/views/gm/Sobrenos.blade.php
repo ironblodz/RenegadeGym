@@ -95,16 +95,23 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
     </section>
 
     <div class="contaiiner mt-5">
+    @if(count($users))
       <h1 class="heading d-flex justify-content-center"><span>meet</span>Our Team</h1>
 
       <div class="profiles">
+      @foreach($users as $user)
         <div class="profile">
           <img src="img/565.jpg" class="profile-img">
-          <h3 class="user-name d-flex justify-content-center">Pedro</h3>
-          <h5 class="d-flex justify-content-center">Developer</h5>
+          <h3 class="user-name d-flex justify-content-center">{{$user->name}}</h3>
         </div>
+        
       </div>
+      @endforeach
     </div>
+
+    @else
+    <h6>Nao existe Users</h6>
+    @endif
 
     <script src="js/jquery-1.9.1.min.js"></script>
     <script src="slick/slick.min.js"></script>
