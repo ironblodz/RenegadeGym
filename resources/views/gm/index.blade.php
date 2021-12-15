@@ -191,7 +191,7 @@
                         
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="IMAGEM" alt="..." />
+                                <img class="card-img-top" src="{{ asset('storage/posts_images/'.$post->image) }}" alt="..." />
                                 <div class="card-body p-4">
                                     <div class="badge bg-gradient rounded-pill mb-2">News</div>
                                     <a class="text-decoration-none link-dark stretched-link" href="blog-post.html"><h5 class="card-title mb-3">{{$post->title}}</h5></a>
