@@ -28,7 +28,7 @@ class GymRequest extends FormRequest
             'description' => 'required',
             'address' => 'required',
             'category' => 'required',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:7000',
 
         ];
     }

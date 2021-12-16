@@ -25,8 +25,8 @@
         <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-1">Localizações</h1>
         <h2 class="u-custom-font u-font-roboto-condensed u-subtitle u-text u-text-2">Onde estamos localizados</h2>
         @foreach($gyms as $gym)
-            <h1 class="u-custom-font u-font-roboto-condensed u-text u-text-default u-text-3">{{ $gym->title }}</h1>
-            <img class="u-expanded-width-xs u-image u-image-default u-image-1" src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-post">
+            <h1>{{ $gym->title }}</h1>
+            <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-post">
         @endforeach
       </div>
     </section>

@@ -25,7 +25,7 @@ class UpdateGymRequest extends FormRequest
     {
         return [
             'title' => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:7000',
             'description' => 'required',
             'address' => 'required',
             'category' => 'required',
