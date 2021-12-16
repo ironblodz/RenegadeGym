@@ -11,7 +11,7 @@
             @if ($gym->photo)
 
 			<div>
-				<img alt="Gym photo" src="{{asset('storage/gym_images/'.$gym->photo)}}">
+				<img alt="Gym photo" class="img-post" src="{{asset('storage/gym_images/'.$gym->photo)}}">
 			</div>
             @endif
             <div><strong>Date:</strong> {{$gym->date}} </div><br>
