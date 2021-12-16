@@ -24,10 +24,11 @@ class UpdateGymRequest extends FormRequest
     public function rules()
     {
         return [
-            "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
-            "description" => 'required',
-            "address" => 'required',
+            'title' => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'description' => 'required',
+            'address' => 'required',
+            'category' => 'required',
         ];
     }
 }

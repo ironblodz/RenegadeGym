@@ -15,7 +15,7 @@
 
 <div class="form-group">
     <label for="inputImage">Imagem</label>
-    <input type="file" class="form-control-file" name="image" id="inputImage" aria-describedby="fileHelp" />
+    <input type="file" class="form-control-file" name="photo" id="inputImage" aria-describedby="fileHelp" />
     <small id="fileHelp" class="form-text text-muted"> Faça upload de um arquivo de imagem válido. O tamanho da imagem não deve ser
         mais de 2 MB </small>
 </div>

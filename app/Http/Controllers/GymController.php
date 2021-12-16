@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\UpdateGymRequest;
+use App\Http\Requests\GymRequest;
 class GymController extends Controller
 {
     /**
@@ -39,14 +40,14 @@ class GymController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(GymRequest $request)
     {
         $fields=$request->validated();
         $gym=new Gym();
         $gym->fill($fields);
-        if ($request->hasFile('image')) {
-            $image = $request->file('image')->store('public/gym_images');
-            $gym->image = basename($gym);
+        if ($request->hasFile('photo')) {
+            $photo = $request->file('photo')->store('public/gym_images');
+            $gym->photo = basename($photo);
         }
         $gym->category_id = $fields["category"];
         $gym->save();
@@ -87,9 +88,9 @@ class GymController extends Controller
     {
         $fields=$request->validated();
         $gym->fill($fields);
-        if ($request->hasFile('image')) {
-            $image = $request->file('image')->store('public/gym_images');
-            $gym->image = basename($image);
+        if ($request->hasFile('photo')) {
+            $photo = $request->file('photo')->store('public/gym_images');
+            $gym->photo = basename($photo);
         }
         $gym->save();
         return redirect()->route('gym.index')->with('success', 'Gym successfully updated');

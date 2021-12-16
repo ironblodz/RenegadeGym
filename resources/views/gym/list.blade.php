@@ -27,18 +27,19 @@
             </tr>
           </thead>
           <tbody>
-            @foreach($gyms as $gym)
+            @foreach($gym as $gym)
             <tr>
               <td>
-                @if ($gym->image)
-                <img src="{{ Storage::disk('public')->url('gym_images/').$gym->image }}" alt="Imagem de {{ $gym->title }}">
+                @if ($gym->photo)
+                <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-gym">
 
                 @else
-                <img src="{{asset('img/no-image.png')}}" class="img-gym">
+                <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-gym">
                 @endif
                 </td>
                 <td>{{$gym->title}}</td>
-                <td>{{$gym->content}}</td>
+                <td>{{$gym->address}}</td>
+                <td>{{$gym->description}}</td>
                 <td> @foreach ($categories as $category)
                   @if($category->id==$gym->category_id) {{ $category->name }} @endif
                   @endforeach

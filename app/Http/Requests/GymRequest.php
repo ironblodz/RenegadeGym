@@ -24,11 +24,11 @@ class GymRequest extends FormRequest
     public function rules()
     {
         return [
-            "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
-            "description" => 'required',
-            "address" => 'required',
-            "category" => 'required',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'title' => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
+            'description' => 'required',
+            'address' => 'required',
+            'category' => 'required',
+            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
 
         ];
     }

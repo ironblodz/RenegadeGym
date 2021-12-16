@@ -6,10 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactInfo;
 use App\Models\Post;
-
 use App\Models\Gym;
-
 use App\Models\User;
+
 use App\Http\Controllers\UserController;
 
 
