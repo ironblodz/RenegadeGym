@@ -101,7 +101,7 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
       <div class="profiles">
       @foreach($users as $user)
         <div class="profile">
-          <img src="img/565.jpg" class="profile-img">
+          <img src="{{asset('img/img-1.jpg')}}" class="profile-img">
           <h3 class="user-name d-flex justify-content-center">{{$user->name}}</h3>
         </div>
 
