@@ -96,7 +96,7 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
 
     <div class="contaiiner mt-5">
     @if(count($users))
-      <h1 class="heading d-flex justify-content-center"><span>meet</span>Our Team</h1>
+      <h1 class="heading d-flex justify-content-center">A nossa equipa</h1>
 
       <div class="profiles">
       @foreach($users as $user)
@@ -104,7 +104,7 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
           <img src="img/565.jpg" class="profile-img">
           <h3 class="user-name d-flex justify-content-center">{{$user->name}}</h3>
         </div>
-        
+
       </div>
       @endforeach
     </div>

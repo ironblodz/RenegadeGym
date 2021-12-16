@@ -27,7 +27,7 @@ class PostRequest extends FormRequest
             "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
             "content" => 'required',
             "category" => 'required',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:3000'
 
         ];
     }
