@@ -31,10 +31,10 @@
             <tr>
               <td>
                 @if ($gym->photo)
-                <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-gym">
+                <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-post">
 
                 @else
-                <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-gym">
+                <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-post">
                 @endif
                 </td>
                 <td>{{$gym->title}}</td>
