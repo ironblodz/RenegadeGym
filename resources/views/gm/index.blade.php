@@ -20,13 +20,9 @@
 
 
 
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
+
+
+<!-- Header-->
             <header class="fundo_personalizado" style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -47,7 +43,15 @@
                     </div>
                 </div>
             </header>
-            <!-- Features section-->
+<!-- Fim Header-->
+
+
+
+
+
+
+
+<!-- Features do ginásio -->
             <section class="py-5" id="features">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
@@ -80,8 +84,14 @@
                         </div>
                     </div>
                 </div>
-            </section>4
-            <!-- frase -->
+            </section>
+<!-- Fim features do ginásio -->
+
+
+
+
+
+<!-- frase -->
             <div  style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
             background-size: cover;
             background-repeat: no-repeat;
@@ -105,84 +115,13 @@
                     </div>
                 </div>
             </div>
-            <!-- Blog preview section
-            <section class="py-5">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-6">
-                            <div class="text-center">
-                                <h1 class="fw-bolder">Destaques do Blog</h1>
-                                <p class="lead fw-normal text-muted mb-5">Aqui encontras alguns posts do nosso blog.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row gx-5">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{asset('img/2.jpg')}}" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-danger bg-gradient mb-2">Abdominais</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="http://localhost/RenegadeGym/public/blog"><h5 class="card-title mb-3">Concurso de abdominais</h5></a>
-                                    <p class="card-text mb-0">Este concurso é aberto a todos os sócios, o vencedor terá um prémio monetário</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://themusclemedics.com/wp-content/uploads/2018/04/Circle-Profile-PNG.png" height="40px" width="40px">
-                                            <div class="small">
-                                                <div class="fw-bold">João Peres</div>
-                                                <div class="text-muted">Novembro 12, 2021 &middot;</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{asset('img/3.jpg')}}" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-danger bg-gradient mb-2">Musculação</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="http://localhost/RenegadeGym/public/blog"><h5 class="card-title mb-3">Modalidades</h5></a>
-                                    <p class="card-text mb-0"> Oferecemos todos os tipos de modalidades, desde a musculação a cardio</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://www.seekpng.com/png/full/219-2190977_circle-profile-no-background-png-120dpi-page001-gentleman.png" height="40px" width="40px">
-                                            <div class="small">
-                                                <div class="fw-bold">Rui Costa</div>
-                                                <div class="text-muted">Novembro 12, 2021 &middot;</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 mb-5">
-                            <div class="card h-100 shadow border-0">
-                                <img class="card-img-top" src="{{asset('img/grupo.jfif')}}" alt="..." />
-                                <div class="card-body p-4">
-                                    <div class="badge bg-danger bg-gradient mb-2">Running</div>
-                                    <a class="text-decoration-none link-dark stretched-link" href="http://localhost/RenegadeGym/public/blog"><h5 class="card-title mb-3">Aulas de grupo</h5></a>
-                                    <p class="card-text mb-0">Disponibilizamos uma vasta variedade de aulas de grupo, é só escolher e fazer a sua reserva</p>
-                                </div>
-                                <div class="card-footer p-4 pt-0 bg-transparent border-top-0">
-                                    <div class="d-flex align-items-end justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <img class="rounded-circle me-3" src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Rubio_Circle.png" height="40px" width="40px">
-                                            <div class="small">
-                                                <div class="fw-bold">Francisco Xavier</div>
-                                                <div class="text-muted">Novembro 12, 2021 &middot; </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                     Call to action-->
+<br><br>
+ <!-- Fim Frase -->
 
+
+
+
+                   <!--   Destaques do Blog-->
                      <section class="pt-0 pb-0">
                 <div class="container px-0 my-5">
                     @if (count($posts))
@@ -212,8 +151,12 @@
                         </div>
                         @endforeach
                     </div>
-                
-                    <!-- Call to action-->
+<!-- Fim Destaques do Blog-->
+
+
+
+
+
                     @else 
                     <h6>Sem posts</h6>
                     @endif
