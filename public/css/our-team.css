@@ -9,6 +9,8 @@
 .heading{
     font-size: 60px;
     color: #343a40;
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 .heading span{
     font-style: italic;

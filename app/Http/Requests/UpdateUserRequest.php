@@ -17,7 +17,7 @@ class UpdateUserRequest extends FormRequest
            "name" => 'required|min:3|max:40|regex:/^[A-ZÀ-úa-z\s]+$/',
            "email" => 'required|email|unique:users,email,'.$this->user->id,
            "role" => 'sometimes|in:N,A',
-           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5000'
        ];
    }
    public function messages()

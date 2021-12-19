@@ -94,14 +94,18 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
 
     </section>
 
-    <div class="contaiiner mt-5">
+    <div class="container">
     @if(count($users))
       <h1 class="heading d-flex justify-content-center">A nossa equipa</h1>
 
-      <div class="profiles">
+      <div class="profiles ">
       @foreach($users as $user)
         <div class="profile">
-          <img src="{{asset('img/img-1.jpg')}}" class="profile-img">
+            @if($user->photo)
+            <img src="{{asset('storage/users_photos/'.$user->photo)}}" class="profile-img rounded mx-auto d-block" alt="User photo">
+            @else
+            <img src="{{asset('img/default_user.jpg')}}" class="img-post rounded mx-auto d-block" alt="User photo">
+            @endif
           <h3 class="user-name d-flex justify-content-center">{{$user->name}}</h3>
         </div>
 

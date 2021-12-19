@@ -20,7 +20,7 @@ class StoreUserRequest extends FormRequest
            "birthdate" => 'required|date',
            "nif" => 'required',
            "role" => 'required|in:N,A',
-           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+           'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:5000'
        ];
    }
    public function messages()
