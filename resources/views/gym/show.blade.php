@@ -14,11 +14,9 @@
 				<img alt="Gym photo" class="img-post" src="{{asset('storage/gym_images/'.$gym->photo)}}">
 			</div>
             @endif
-            <div><strong>Date:</strong> {{$gym->date}} </div><br>
-            <div><strong>Category:</strong> {{$gym->category}} </div><br>
-            <div><strong>Image:</strong> {{$gym->photo}} </div><br>
-            <div><strong>Title:</strong> {{$gym->title}} </div><br>
-            <div><strong>Description:</strong> {{$gym->content}} </div><br>
+            <div><strong>Titulo:</strong> {{$gym->title}} </div><br>
+            <div><strong>Descrição:</strong> {{$gym->content}} </div><br>
+            <div><strong>Categoria:</strong> {{$gym->category}} </div><br>
 	</div>
 </div>
 @endsection

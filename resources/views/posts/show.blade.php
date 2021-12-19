@@ -14,9 +14,9 @@
 				<img alt="Post image" class="img-post" src="{{asset('storage/posts_images/'.$post->image)}}">
 			</div>
             @endif
-            <div><strong>Title:</strong> {{$post->title}} </div><br>
-            <div><strong>Description:</strong> {{$post->content}} </div><br>
-            <div><strong>Category:</strong> {{$post->category}} </div><br>
+            <div><strong>Titulo:</strong> {{$post->title}} </div><br>
+            <div><strong>Descrição:</strong> {{$post->content}} </div><br>
+            <div><strong>Categoria:</strong> {{$post->category->name}} </div><br>
 	</div>
 </div>
 @endsection
