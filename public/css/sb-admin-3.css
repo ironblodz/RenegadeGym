@@ -5914,12 +5914,14 @@ a.close.disabled {
 .modal-title {
     margin-bottom: 0;
     line-height: 1.5;
+    color:black;
 }
 
 .modal-body {
     position: relative;
     flex: 1 1 auto;
     padding: 1rem;
+    color:black;
 }
 
 .modal-footer {
