@@ -44,9 +44,7 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
         "Liberation Mono", "Courier New", monospace;
 }
-#dashbcolor{
-    background-color: #f8f9fc;
-}
+
 
 *,
 *::before,
@@ -82,9 +80,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #e74a3b;
+    color: white;
     text-align: left;
-    background-color: #fff;
 }
 
 [tabindex="-1"]:focus {
@@ -637,7 +634,7 @@ pre code {
     flex-wrap: wrap;
     margin-right: -0.75rem;
     margin-left: -0.75rem;
-    background: #212529;
+
 }
 
 .no-gutters {
@@ -1959,7 +1956,7 @@ textarea.form-control {
 
 .form-group {
     margin-bottom: 1rem;
-    background: #212529;
+    background: #3f464e;
     color:white;
 }
 
@@ -4634,9 +4631,11 @@ input[type="button"].btn-block {
 }
 
 .card-body {
+
     flex: 1 1 auto;
     padding: 1.25rem;
-
+    color:white;
+    background-color: #3f464e;
 }
 
 .card-title {
@@ -4663,7 +4662,7 @@ input[type="button"].btn-block {
 .card-header {
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
-    background-color: #212529;
+    background-color: #3f464e;
     color:white;
 }
 
@@ -6647,7 +6646,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-    background-color: #212529 !important;
+    background-color: #3f464e !important;
 }
 
 a.bg-dark:hover,
@@ -7716,7 +7715,7 @@ button.bg-dark:focus {
 }
 
 .shadow {
-    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+    box-shadow: 0 0.15rem 1.75rem 0 #3f464e !important;
 }
 
 .shadow-lg {
@@ -9962,6 +9961,7 @@ a:focus {
 
 #wrapper #content-wrapper #content {
     flex: 1 0 auto;
+    background-image: url('https://images.pexels.com/photos/669576/pexels-photo-669576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 
 .container,
@@ -10183,7 +10183,7 @@ a:focus {
 }
 
 .text-gray-800 {
-    color: #5a5c69 !important;
+    color: #3f464e !important;
 }
 
 .text-gray-900 {

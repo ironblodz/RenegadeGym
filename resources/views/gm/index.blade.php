@@ -26,7 +26,7 @@
             <header class="fundo_personalizado" style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;">
+            background-position: top;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center justify-content-center">
                         <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -127,7 +127,7 @@
                     @if (count($posts))
                     <div class="row gx-5">
                         @foreach($posts as $post)
-                        
+
                         <div class="col-lg-4 mb-5">
                             <div class="card h-100 shadow border-0">
                                 <img class="card-img-top" src="{{ asset('storage/posts_images/'.$post->image) }}" alt="..." />
@@ -157,7 +157,7 @@
 
 
 
-                    @else 
+                    @else
                     <h6>Sem posts</h6>
                     @endif
                 </div>
