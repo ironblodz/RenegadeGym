@@ -11,14 +11,12 @@
             @if ($post->image)
 
 			<div>
-				<img alt="Post image" src="{{asset('storage/posts_images/'.$post->image)}}">
+				<img alt="Post image" class="img-post" src="{{asset('storage/posts_images/'.$post->image)}}">
 			</div>
             @endif
-            <div><strong>Date:</strong> {{$post->date}} </div><br>
-            <div><strong>Category:</strong> {{$post->category}} </div><br>
-            <div><strong>Image:</strong> {{$post->image}} </div><br>
             <div><strong>Title:</strong> {{$post->title}} </div><br>
             <div><strong>Description:</strong> {{$post->content}} </div><br>
+            <div><strong>Category:</strong> {{$post->category}} </div><br>
 	</div>
 </div>
 @endsection

@@ -4,7 +4,7 @@
 @section("content")
 <div class="container-fluid">
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Blog</h1>
+  <h1 class="h3 mb-2">Blog</h1>
 
   <div class="card shadow mb-4">
     <div class="card-header py-3">
@@ -31,7 +31,7 @@
               <td>
                 @if ($post->image)
                 <img style="width:100px;height:auto;" src="{{ asset('storage/posts_images/'.$post->image) }}" alt="Imagem de {{ $post->title }}">
-              
+
                 @else
                 <img src="{{asset('img/no-image.png')}}" class="img-post" alt="Post image">
                 @endif
@@ -39,9 +39,9 @@
                 <td>{{$post->title}}</td>
                 <td>{{$post->content}}</td>
                 <td> @foreach ($categories as $category)
-                  @if($category->id==$post->category_id) {{ $category->name }} @endif
-                  @endforeach
-                </td>
+                    @if($category->id==$post->category_id) {{ $category->name }} @endif
+                    @endforeach
+                  </td>
 
                 <td nowrap>
                   <a class="btn btn-xs btn-danger btn-p" href="{{route('posts.show',$post)}}"><i class="fas fa-eye fa-xs"></i></a>
