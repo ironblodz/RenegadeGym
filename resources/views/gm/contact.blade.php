@@ -37,8 +37,7 @@
 
 	<div class="container-contact100">
 
-		<div class="contact100-map" data-scrollwhell="0" data-draggable="2" ><img src="img/gps1.png" height="2000px" width="2000px" style="background-size:contain; background-repeat: no-repeat;"></div>
-
+		<div class="contact100-map" data-scrollwhell="0" data-draggable="2" ></div>
 
 		<button class="contact100-btn-show">
 			<i class="fa fa-envelope-o" aria-hidden="true"></i>

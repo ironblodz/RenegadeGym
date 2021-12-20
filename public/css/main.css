@@ -160,7 +160,7 @@ iframe {
   padding: 15px;
   background: transparent;
   position: relative;
-  z-index: 1;
+  z-index: 4;
 }
 
 .contact100-map {
@@ -301,8 +301,7 @@ textarea.input100 {
   width: 100%;
 }
 
-
-/*------------------------------------------------------------------
+-----------------------------------------------------------------
 [ Button ]*/
 .container-contact100-form-btn {
   width: 100%;
@@ -517,7 +516,7 @@ textarea.input100 {
   color: #fff;
   font-size: 39px;
   position: static;
-  z-index: 0;
+  z-index: 4;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -542,7 +541,7 @@ textarea.input100 {
   content: "";
   display: block;
   position: absolute;
-  z-index: -2;
+  z-index: -5;
   width: 100%;
   height: 100%;
   background-color: #ff4b5a;
