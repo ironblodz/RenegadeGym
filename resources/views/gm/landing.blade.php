@@ -43,7 +43,7 @@
              <p id="texto-desc">Este Evento será promovido pela Liga Portuguesa de Street Workout, o único projeto oficial registrado internacionalmente pola World Street Workout Calisthenics  & Federation – WSWCF.<br><br>O Worshop estará aberto ao público, grátis e terá várias demonstrações de Freestyle, Strength, Street Lifting e muito mais!<br><br><p id="texto-maior">Não perca esta oportunidade.</p>
            </div>
            <div id="video" class="col-lg-6">
-             <video poster="{{asset('img/img.png')}}" controls src="./{{asset('videos/blog.mp4')}}"></video>
+             <video poster="{{asset('img/img.png')}}" controls src="{{asset('videos/video.mp4')}}"></video>
            </div>
          </div>
        </div>
