@@ -24,10 +24,6 @@
             <li class="nav-item @if ($menuOption=='E') active @endif">
               <a class="nav-link" href="{{route('gm.contact')}}">Contacto</a>
             </li>
-             <li class="nav-item @if ($menuOption=='S') active @endif">
-              <a class="nav-link" href="{{route('gm.landing')}}">Landing</a>
-            </li>
-
             <li>
                 <a class="nav-link" href="https://renegadegym.biz/wp/" target="_blank">Loja</a>
               </li>

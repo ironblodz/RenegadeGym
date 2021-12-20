@@ -26,7 +26,7 @@ Route::prefix('admin')->middleware(['staff', 'auth', 'verified'])->group(functio
 });
 
 
-Route::get('/', [PageController::class,'index'])->name('gm.index');
+Route::get('/index', [PageController::class,'index'])->name('gm.index');
 
 Route::get('/blog', [PageController::class,'blog'])->name('gm.blog');
 
@@ -43,8 +43,8 @@ Route::get('/gym', [PageController::class,'gym'])->name('gm.gym');
 
 Route::get('/faq', [PageController::class,'faq'])->name('gm.faq');
 
-Route::get('/landing',[PageController::class,'landing'])->name('gm.landing');
+Route::get('/',[PageController::class,'landing'])->name('gm.landing');
 
 Auth::routes(['verify'=> True]);
 
-Route::redirect('/', '/landing');
+
