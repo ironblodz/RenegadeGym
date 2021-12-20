@@ -3,6 +3,7 @@ body{
     margin-top: 170px!important;
     background-image: url('../img/sd.jpg');
     background-size: cover;
+    background-position:bottom!important;
 }
 
 h4{
