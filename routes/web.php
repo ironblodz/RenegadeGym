@@ -43,7 +43,8 @@ Route::get('/gym', [PageController::class,'gym'])->name('gm.gym');
 
 Route::get('/faq', [PageController::class,'faq'])->name('gm.faq');
 
-//Route::resource("blogs", BlogsController::class);
+Route::get('/landing',[PageController::class,'landing'])->name('gm.landing');
 
 Auth::routes(['verify'=> True]);
 
+Route::redirect('/', '/landing');

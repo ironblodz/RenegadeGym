@@ -50,6 +50,9 @@ class PageController extends Controller
         return view ('gm.faq')->with('menuOption','G');
     }
 
+    public function landing(){
+        return view ('gm.landing')->with('menuOption','S');
+    }
 
 
     public function contactSendEmail(Request $request){
