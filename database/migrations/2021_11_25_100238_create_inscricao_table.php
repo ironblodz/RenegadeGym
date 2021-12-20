@@ -15,6 +15,9 @@ class CreateInscricaoTable extends Migration
     {
         Schema::create('event_users', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email');
+            $table->string('contact');
             $table->unsignedBigInteger('user_id');
             $table->foreign('user_id')->references('id')->on('users');
             $table->unsignedBigInteger('event_id');
