@@ -108,7 +108,7 @@
                 @if (count($quotes))
                     @foreach ($quotes as $quote)
                         <div class='carousel-item @if ($loop->first) active @endif'>
-                            <img id="carousel-img-height" class="d-block w-100" src="https://images.pexels.com/photos/3112004/pexels-photo-3112004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                            <img id="carousel-img-height" class="d-block w-100" src="{{asset('img/pexels-photo-3112004.jpg')}}"
                                 alt="First slide">
                             <p id="frase-motiv">" {{ $quote->quote }} "</p>
                         </div>
@@ -116,7 +116,7 @@
 
                 @else
                     <div class="carousel-item active">
-                        <img id="carousel-img-height" class="d-block w-100" src="{{ asset('img/carousel-img.jpg') }}"
+                        <img id="carousel-img-height" class="d-block w-100" src="{{ asset('img/pexels-photo-3112004.jpg') }}"
                             alt="First slide">
                         <p id="frase-motiv">Sem frases</p>
                     </div>
