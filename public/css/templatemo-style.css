@@ -1,10 +1,4 @@
-/*
 
-The Town
-
-https://templatemo.com/tm-525-the-town
-
-*/
 #iconssss {
     color: #dc3545;
     font-size: 80px;
@@ -146,6 +140,7 @@ a:focus {
     background-image: url(../img/monkey3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top!important;
     height: 100vh;
     min-height: 375px;
     position: relative;
@@ -251,18 +246,17 @@ a:focus {
 /* Work */
 
 .img-crop {
-    width: 200px;
     height: 200px;
-    position: relative;
+    width: auto;
     overflow: hidden;
     border-radius: 50%;
 }
 
 .img-crop > img {
-    display: inline;
-    margin: 0 auto;
-    height: 100%;
-    width: auto;
+    -webkit-transform: translate(-50%);
+    margin-left: 100px;
+    min-height: 200px;
+    object-fit: cover;
 }
 
 .tm-work-description {

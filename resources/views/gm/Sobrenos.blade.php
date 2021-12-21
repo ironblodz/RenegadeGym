@@ -48,7 +48,7 @@
         <section id="introduction">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <img src="img/logo.png" alt="Image" class="img-fluid tm-intro-img" />
                     </div>
                     <div class="col-lg-6">
@@ -105,15 +105,14 @@
                     @foreach ($users as $user)
                         <div class="col">
                             @if ($user->photo)
-                                <div class="img-crop">
-                                    <img src="{{ asset('storage/users_photos/' . $user->photo) }}"
-                                        class="rounded mx-auto d-block" height="200px" width="200px" alt="User photo">
+                                <div class="img-crop mx-auto">
+                                    <img src="{{asset('storage/users_photos/'.$user->photo)}}" class="rounded" alt="User photo">
                                 </div>
                             @else
                                 <img src="{{ asset('img/default_user.jpg') }}" class="img-post rounded mx-auto d-block"
                                     alt="User photo">
                             @endif
-                            <h3 class="user-name d-flex justify-content-center">{{ $user->name }}</h3>
+                            <h3 class="user-name">{{ $user->name }}</h3>
                         </div>
                     @endforeach
                 </div>
