@@ -1,45 +1,87 @@
-<html>
 
-<head>
-    <link rel="stylesheet" href="{{asset('css/503.css')}}">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!------ Include the above in your HEAD tag ---------->
+   <!-- mobile specific metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+   <!-- CSS
+ ================================================== -->
+ <link rel="stylesheet" href="{{asset('css/base.css')}}">
+ <link rel="stylesheet" href="{{asset('css/mainbase503.css')}}">
+ <link rel="stylesheet" href="{{asset('css/vendorbase.css')}}">
+
+ <!-- script
+ ================================================== -->
+  <script src="{{asset('js/modernizr.js')}}"></script>
+
+ <!-- favicons
+  ================================================== -->
+  <link rel="icon" type="{{asset('img/logo.png')}}" href="favicon.png">
+
 </head>
 
 <body>
-    
-    <div class="error-content">
-        <div class="container">
-            <div class="row">
 
-                <div class="col-md-12 ">
-                    <div class="error-text">
-                        <h1 class="error">Erro 503</h1>
-                        <div class="im-sheep">
-                            <div class="top">
-                                <div class="body"></div>
-                                <div class="head">
-                                    <div class="im-eye one"></div>
-                                    <div class="im-eye two"></div>
-                                    <div class="im-ear one"></div>
-                                    <div class="im-ear two"></div>
-                                </div>
-                            </div>
-                            <div class="im-legs">
-                                <div class="im-leg"></div>
-                                <div class="im-leg"></div>
-                                <div class="im-leg"></div>
-                                <div class="im-leg"></div>
-                            </div>
-                        </div>
-                        <h4>Site em manutenção!</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- header
+ ================================================== -->
+ <header class="main-header">
+
+
+
+ </header> <!-- /header -->
+
+
+  <!-- main content
+ ================================================== -->
+ <main id="main-404-content" class="main-content-static">
+
+     <div class="content-wrap">
+
+         <div class="shadow-overlay"></div>
+
+         <div class="main-content">
+             <div class="row">
+                 <div class="col-twelve">
+
+                        <h1 class="kern-this">Erro 503</h1>
+                        <p>
+                        Site em manutenção, breve estaremos no ar!
+                        </p>
+
+
+                 </div> <!-- /twelve -->
+             </div> <!-- /row -->
+         </div> <!-- /main-content -->
+
+         <footer>
+             <div class="row">
+
+                    <div class="col-five tab-full bottom-links">
+                     <ul class="links">
+                       <li><a href="mailto:221269@my.ipleiria.pt">Report Error</a></li>
+                     </ul>
+
+                     <div class="credits">
+                         <p>Design by <a href="http://renegadegym.test/" title="Staff">Renegade</a></p>
+                     </div>
+                 </div>
+
+             </div> <!-- /row -->
+         </footer>
+
+      </div> <!-- /content-wrap -->
+
+ </main> <!-- /main-404-content -->
+
+ <div id="preloader">
+      <div id="loader"></div>
+ </div>
+
+ <!-- Java Script
+ ================================================== -->
+ <script src="{{asset('js/jquery-2.1.3.min.js')}}"></script>
+ <script src="{{asset('js/plugins.js')}}"></script>
+ <script src="{{asset('js/mainbase.js')}}"></script>
+
 </body>
-    </html>
 
+</html>
