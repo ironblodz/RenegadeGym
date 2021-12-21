@@ -105,6 +105,22 @@
       </div>
     </li>
 
+    <!-- QUOTES -->
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseQuotes" aria-expanded="true"
+        aria-controls="collapseQuotes">
+        <i class="fab fa-blogger"></i>
+        <span>Frases</span>
+      </a>
+      <div id="collapseQuotes" class="collapse" aria-labelledby="headingQuotes" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <a class="collapse-item" href="{{route('quotes.index')}}"><i class="fas fa-folder-plus pr-2"></i></i>Ver Frases</a>
+          <a class="collapse-item" href="{{route('quotes.create')}}"><i class="fas fa-blog pr-2"></i>Adicionar Frases</a>
+        </div>
+      </div>
+    </li>
+
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGym" aria-expanded="true"

@@ -12,6 +12,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\GymController;
+use App\Http\Controllers\QuoteController;
 
 
 Route::prefix('admin')->middleware(['staff', 'auth', 'verified'])->group(function () {
@@ -19,6 +20,7 @@ Route::prefix('admin')->middleware(['staff', 'auth', 'verified'])->group(functio
     Route::resource('users', UserController::class)->middleware('admin');
     Route::resource('posts', PostController::class);
     Route::resource('gym', GymController::class);
+    Route::resource('quotes', QuoteController::class);
     Route::resource('categories',CategoryController::class);
     Route::get('/alterpass',[UserController::class,'editpass'])->name('users.editpass');
     Route::post('/alterpass',[UserController::class,'updatepass'])->name('users.updatepass');

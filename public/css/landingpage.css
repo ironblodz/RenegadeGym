@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 #main {
@@ -202,18 +201,18 @@ video {
 .inscrever {
   padding-top: 25px 0;
   font-size: 50px;
-  color: #dc3545;
+  color: #343a40;
 }
 .inscrever::before {
   content: "";
-  background: #dc3545;
+  background: #343a40;
   display: block;
   width: 30px;
   height: 3px;
   margin-bottom: 25px;
 }
 label {
-  color: #dc3545;
+  color: #343a40;
 }
 input {
   border: none;
@@ -234,14 +233,14 @@ input {
 }
 #btn-enviar {
   margin-top: 30px;
-  background: #dc3545;
+  background: #343a40;
   color: #fff;
 }
 .inscrever {
   font-size: 40px;
 }
 #btn-enviar:hover {
-  background: #dc3545;
+  background: #343a40;
 }
 .mockup {
   position: relative;
@@ -260,11 +259,11 @@ input {
 .inscreverr {
   padding-top: 25px 0;
   font-size: 50px;
-  color: #dc3545;
+  color: #343a40;
 }
 .inscreverr::before {
   content: "";
-  background: #dc3545;
+  background: #343a40;
   display: block;
   width: 30px;
   height: 3px;
