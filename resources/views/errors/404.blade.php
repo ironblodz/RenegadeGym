@@ -5,9 +5,9 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="{{asset('css/404.css')}}">
-   <link rel="stylesheet" href="{{asset('css/main404.css')}}">
-   <link rel="stylesheet" href="{{asset('css/vendor404.css')}}">
+   <link rel="stylesheet" href="{{asset('css/base.css')}}">
+   <link rel="stylesheet" href="{{asset('css/mainbase.css')}}">
+   <link rel="stylesheet" href="{{asset('css/vendorbase.css')}}">
 
    <!-- script
    ================================================== -->
@@ -40,7 +40,6 @@
 			<li><a href="{{route('gm.gym')}}" title="Ginásios">Ginásios</a></li>
 			<li><a href="{{route('gm.blog')}}" title="Blog">Blog</a></li>
 			<li><a href="{{route('gm.contact')}}" title="Contacto">Contacto</a></li>
-            <li><a href="'https://renegadegym.biz/wp/" title="Loja">Loja</a></li>
 		</ul>
 
 		<h5>Renegade Gym</h5>
@@ -112,7 +111,7 @@
    ================================================== -->
    <script src="{{asset('js/jquery-2.1.3.min.js')}}"></script>
    <script src="{{asset('js/plugins.js')}}"></script>
-   <script src="{{asset('js/main404.js')}}"></script>
+   <script src="{{asset('js/mainbase.js')}}"></script>
 
 </body>
 

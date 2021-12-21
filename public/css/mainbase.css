@@ -595,38 +595,6 @@ header.menu-is-open {
 	transform: translateX(-260px);
 }
 
-/** 
- * header logo - (_layout.css) 
- * ------------------------------------------------------------------- 
- */
-
-header .logo {
-	position: absolute;
-	left: 26px;
-	top: 0;
-	margin-top: 78px;
-}
-header .logo a {
-	display: block;
-	margin: 0;
-	padding: 0;
-	outline: 0;
-	border: none;
-	width: 282px;
-	height: 72px;
-	background: url("../images/main-logo.png") no-repeat center;
-	background-size: 282px 72px;
-
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	-webkit-transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
 
 /**
  * menu toggle - (_layout.css)
@@ -847,7 +815,7 @@ header .logo a {
 }
 #menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
-	color: white;
+	color: #dc3545;
 }
 
 

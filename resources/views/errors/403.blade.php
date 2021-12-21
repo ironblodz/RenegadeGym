@@ -1,44 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+   <!-- mobile specific metas
+   ================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<title>Error 404</title>
+   <!-- CSS
+ ================================================== -->
+ <link rel="stylesheet" href="{{asset('css/base.css')}}">
+ <link rel="stylesheet" href="{{asset('css/mainbase403.css')}}">
+ <link rel="stylesheet" href="{{asset('css/vendorbase.css')}}">
 
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Muli:400" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+ <!-- script
+ ================================================== -->
+  <script src="{{asset('js/modernizr.js')}}"></script>
 
-	<!-- Font Awesome Icon -->
-	<link type="text/css" rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}" />
-
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="{{asset('css/403.css')}}" />
+ <!-- favicons
+  ================================================== -->
+  <link rel="icon" type="{{asset('img/logo.png')}}" href="favicon.png">
 
 </head>
 
 <body>
 
-	<div id="notfound">
-		<div class="notfound-bg"></div>
-		<div class="notfound">
-			<div class="notfound-404">
-				<h1>Erro 403</h1>
-			</div>
-			<h2>Página não foi encontrada</h2>
+  <!-- header
+ ================================================== -->
+ <header class="main-header">
 
-			<div class="notfound-social">
-				<a href="#"><i class="fa fa-facebook"></i></a>
-				<a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-instagram"></i></a>
-			</div>
-			<a href="{{route('gm.index')}}">Voltar para a HomePage</a>
-		</div>
-	</div>
+
+     <a class="menu-toggle" href="#"><span>Menu</span></a>
+ </header> <!-- /header -->
+
+ <!-- navigation
+ ================================================== -->
+ <nav id="menu-nav-wrap">
+
+     <h5>Website</h5>
+      <ul class="nav-list">
+          <li><a href="{{route('gm.index')}}" title="Home">Home</a></li>
+          <li><a href="{{route('gm.Sobrenos')}}" title="Sobre">Sobre</a></li>
+          <li><a href="{{route('gm.gym')}}" title="Ginásios">Ginásios</a></li>
+          <li><a href="{{route('gm.blog')}}" title="Blog">Blog</a></li>
+          <li><a href="{{route('gm.contact')}}" title="Contacto">Contacto</a></li>
+      </ul>
+
+      <h5>Renegade Gym</h5>
+      <p>Não existe um treino milagroso, nem uma dieta mágica, o que existe é o foco, disciplina, perseverança e nunca desistir"</p>
+
+  </nav>
+
+  <!-- main content
+ ================================================== -->
+ <main id="main-404-content" class="main-content-static">
+
+     <div class="content-wrap">
+
+         <div class="shadow-overlay"></div>
+
+         <div class="main-content">
+             <div class="row">
+                 <div class="col-twelve">
+
+                        <h1 class="kern-this">Erro 403</h1>
+                        <p>
+                        Como cliente não tem autorização para aceder a esta página, 
+                        clique em uma das páginas para ir para o website
+                        </p>
+
+
+                 </div> <!-- /twelve -->
+             </div> <!-- /row -->
+         </div> <!-- /main-content -->
+
+         <footer>
+             <div class="row">
+
+                 <div class="col-seven tab-full social-links pull-right">
+                     <ul>
+                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                     </ul>
+                 </div>
+
+                    <div class="col-five tab-full bottom-links">
+                     <ul class="links">
+                         <li><a href="{{route('gm.index')}}">Home</a></li>
+                       <li><a href="{{route('gm.Sobrenos')}}">Sobre</a></li>
+                       <li><a href="mailto:221269@my.ipleiria.pt">Report Error</a></li>
+                     </ul>
+
+                     <div class="credits">
+                         <p>Design by <a href="http://renegadegym.test/" title="Staff">Renegade</a></p>
+                     </div>
+                 </div>
+
+             </div> <!-- /row -->
+         </footer>
+
+      </div> <!-- /content-wrap -->
+
+ </main> <!-- /main-404-content -->
+
+ <div id="preloader">
+      <div id="loader"></div>
+ </div>
+
+ <!-- Java Script
+ ================================================== -->
+ <script src="{{asset('js/jquery-2.1.3.min.js')}}"></script>
+ <script src="{{asset('js/plugins.js')}}"></script>
+ <script src="{{asset('js/mainbase.js')}}"></script>
 
 </body>
 
