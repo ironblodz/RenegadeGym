@@ -98,7 +98,7 @@ de serviços para o ajudar a melhorar o seu estado de vida com o desporto.
     @if(count($users))
       <h1 class="heading d-flex justify-content-center">A nossa equipa</h1>
 
-      <div class="profiles ">
+      <div class="profiles">
       @foreach($users as $user)
         <div class="profile">
             @if($user->photo)
