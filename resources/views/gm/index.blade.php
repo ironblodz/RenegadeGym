@@ -92,7 +92,7 @@
 
 
 <!-- frase -->
-            <div  style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
+            <!--<div  style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;">
@@ -114,7 +114,35 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+    @if(count($quotes))
+    @foreach($quotes as $quote)
+    <div class='carousel-item @if($loop->first) active @endif'>
+      <img id="carousel-img-height" class="d-block w-100" src="{{asset('img/carousel-img.jpg')}}" alt="First slide">
+      <p id="frase-motiv">{{$quote->quote}}</p>
+    </div>
+    @endforeach
+
+    @else
+    <div class="carousel-item active">
+      <img id="carousel-img-height" class="d-block w-100" src="{{asset('img/carousel-img.jpg')}}" alt="First slide">
+      <p id="frase-motiv">Sem frases</p>
+    </div>
+                  
+         @endif
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 <br><br>
  <!-- Fim Frase -->
 

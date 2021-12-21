@@ -8,6 +8,7 @@ use App\Mail\ContactInfo;
 use App\Models\Post;
 use App\Models\Gym;
 use App\Models\User;
+use App\Models\Quote;
 
 use App\Http\Controllers\UserController;
 
@@ -16,7 +17,8 @@ class PageController extends Controller
 {
     public function index(){
         $posts = Post::orderBy('created_at', 'desc')->take(3)->get();
-        return view('gm.index', compact('posts'))->with('menuOption', 'I');
+        $quotes = Quote::all();
+        return view('gm.index', compact('posts' , 'quotes'))->with('menuOption', 'I');
     }
 
     public function Sobrenos(){
@@ -32,6 +34,7 @@ class PageController extends Controller
 
     public function blog(){
         $posts = Post::all();
+        
         return view ('gm.blog', compact('posts'))->with('menuOption', 'D');
     }
 
