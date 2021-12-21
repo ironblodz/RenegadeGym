@@ -101,29 +101,6 @@
             @if (count($users))
                 <h1 class="heading d-flex justify-content-center">A nossa equipa</h1>
 
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-                
-
                 <div class="row">
                     @foreach ($users as $user)
                         <div class="col">
@@ -141,13 +118,7 @@
                     @endforeach
                 </div>
 
-=======
-      <div class="profiles">
-      @foreach($users as $user)
-        <div class="profile mb-5">
-            @if($user->photo)
-            <img src="{{asset('storage/users_photos/'.$user->photo)}}" class="profile-img rounded mx-auto d-block" alt="User photo">
->>>>>>> 95e6ff196e9565232afb79b8f168c7e0341e9b1b
+
             @else
                 <h6>Nao existe Users</h6>
             @endif
