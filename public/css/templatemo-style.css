@@ -1,4 +1,3 @@
-
 #iconssss {
     color: #dc3545;
     font-size: 80px;
@@ -137,10 +136,10 @@ a:focus {
 /* Hero */
 
 #hero {
-    background-image: url(../img/monkey3.jpg);
+    background-image: url(../img/monkey2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top!important;
+    background-position: top !important;
     height: 100vh;
     min-height: 375px;
     position: relative;
@@ -229,7 +228,7 @@ a:focus {
 .tm-section-title {
     font-size: 2.6rem;
     font-weight: normal;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .tm-intro-text {

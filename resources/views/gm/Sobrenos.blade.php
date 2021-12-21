@@ -99,7 +99,7 @@
 
         <div class="container">
             @if (count($users))
-                <h1 class="heading d-flex justify-content-center">A nossa equipa</h1>
+                <h1 class="tm-text-danger mb-4 tm-section-title" align="center">A nossa equipa</h1>
 
                 <div class="row">
                     @foreach ($users as $user)

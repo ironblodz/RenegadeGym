@@ -1,7 +1,7 @@
 @extends('layout.admin')
 
 @section("content")
-<div class="container-fluid">
+<div class="main">
 	<!-- Page Heading -->
 	<h1 class="h3 mb-2">Utilizadores</h1>
 
