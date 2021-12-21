@@ -122,7 +122,7 @@
     @foreach($quotes as $quote)
     <div class='carousel-item @if($loop->first) active @endif'>
       <img id="carousel-img-height" class="d-block w-100" src="{{asset('img/carousel-img.jpg')}}" alt="First slide">
-      <p id="frase-motiv">{{$quote->quote}}</p>
+      <p id="frase-motiv">" {{$quote->quote}} "</p>
     </div>
     @endforeach
 
