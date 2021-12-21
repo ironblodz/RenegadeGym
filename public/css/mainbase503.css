@@ -851,7 +851,7 @@ header.menu-is-open {
 
 /* static background */
 #main-404-content.main-content-static {
-    background-image: url('../img/monkey2.jpg')!important;
+    background-image: url('https://images.pexels.com/photos/4553611/pexels-photo-4553611.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')!important;
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
