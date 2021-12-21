@@ -27,6 +27,7 @@
     <div class="footer-content">
         <h3>RenegadeGym</h3>
         <p id="texto--footer">Somos um ginásio aberto ao público, sem fins lucrativos</p>
+        <p id="texto--footer"><a href="{{route('gm.landing')}}" style="text-decoration:underline; color:white;">Workshop</p></a>
         <ul class="socials">
           <li><a href="https://github.com/ironblodz/RenegadeGym" target="_blank"><i id="icons-color" class="fa fa-github" aria-hidden="true"></i></a></li>
           <li><a href="#"><i id="icons-color" class="fa fa-instagram" aria-hidden="true"></i></a></li>

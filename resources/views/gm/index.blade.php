@@ -25,10 +25,10 @@
 
 
         <!-- Header-->
-        <header class="fundo_personalizado" style="background-image: url('https://images.pexels.com/photos/7690452/pexels-photo-7690452.jpeg?cs=srgb&dl=pexels-cottonbro-7690452.jpg&fm=jpg');
+        <header class="fundo_personalizado" style="background-image: url('https://images.pexels.com/photos/50597/man-male-boy-a-person-50597.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
                 background-size: cover;
                 background-repeat: no-repeat;
-                background-position: top;">
+                background-position: bottom;">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -108,7 +108,7 @@
                 @if (count($quotes))
                     @foreach ($quotes as $quote)
                         <div class='carousel-item @if ($loop->first) active @endif'>
-                            <img id="carousel-img-height" class="d-block w-100" src="{{ asset('img/sd.jpg') }}"
+                            <img id="carousel-img-height" class="d-block w-100" src="https://images.pexels.com/photos/3112004/pexels-photo-3112004.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
                                 alt="First slide">
                             <p id="frase-motiv">" {{ $quote->quote }} "</p>
                         </div>
