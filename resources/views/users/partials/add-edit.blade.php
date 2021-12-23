@@ -12,7 +12,7 @@
 
 <div class="form-group">
     <label for="inputEmail">Email</label>
-    <input type="text" class="form-control" name="email" id="inputEmail" placeholder="exemplo@gmail.com"
+    <input type="email" class="form-control" name="email" id="inputEmail" placeholder="exemplo@gmail.com"
         value="{{old('email',$user->email)}}" />
 </div>
 

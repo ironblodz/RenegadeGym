@@ -50,7 +50,7 @@ class LandingController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\LandingModel  $landingModel
+     * @param  \App\Models\Landing  $landing
      * @return \Illuminate\Http\Response
      */
     public function show(landing $landing)
@@ -61,7 +61,7 @@ class LandingController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\LandingModel  $landingModel
+     * @param  \App\Models\Landing  $landing
      * @return \Illuminate\Http\Response
      */
     public function edit(landing $landing)
@@ -73,7 +73,7 @@ class LandingController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\LandingModel  $landingModel
+     * @param  \App\Models\Landing  $landing
      * @return \Illuminate\Http\Response
      */
     public function update(UpdateLandingRequest $request, landing $landing)
@@ -87,7 +87,7 @@ class LandingController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\LandingModel  $landingModel
+     * @param  \App\Models\Landing  $landing
      * @return \Illuminate\Http\Response
      */
     public function destroy(landing $landing)

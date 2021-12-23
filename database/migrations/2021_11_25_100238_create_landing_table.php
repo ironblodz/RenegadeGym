@@ -13,11 +13,15 @@ class CreateLandingTable extends Migration
      */
     public function up()
     {
-        Schema::create('landing', function(Blueprint $table) {
+        Schema::create('event_users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('email');
             $table->string('contact');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('event_id');
+            $table->foreign('event_id')->references('id')->on('events');
             $table->timestamps();
         });
     }
@@ -29,6 +33,6 @@ class CreateLandingTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('landing');
+        Schema::dropIfExists('event_users');
     }
 }

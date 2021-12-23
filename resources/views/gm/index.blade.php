@@ -33,7 +33,7 @@
                 <div class="row gx-5 align-items-center justify-content-center">
                     <div class="col-lg-8 col-xl-7 col-xxl-6">
                         <div class="my-5 text-center text-xl-start">
-                            <h1 class="display-5 fw-bolder text-white mb-2">Bem vindo ao nosso website</h1>
+                            <h1 class="display-5 fw-bolder text-white mb-2">Bem vindo ao nosso websites</h1>
                             <p class="lead fw-normal text-white mb-4">Aqui poderas encontrar diversos planos de treino bem
                                 como acompanhamento e vários produtos na nossa loja.</p>
                             <div class="gap-3 d-sm-flex justify-content-sm-center justify-content-xl-center">
