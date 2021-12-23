@@ -89,7 +89,43 @@
       </div>
     </li>
 
-    <!-- BLOG -->
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLanding" aria-expanded="true"
+        aria-controls="collapseLanding">
+        <i class="fas fa-user-plus"></i>
+        <span>Inscrição</span>
+      </a>
+      <div id="collapseLanding" class="collapse" aria-labelledby="headingLanding" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <a class="collapse-item" href="{{route('landing.index')}}"><i class="fas fa-folder-plus pr-2"></i>Ver inscrição</a>
+          <a class="collapse-item" href="{{route('landing.create')}}"><i class="fas fa-folder-plus pr-2"></i>Adicionar informação</a>
+          <div class="collapse-divider"></div>
+        </div>
+      </div>
+    </li>
+
+    {{-- <!-- Gym -->  --}}
+
+
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGym" aria-expanded="true"
+        aria-controls="collapseGym">
+        <i class="fas fa-dumbbell"></i>
+        <span>Ginásio</span>
+      </a>
+      <div id="collapseGym" class="collapse" aria-labelledby="headingGym" data-parent="#accordionSidebar">
+        <div class="bg-white py-2 collapse-inner rounded">
+          <a class="collapse-item" href="{{route('gym.index')}}"><i class="fas fa-folder-plus pr-2"></i>Ver ginásio</a>
+          <a class="collapse-item" href="{{route('gym.create')}}"><i class="fas fa-folder-plus pr-2"></i>Adicionar ginásio</a>
+          <div class="collapse-divider"></div>
+        </div>
+      </div>
+    </li>
+
+
+    {{-- <!-- BLOG --> --}}
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBlogs" aria-expanded="true"
@@ -105,7 +141,7 @@
       </div>
     </li>
 
-    <!-- QUOTES -->
+    {{-- <!-- Frases --> --}}
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseQuotes" aria-expanded="true"
@@ -122,35 +158,6 @@
     </li>
 
 
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseGym" aria-expanded="true"
-        aria-controls="collapseGym">
-        <i class="fas fa-wallet"></i>
-        <span>Ginásio</span>
-      </a>
-      <div id="collapseGym" class="collapse" aria-labelledby="headingGym" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('gym.index')}}"><i class="fas fa-folder-plus pr-2"></i>Ver ginásio</a>
-          <a class="collapse-item" href="{{route('gym.create')}}"><i class="fas fa-folder-plus pr-2"></i>Adicionar ginásio</a>
-          <div class="collapse-divider"></div>
-        </div>
-      </div>
-    </li>
-    
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLanding" aria-expanded="true"
-        aria-controls="collapseLanding">
-        <i class="fas fa-wallet"></i>
-        <span>Inscrição</span>
-      </a>
-      <div id="collapseLanding" class="collapse" aria-labelledby="headingLanding" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-          <a class="collapse-item" href="{{route('landing.index')}}"><i class="fas fa-folder-plus pr-2"></i>Ver inscrição</a>
-          <a class="collapse-item" href="{{route('landing.create')}}"><i class="fas fa-folder-plus pr-2"></i>Adicionar informação</a>
-          <div class="collapse-divider"></div>
-        </div>
-      </div>
-    </li>
 
 
     <!-- Divider -->
