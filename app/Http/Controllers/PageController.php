@@ -9,6 +9,7 @@ use App\Models\Post;
 use App\Models\Gym;
 use App\Models\User;
 use App\Models\Quote;
+use App\Models\Landing;
 
 use App\Http\Controllers\UserController;
 
@@ -54,7 +55,8 @@ class PageController extends Controller
     }
 
     public function landing(){
-        return view ('gm.landing')->with('menuOption','S');
+        $landing = landing::all();
+        return view ('gm.landing', compact('landing'))->with('menuOption','S');
     }
 
 

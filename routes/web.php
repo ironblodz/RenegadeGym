@@ -13,7 +13,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\BlogsController;
 use App\Http\Controllers\GymController;
 use App\Http\Controllers\QuoteController;
-
+use App\Http\Controllers\LandingController;
 
 Route::prefix('admin')->middleware(['staff', 'auth', 'verified'])->group(function () {
     Route::get('/users/{user}/send_reactivate_mail', [UserController::class,'send_reactivate_email'])->name('users.sendActivationEmail');
@@ -45,7 +45,7 @@ Route::get('/gym', [PageController::class,'gym'])->name('gm.gym');
 
 Route::get('/faq', [PageController::class,'faq'])->name('gm.faq');
 
-Route::get('/landingpage',[PageController::class,'landing'])->name('gm.landing');
+Route::get('/landing',[PageController::class,'landing'])->name('gm.landing');
 
 Auth::routes(['verify'=> True]);
 
