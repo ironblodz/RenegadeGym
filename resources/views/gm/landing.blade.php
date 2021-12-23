@@ -63,7 +63,8 @@
                     <div class="row">
                         <div class="col-lg-6 form">
                             <h3 class="inscrever">INSCREVE-TE</h3>
-                            <form action="{{ route('gm.index') }}" method="POST" class="inline">
+                            <form action="{{ route('gm.landing.store') }}" method="POST" class="inline">
+                               @csrf
                                 <div>
                                 <label id="nome" for="nome">Nome</label><br>
 

@@ -19,6 +19,11 @@ class LandingController extends Controller
         $landing = landing::all();
         return view('landing.list', compact('landing'));
     }
+    public function indexFrontend()
+    {
+        return view('gm.landing')->with('menuOption', '');
+    }
+
 
     /**
      * Show the form for creating a new resource.
@@ -39,12 +44,14 @@ class LandingController extends Controller
      */
     public function store(StoreLandingRequest $request)
     {
-        $fields=$request->validated();
-        $landing=new landing();
+        $fields = $request->validated();
+        $landing = new Landing();
         $landing->fill($fields);
         $landing->save();
-        return redirect()->route('landing.index')->with('success',
-         'Inscrição criada com sucesso');
+        return redirect()->route('gm.index')->with(
+            'success',
+            'Inscrição criada com sucesso'
+        );
     }
 
     /**
@@ -55,7 +62,7 @@ class LandingController extends Controller
      */
     public function show(landing $landing)
     {
-        return view('landing.show',compact('landing'));
+        return view('landing.show', compact('landing'));
     }
 
     /**
@@ -66,7 +73,7 @@ class LandingController extends Controller
      */
     public function edit(landing $landing)
     {
-        return view('landing.edit',compact('landing'));
+        return view('landing.edit', compact('landing'));
     }
 
     /**
@@ -78,7 +85,7 @@ class LandingController extends Controller
      */
     public function update(UpdateLandingRequest $request, landing $landing)
     {
-        $fields=$request->validated();
+        $fields = $request->validated();
         $landing->fill($fields);
         $landing->save();
         return redirect()->route('landing.index')->with('sucess', 'A informação foi atualizada com sucesso');
@@ -93,6 +100,6 @@ class LandingController extends Controller
     public function destroy(landing $landing)
     {
         $landing->delete();
-            return redirect()->route('landing.index')->with('success', 'A inscrição foi eliminado com sucesso!');
+        return redirect()->route('landing.index')->with('success', 'A inscrição foi eliminado com sucesso!');
     }
 }

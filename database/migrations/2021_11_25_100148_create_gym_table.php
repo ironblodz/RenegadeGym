@@ -18,7 +18,6 @@ class CreateGymTable extends Migration
             $table->string('title')->nullable();
             $table->text('address')->nullable();
             $table->text('description')->nullable();
-            $table->string('photo')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->unsignedBigInteger('user_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories');

@@ -18,6 +18,7 @@ use App\Http\Controllers\LandingController;
 Route::prefix('admin')->middleware(['staff', 'auth', 'verified'])->group(function () {
     Route::get('/users/{user}/send_reactivate_mail', [UserController::class, 'send_reactivate_email'])->name('users.sendActivationEmail');
     Route::resource('users', UserController::class)->middleware('admin');
+    Route::get('users/{user}', [UserController::class, 'show'])->name('users.show');
     Route::resource('posts', PostController::class);
     Route::resource('gym', GymController::class);
     Route::resource('quotes', QuoteController::class);
@@ -43,6 +44,7 @@ Route::get('/Sobrenos', [PageController::class, 'Sobrenos'])->name('gm.Sobrenos'
 
 Route::get('/gym', [PageController::class, 'gym'])->name('gm.gym');
 
-Route::get('/landing', [PageController::class, 'landing'])->name('gm.landing');
+Route::get('/landing', [LandingController::class, 'indexFrontend'])->name('gm.landing');
+Route::post('/landing', [LandingController::class, 'store'])->name('gm.landing.store');
 
 Auth::routes(['verify' => True]);
