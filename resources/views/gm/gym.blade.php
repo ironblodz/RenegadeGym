@@ -29,6 +29,7 @@
             <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-post">
         @endforeach
       </div>
+
     </section>
     <section class="u-align-left u-clearfix u-white u-section-3" id="carousel_54fb">
       <div class="u-clearfix u-sheet u-sheet-1">
