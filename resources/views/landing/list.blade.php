@@ -4,14 +4,9 @@
 @section("content")
 <div class="container-fluid">
   <!-- Page Heading -->
-  <h1 class="h3 mb-2">Landing</h1>
+  <h1 class="h3 mb-2">Inscrição</h1>
 
   <div class="card shadow mb-4">
-    <div class="card-header py-3">
-      <a class="btn btn-danger" href="{{route('landing.create')}}">
-        <i class="fas fa-plus"></i> Adicionar Pessoa
-      </a>
-    </div>
     <div class="card-body">
       @if(count($landing))
       <div class="table-responsive">
@@ -21,6 +16,7 @@
                 <th>Nome</th>
                 <th>Email</th>
                 <th>Contacto</th>
+                <th>Ações</th>
             </tr>
           </thead>
           <tbody>
@@ -45,7 +41,7 @@
        </table>
      </div>
       @else
- <h6>Não há frases registadas</h6>
+ <h6>Não há pessoas inscritas</h6>
  @endif
    </div>
  </div>

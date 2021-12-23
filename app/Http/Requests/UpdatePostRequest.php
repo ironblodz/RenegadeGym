@@ -24,9 +24,15 @@ class UpdatePostRequest extends FormRequest
     public function rules()
     {
         return [
-            "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:3000',
+            "title" => 'required|min:3|max:250|regex:/^[A-ZÀ-úa-z\s]+$/',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:6000',
             "content" => 'required'
+        ];
+    }
+    public function messages()
+    {
+        return [
+         'name.regex' => 'O nome deve conter apenas letras e espaços'
         ];
     }
 }

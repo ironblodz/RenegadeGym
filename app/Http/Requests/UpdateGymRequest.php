@@ -31,4 +31,10 @@ class UpdateGymRequest extends FormRequest
             'category' => 'required',
         ];
     }
+    public function messages()
+    {
+        return [
+         'name.regex' => 'O titulo deve conter apenas letras e espaços'
+        ];
+    }
 }

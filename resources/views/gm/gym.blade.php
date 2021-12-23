@@ -27,7 +27,7 @@
         @foreach($gyms as $gym)
             <h1>{{ $gym->title }}</h1>
             <img src="{{asset('storage/gym_images/'.$gym->photo) }}" class="img-post">
-        @endforeach
+
       </div>
 
     </section>
@@ -45,6 +45,7 @@
         <img class="u-image u-image-default u-image-8" src="{{asset('img/tuv-rheinland-gym-equipment.jpg')}}" alt="" data-image-width="800" data-image-height="533">
         <img class="u-image u-image-default u-image-9" src="{{asset('img/Weights-gym-right-aligned.jpg')}}" alt="" data-image-width="4032" data-image-height="2384">
       </div>
+      @endforeach
     </section>
 
 

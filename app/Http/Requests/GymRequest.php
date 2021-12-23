@@ -35,7 +35,7 @@ class GymRequest extends FormRequest
     public function messages()
     {
         return [
-            'title.regex' => 'O titulo só pode ter letras e espaços'
+            'title.regex' => 'O titulo só pode conter apenas espaços e letras'
         ];
     }
 }

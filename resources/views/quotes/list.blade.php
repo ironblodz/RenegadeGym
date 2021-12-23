@@ -19,6 +19,7 @@
           <thead>
             <tr>
               <th>Quote</th>
+              <th>Ações</th>
             </tr>
           </thead>
           <tbody>

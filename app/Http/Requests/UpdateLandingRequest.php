@@ -29,4 +29,10 @@ class UpdateLandingRequest extends FormRequest
             "contact" => 'required',
         ];
     }
+    public function messages()
+    {
+        return [
+         'name.regex' => 'O nome deve conter apenas letras e espaços'
+        ];
+    }
 }

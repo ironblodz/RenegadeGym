@@ -24,17 +24,17 @@ class PostRequest extends FormRequest
     public function rules()
     {
         return [
-            "title" => 'required|min:3|max:100|regex:/^[A-ZÀ-úa-z\s]+$/',
+            "title" => 'required|min:3|max:250|regex:/^[A-ZÀ-úa-z\s]+$/',
             "content" => 'required',
             "category" => 'required',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:3000'
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:6000'
 
         ];
     }
     public function messages()
     {
         return [
-            'title.regex' => 'Title should contain only letters and spaces'
+            'title.regex' => 'O titulo só pode conter apenas espaços e letras'
         ];
     }
 }

@@ -26,7 +26,7 @@ class StoreUserRequest extends FormRequest
    public function messages()
    {
        return [
-           'name.regex' => 'Name should contain only letters and spaces'
+           'name.regex' => 'O nome só pode conter apenas espaços e letras'
        ];
    }
 }

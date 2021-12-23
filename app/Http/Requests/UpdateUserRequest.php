@@ -23,7 +23,7 @@ class UpdateUserRequest extends FormRequest
    public function messages()
    {
        return [
-           'name.regex' => 'Name should contain only letters and spaces'
+           'name.regex' => 'O nome deve conter apenas letras e espaços'
        ];
    }
 
