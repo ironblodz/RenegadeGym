@@ -32,8 +32,7 @@ class LandingController extends Controller
      */
     public function create()
     {
-        $landing = new landing;
-        return view('landing.add', compact('landing'));
+
     }
 
     /**
