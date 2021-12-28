@@ -29,7 +29,7 @@ body {
     position: relative;
   }
   #frase-motiv{
-    color: #fff;
+    color: rgb(29, 29, 29);
     font-size: 20px;
     font-weight: 400;
     position: absolute;
