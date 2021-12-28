@@ -106,7 +106,10 @@
                         <div class='carousel-item @if ($loop->first) active @endif'>
                             <img id="carousel-img-height" class="d-block w-100" src="{{asset('https://images.pexels.com/photos/669578/pexels-photo-669578.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')}}"
                                 alt="First slide">
-                            <p id="frase-motiv">" {{ $quote->quote }} "</p>
+                                <div id="frase-motiv">
+                                    <p class="font-italic">" {{ $quote->quote }} "</p>
+                                    <p class="font-weight-bold text-center">{{ $quote->author }}</p>
+                                </div>
                         </div>
                     @endforeach
 

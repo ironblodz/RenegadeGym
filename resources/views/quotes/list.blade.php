@@ -19,6 +19,7 @@
           <thead>
             <tr>
               <th>Quote</th>
+              <th>Autor</th>
               <th>Ações</th>
             </tr>
           </thead>
@@ -26,6 +27,8 @@
             @foreach($quotes as $quote)
             <tr>
                 <td>{{$quote->quote}}</td>
+
+                <td>{{$quote->author}}</td>
 
                 <td nowrap>
                   <a class="btn btn-xs btn-danger btn-p" href="{{route('quotes.show',$quote)}}"><i class="fas fa-eye fa-xs"></i></a>

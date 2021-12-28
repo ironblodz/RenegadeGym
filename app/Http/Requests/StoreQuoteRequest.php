@@ -25,6 +25,7 @@ class StoreQuoteRequest extends FormRequest
     {
         return [
             "quote" => 'required',
+            "author" => 'required',
         ];
     }
 }

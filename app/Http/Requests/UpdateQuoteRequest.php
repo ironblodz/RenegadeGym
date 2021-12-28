@@ -25,6 +25,7 @@ class UpdateQuoteRequest extends FormRequest
     {
         return [
             'quote' => 'required',
+            'author' => 'required',
         ];
     }
 }
