@@ -26,7 +26,7 @@
 
     <body>
         <!-- Hero section -->
-        <section id="hero" class="text-white tm-font-big tm-parallax">
+        <section id="hero" class="text-white tm-font-big tm-parallax mb-5">
             <!-- Navigation -->
 
 

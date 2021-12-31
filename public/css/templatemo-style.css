@@ -136,11 +136,11 @@ a:focus {
 /* Hero */
 
 #hero {
-    background-image: url(../img/monkey2.jpg);
+    background-image: url(../img/sd.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top !important;
-    height: 100vh;
+    background-position: center !important;
+    height: 60vh;
     min-height: 375px;
     position: relative;
 }
@@ -183,7 +183,7 @@ a:focus {
 
 .tm-hero-title {
     font-size: 3.5rem;
-    text-shadow: 2px 2px 2px #333;
+    /*text-shadow: 2px 2px 2px #333;*/
 }
 
 .tm-intro-next {
