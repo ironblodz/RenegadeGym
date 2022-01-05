@@ -25,7 +25,7 @@
                                         <div class="d-flex align-items-center">
                                             <img class="rounded-circle me-3" src="{{asset('img/logo.png')}}" height="40px" width="40px"/>
                                             <div class="small d-flex">
-                                                <div class="text-muted">March 12, 2021 &middot; 6 min read</div>
+                                                <div class="text-muted">{{$post->created_at}}</div>
                                             </div>
                                         </div>
                                     </div>
