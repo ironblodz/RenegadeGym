@@ -69,7 +69,8 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: white;
+    color: black;
+    font-weight: bold;
     text-align: left;
 }
 
@@ -1460,23 +1461,23 @@ pre code {
 .table {
     width: 100%;
     margin-bottom: 1rem;
-    color: white;
+    color: black;
 }
 
 .table th,
 .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 1px solid #e3e6f0;
+    border-top: 1px solid black;
 }
 
 .table thead th {
     vertical-align: bottom;
-    border-bottom: 2px solid #e3e6f0;
+    border-bottom: 1px solid #6e707e;
 }
 
 .table tbody + tbody {
-    border-top: 2px solid #e3e6f0;
+    border-top: 1px solid #6e707e;
 }
 
 .table-sm th,
@@ -1485,12 +1486,12 @@ pre code {
 }
 
 .table-bordered {
-    border: 1px solid #e3e6f0;
+    border: 1px solid #6e707e;
 }
 
 .table-bordered th,
 .table-bordered td {
-    border: 1px solid #e3e6f0;
+    border: 1px solid #6e707e;
 }
 
 .table-bordered thead th,
@@ -1945,8 +1946,8 @@ textarea.form-control {
 
 .form-group {
     margin-bottom: 1rem;
-    background: #3f464e;
-    color:white;
+    background: white;
+    color:black;
 }
 
 .form-text {
@@ -3290,7 +3291,7 @@ input[type="button"].btn-block {
     height: 0;
     margin: 0.5rem 0;
     overflow: hidden;
-    border-top: 1px solid #eaecf4;
+    border-top: 1px solid #6e707e;
 }
 
 .dropdown-item {
@@ -4600,7 +4601,7 @@ input[type="button"].btn-block {
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
-    border: 1px solid #3f464e;
+    border: 1px solid white;
     border-radius: 0.35rem;
 }
 
@@ -4623,8 +4624,8 @@ input[type="button"].btn-block {
 
     flex: 1 1 auto;
     padding: 1.25rem;
-    color:white;
-    background-color: #3f464e;
+    color:black;
+    background-color: white;
 }
 
 .card-title {
@@ -4651,8 +4652,8 @@ input[type="button"].btn-block {
 .card-header {
     padding: 0.75rem 1.25rem;
     margin-bottom: 0;
-    background-color: #3f464e;
-    color:white;
+    background-color: white;
+    color:black;
 }
 
 .card-header:first-child {
@@ -6637,7 +6638,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-    background-color: #3f464e !important;
+    background-color: white !important;
 }
 
 a.bg-dark:hover,
@@ -7667,7 +7668,7 @@ div.main {
     height: auto !important;
     height: 100%;
     margin: 0 30px -30px;
-    
+
  }
 .fixed-bottom {
     position:fixed;
@@ -9734,7 +9735,7 @@ div.main {
 }
 
 .text-white {
-    color: #fff !important;
+    color: black !important;
 }
 
 .text-primary {
@@ -9958,7 +9959,7 @@ a:focus {
 
 #wrapper #content-wrapper #content {
     flex: 1 0 auto;
-    background-image: url('https://images.pexels.com/photos/6296041/pexels-photo-6296041.jpeg?cs=srgb&dl=pexels-pavel-danilyuk-6296041.jpg&fm=jpg');
+    background-image: url('https://wallpapercave.com/wp/wp7661121.jpg');
     background-size: cover;
 }
 
@@ -10165,7 +10166,7 @@ a:focus {
 }
 
 .text-gray-400 {
-    color: #d1d3e2 !important;
+    color: black !important;
 }
 
 .text-gray-500 {
@@ -10334,11 +10335,11 @@ a:focus {
 }
 
 .topbar #sidebarToggleTop:hover {
-    background-color: #eaecf4;
+    background-color: black;
 }
 
 .topbar #sidebarToggleTop:active {
-    background-color: #dddfeb;
+    background-color: black;
 }
 
 .topbar .navbar-search {
@@ -10352,7 +10353,7 @@ a:focus {
 
 .topbar .topbar-divider {
     width: 0;
-    border-right: 1px solid #e3e6f0;
+    border-right: 1px solid black;
     height: calc(4.375rem - 2rem);
     margin: auto 1rem;
 }
@@ -10611,6 +10612,7 @@ a:focus {
 
 .sidebar hr.sidebar-divider {
     margin: 0 1rem 1rem;
+    background: #6e707e;
 }
 
 .sidebar .sidebar-heading {
@@ -10746,7 +10748,7 @@ a:focus {
 }
 
 .sidebar-light hr.sidebar-divider {
-    border-top: 1px solid #eaecf4;
+    border-top: 1px solid #6e707e;
 }
 
 .sidebar-light .sidebar-heading {
@@ -10798,35 +10800,35 @@ a:focus {
 }
 
 .sidebar-dark .sidebar-brand {
-    color: #fff;
+    color: black;
 }
 
 .sidebar-dark hr.sidebar-divider {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 1px solid #6e707e;
 }
 
 .sidebar-dark .sidebar-heading {
-    color: rgba(255, 255, 255, 0.4);
+    color: black;
 }
 
 .sidebar-dark .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.9);
+    color: black;
 }
 
 .sidebar-dark .nav-item .nav-link i {
-    color: rgba(255, 255, 255, 0.8);
+    color: #dc3545;
 }
 
 .sidebar-dark .nav-item .nav-link:active,
 .sidebar-dark .nav-item .nav-link:focus,
 .sidebar-dark .nav-item .nav-link:hover {
-    color: #fff;
+    color: #dc3545;
 }
 
 .sidebar-dark .nav-item .nav-link:active i,
 .sidebar-dark .nav-item .nav-link:focus i,
 .sidebar-dark .nav-item .nav-link:hover i {
-    color: #fff;
+    color: #dc3545;
 }
 
 .sidebar-dark .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -10842,7 +10844,7 @@ a:focus {
 }
 
 .sidebar-dark #sidebarToggle {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e74a3b;
 }
 
 .sidebar-dark #sidebarToggle::after {
@@ -10850,7 +10852,7 @@ a:focus {
 }
 
 .sidebar-dark #sidebarToggle:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #e74a3b;
 }
 
 .sidebar-dark.toggled #sidebarToggle::after {
@@ -11401,6 +11403,7 @@ form.user .btn-user {
 footer.sticky-footer {
     padding: 2rem 0;
     flex-shrink: 0;
+    z-index: 4000;
 }
 
 footer.sticky-footer .copyright {
