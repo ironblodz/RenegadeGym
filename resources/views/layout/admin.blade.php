@@ -34,7 +34,7 @@
     <ul class="navbar-nav bg-dark sidebar sidebar-dark bg-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/admin">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('gm.index') }}">
         <div class="sidebar-brand-icon">
             <img src="{{asset('img/logo.png')}}" height="80px" width="80px" alt="logo" class="logo">
 
@@ -193,7 +193,7 @@
             @if (auth()->check())
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
-            <span class="mr-2 d-none d-lg-inline text-gray-200 small">
+            <span class="mr-2 d-none d-lg-inline text-gray-400 small">
               {{auth()->user()->name}}</span>
               @if (auth()->user()->photo==null)
               <img class="img-profile rounded-circle" alt="User Photo"
