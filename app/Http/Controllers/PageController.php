@@ -34,8 +34,7 @@ class PageController extends Controller
     }
 
     public function blog(){
-        $posts = Post::all();
-        
+        $posts = Post::paginate(6);
         return view ('gm.blog', compact('posts'))->with('menuOption', 'D');
     }
 
